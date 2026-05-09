@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Extrae Estudios de Yoes desde los PDFs proporcionados."""
-import fitz, json, re
+import fitz, json, re, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from extract_pdf_text import to_blocks
 
 ROOT = Path(__file__).resolve().parent.parent
 PDFS = Path("/tmp/cr/pdfs")
