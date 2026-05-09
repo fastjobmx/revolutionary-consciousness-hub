@@ -221,50 +221,49 @@ def to_blocks(raw):
     """Convert raw text into structured blocks."""
     if not raw: return []
     blocks=[]
-    paragraphs=re.split(r'\n{2,}|(?<=[\.\?\!:])\s*\n(?=[A-ZÁÉÍÓÚÑ¿¡])', raw)
-    # simpler: split by line then group
-    lines=[l.rstrip() for l in raw.split('\n') if l.strip()]
-    i=0
-    buf=[]
-    list_buf=[]
-    def flush_para():
+    buf=[]; lst=[]
+    def fp():
         nonlocal buf
         if buf:
-            txt=' '.join(buf).strip()
-            if txt: blocks.append({"type":"paragraph","text":txt})
+            t=' '.join(buf).strip()
+            if t: blocks.append({"type":"paragraph","text":t})
             buf=[]
-    def flush_list():
-        nonlocal list_buf
-        if list_buf:
-            blocks.append({"type":"list","items":list_buf[:]})
-            list_buf=[]
-    for ln in lines:
-        ls=ln.strip()
-        # heading: short line, mostly uppercase or ends with ':' alone
-        is_heading = (
-            len(ls)<80 and ls.isupper() and len(ls)>3
-        ) or re.match(r'^\d+\.\-?\s+[A-ZÁÉÍÓÚÑ][^.]{3,70}:?$', ls)
-        is_bullet = re.match(r'^(?:[-•·▪]|\d+[\.\-\)])\s+(.+)$', ls)
-        is_practice_h = re.match(r'^(PRÁCTICA|PRACTICA|EJERCICIO|MEDITACI[ÓO]N)\b', ls, re.I)
-        is_mantra = re.match(r'^MANTRA[M]?\b', ls, re.I)
-        if is_heading and not is_bullet:
-            flush_para(); flush_list()
-            blocks.append({"type":"heading","level":3,"text":ls.rstrip(':')})
-        elif is_bullet:
-            flush_para()
-            list_buf.append(is_bullet.group(1) if is_bullet.lastindex else ls)
-        else:
-            flush_list()
-            buf.append(ls)
-    flush_para(); flush_list()
-    # Merge tiny consecutive paragraphs
-    merged=[]
-    for b in blocks:
-        if merged and b["type"]=="paragraph" and merged[-1]["type"]=="paragraph" and len(merged[-1]["text"])<120:
-            merged[-1]["text"] += ' ' + b["text"]
-        else:
-            merged.append(b)
-    return merged
+    def fl():
+        nonlocal lst
+        if lst:
+            blocks.append({"type":"list","items":lst[:]}); lst=[]
+    lines=[l.strip() for l in raw.split('\n') if l.strip()]
+    for ls in lines:
+        is_upper_h = len(ls)<80 and ls.isupper() and len(ls)>3
+        is_num_h = re.match(r'^\d+\.\-?\s+[A-ZÁÉÍÓÚÑ][^.]{3,70}:?$', ls)
+        # short line, no terminal punctuation, looks like a heading
+        ends_terminal = bool(re.search(r'[\.,;:]$', ls))
+        is_short_h = (5 <= len(ls) <= 70 and not ends_terminal and re.match(r'^[¿¡A-ZÁÉÍÓÚÑ]', ls) and not re.search(r'\b(que|los|las|y|de|en|el|la)\b', ls.split()[-1].lower() if ls.split() else ''))
+        bm = re.match(r'^(?:[-•·▪–—]|\d+[\.\-\)])\s+(.+)$', ls)
+        is_mantra = re.match(r'^MANTRA[M]?\b[: ]', ls, re.I)
+        is_practice = re.match(r'^(PR[ÁA]CTICA|EJERCICIO)\b', ls, re.I)
+        if bm:
+            fp(); lst.append(bm.group(1))
+            continue
+        if is_upper_h or is_num_h or (is_short_h and not bm):
+            fp(); fl()
+            level = 2 if is_upper_h else 3
+            blocks.append({"type":"heading","level":level,"text":ls.rstrip(':')})
+            continue
+        if is_mantra:
+            fp(); fl()
+            blocks.append({"type":"mantra","text":re.sub(r'^MANTRA[M]?\s*[:\-]?\s*','',ls,flags=re.I)})
+            continue
+        fl()
+        buf.append(ls)
+        # close paragraph after sentence-ending line
+        if ls.endswith('.') or ls.endswith('?') or ls.endswith('!'):
+            # only if accumulated 2+ sentences worth
+            joined=' '.join(buf)
+            if len(joined) > 180:
+                fp()
+    fp(); fl()
+    return blocks
 
 def make_summary(blocks):
     for b in blocks:
