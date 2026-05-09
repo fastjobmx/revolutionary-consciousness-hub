@@ -30,7 +30,22 @@
       8,
       9
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p005-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p005-img01.png",
+        "alt": "Imagen extraída de Fase A, página 5",
+        "caption": "",
+        "sourcePage": 5
+      },
+      {
+        "id": "fase-a-p007-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p007-img01.png",
+        "alt": "Imagen extraída de Fase A, página 7",
+        "caption": "",
+        "sourcePage": 7
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -40,6 +55,20 @@
         "type": "heading",
         "level": 3,
         "text": "TODOS ESTAMOS CONSTITUIDOS POR TRES PARTES"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p005-img01.png",
+        "alt": "Imagen extraída de Fase A, página 5",
+        "caption": "",
+        "sourcePage": 5
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p007-img01.png",
+        "alt": "Imagen extraída de Fase A, página 7",
+        "caption": "",
+        "sourcePage": 7
       },
       {
         "type": "paragraph",
@@ -192,7 +221,22 @@
       11,
       12
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p010-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p010-img01.png",
+        "alt": "Imagen extraída de Fase A, página 10",
+        "caption": "",
+        "sourcePage": 10
+      },
+      {
+        "id": "fase-a-p011-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p011-img01.png",
+        "alt": "Imagen extraída de Fase A, página 11",
+        "caption": "",
+        "sourcePage": 11
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -232,6 +276,20 @@
         "type": "heading",
         "level": 3,
         "text": "B. LA MUERTE SEGUNDA."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p010-img01.png",
+        "alt": "Imagen extraída de Fase A, página 10",
+        "caption": "",
+        "sourcePage": 10
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p011-img01.png",
+        "alt": "Imagen extraída de Fase A, página 11",
+        "caption": "",
+        "sourcePage": 11
       },
       {
         "type": "paragraph",
@@ -277,7 +335,15 @@
       13,
       14
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p013-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p013-img01.png",
+        "alt": "Imagen extraída de Fase A, página 13",
+        "caption": "",
+        "sourcePage": 13
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -296,6 +362,13 @@
         "type": "heading",
         "level": 3,
         "text": " FFAAAAA   RAAAAA   OOOOONNNNN."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p013-img01.png",
+        "alt": "Imagen extraída de Fase A, página 13",
+        "caption": "",
+        "sourcePage": 13
       },
       {
         "type": "heading",
@@ -361,7 +434,22 @@
       18,
       19
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p016-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p016-img01.png",
+        "alt": "Imagen extraída de Fase A, página 16",
+        "caption": "",
+        "sourcePage": 16
+      },
+      {
+        "id": "fase-a-p018-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p018-img01.png",
+        "alt": "Imagen extraída de Fase A, página 18",
+        "caption": "",
+        "sourcePage": 18
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -383,6 +471,20 @@
         "type": "heading",
         "level": 3,
         "text": "LOS SIETE CENTROS DE LA MAQUINA HUMANA"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p016-img01.png",
+        "alt": "Imagen extraída de Fase A, página 16",
+        "caption": "",
+        "sourcePage": 16
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p018-img01.png",
+        "alt": "Imagen extraída de Fase A, página 18",
+        "caption": "",
+        "sourcePage": 18
       },
       {
         "type": "heading",
@@ -494,7 +596,29 @@
       22,
       23
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p021-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p021-img01.png",
+        "alt": "Imagen extraída de Fase A, página 21",
+        "caption": "",
+        "sourcePage": 21
+      },
+      {
+        "id": "fase-a-p023-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p023-img01.png",
+        "alt": "Imagen extraída de Fase A, página 23",
+        "caption": "",
+        "sourcePage": 23
+      },
+      {
+        "id": "fase-a-p023-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p023-img02.png",
+        "alt": "Imagen extraída de Fase A, página 23",
+        "caption": "",
+        "sourcePage": 23
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -504,6 +628,27 @@
         "type": "heading",
         "level": 3,
         "text": "¿QUÉ ES UNA DIMENSIÓN?"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p021-img01.png",
+        "alt": "Imagen extraída de Fase A, página 21",
+        "caption": "",
+        "sourcePage": 21
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p023-img01.png",
+        "alt": "Imagen extraída de Fase A, página 23",
+        "caption": "",
+        "sourcePage": 23
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p023-img02.png",
+        "alt": "Imagen extraída de Fase A, página 23",
+        "caption": "",
+        "sourcePage": 23
       },
       {
         "type": "paragraph",
@@ -565,7 +710,29 @@
       24,
       25
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p024-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p024-img01.png",
+        "alt": "Imagen extraída de Fase A, página 24",
+        "caption": "",
+        "sourcePage": 24
+      },
+      {
+        "id": "fase-a-p024-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p024-img02.png",
+        "alt": "Imagen extraída de Fase A, página 24",
+        "caption": "",
+        "sourcePage": 24
+      },
+      {
+        "id": "fase-a-p025-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p025-img01.png",
+        "alt": "Imagen extraída de Fase A, página 25",
+        "caption": "",
+        "sourcePage": 25
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -575,6 +742,27 @@
         "type": "heading",
         "level": 3,
         "text": "PENTALFA"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p024-img01.png",
+        "alt": "Imagen extraída de Fase A, página 24",
+        "caption": "",
+        "sourcePage": 24
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p024-img02.png",
+        "alt": "Imagen extraída de Fase A, página 24",
+        "caption": "",
+        "sourcePage": 24
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p025-img01.png",
+        "alt": "Imagen extraída de Fase A, página 25",
+        "caption": "",
+        "sourcePage": 25
       },
       {
         "type": "paragraph",
@@ -641,7 +829,43 @@
       28,
       29
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p026-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p026-img01.png",
+        "alt": "Imagen extraída de Fase A, página 26",
+        "caption": "",
+        "sourcePage": 26
+      },
+      {
+        "id": "fase-a-p026-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p026-img02.png",
+        "alt": "Imagen extraída de Fase A, página 26",
+        "caption": "",
+        "sourcePage": 26
+      },
+      {
+        "id": "fase-a-p027-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p027-img01.png",
+        "alt": "Imagen extraída de Fase A, página 27",
+        "caption": "",
+        "sourcePage": 27
+      },
+      {
+        "id": "fase-a-p027-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p027-img02.png",
+        "alt": "Imagen extraída de Fase A, página 27",
+        "caption": "",
+        "sourcePage": 27
+      },
+      {
+        "id": "fase-a-p028-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p028-img01.png",
+        "alt": "Imagen extraída de Fase A, página 28",
+        "caption": "",
+        "sourcePage": 28
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -668,6 +892,41 @@
         "type": "heading",
         "level": 3,
         "text": "¿QUE ES LA REVOLUCION?"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p026-img01.png",
+        "alt": "Imagen extraída de Fase A, página 26",
+        "caption": "",
+        "sourcePage": 26
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p026-img02.png",
+        "alt": "Imagen extraída de Fase A, página 26",
+        "caption": "",
+        "sourcePage": 26
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p027-img01.png",
+        "alt": "Imagen extraída de Fase A, página 27",
+        "caption": "",
+        "sourcePage": 27
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p027-img02.png",
+        "alt": "Imagen extraída de Fase A, página 27",
+        "caption": "",
+        "sourcePage": 27
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p028-img01.png",
+        "alt": "Imagen extraída de Fase A, página 28",
+        "caption": "",
+        "sourcePage": 28
       },
       {
         "type": "paragraph",
@@ -705,11 +964,26 @@
       31,
       32
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p032-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p032-img01.png",
+        "alt": "Imagen extraída de Fase A, página 32",
+        "caption": "",
+        "sourcePage": 32
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 09 LAS INFRADIMENSIONES Este tema tiene por objeto que conozcamos que tal como sucede en el planeta Tierra sucede en nuestro Mundo Interior. En el bajo vientre encontramos las siete puertas que conducen a las Infradimensiones internas nuestras o Infiernos atómicos. Por Ley de Correspondencias, encontramos para el trabajo psicológico los Nueve Círculos Dantescos en nuestro mundo interior, al igual que en el planeta Tierra. Todos los seres humanos tenemos dos lunas, la luna visible y la luna oculta. La luna visible está relacionada con los defectos visibles nuestros y con nuestras propias Infradimensiones. La luna invisible nuestra está relacionada con los Yoes Causa y las Infradimensiones del planeta Tierra. Ya hemos dicho que los defectos psicológicos tienen dos formas de acabarse: voluntaria o involuntariamente. Cuando un Ser se decide a acabarlos voluntariamente tiene que iniciar primero una guerra psicológica en el diario vivir, trabajando interiormente todos los agregados psicológicos que le afloran de su mundo interior. Estos yoes trabajan adueñándose de los Centros de la máquina humana, del aparato sexual y las glándulas sexuales. Como ya sabemos, el 97% de nuestra Energía Creadora Sexual se encuentra atrapada en los diversos elementos psicológicos. Hay que bajar a nuestras Infradimensiones a rescatar esta energía para poder hacer las distintas creaciones. Veamos las Infradimensiones y los principales defectos que en cada una se encuentran:  Primera Infradimensión - Esfera de la Luna: Relacionada con todos los perezosos que no se han bautizado. Nos está mostrando que el primer trabajo que debemos realizar es contra nuestra propia pereza, pues ésta no nos deja iniciar el trabajo sexual ni el trabajo sobre nosotros mismos. La esfera de la Luna está relacionada con el planeta Luna y el Centro Sexual. En este centro encontramos el átomo del Enemigo Secreto (el Anticristo), que impide la ejecución de toda obra.  Segunda Infradimensión - Esfera de Mercurio: Relacionada con nuestras Aguas y con el Instinto. Aquí se encuentran todos los fornicarios de nuestro mundo interior, los cuales terminan de copular y están pensando en el siguiente orgasmo o fornicación. En este círculo no se hace otra cosa que derramar la simiente. Por esto es necesario comprender el valor del Ens Seminis para la creación de los Cuerpos, aprender a valorar nuestra propia energía, comprender los daños que ocasionó la pérdida de la misma y eliminar al yo fornicario para poder hacer el trabajo de la Gran Obra.  Tercera Infradimensión - Esfera de Venus: Relacionada con todos nuestros placeres o deseos. Aquí debemos comprender que el deseo es la fuente de toda fuerza, que el que se niega al deseo se hace dueño de la fuerza, que el que se entrega al deseo se hace su esclavo. En este círculo encontramos al Deseo, quien obra como Entrenador Psicológico, el Lucifer, tentándonos y probándonos. Si lo vencemos nos hacemos dueños del fuego y la luz. Si no lo vencemos nos convertimos en sus esclavos y nunca podremos dejar de ser lo que somos. Debemos estudiar todos los placeres: tomar, comer, jugar, fornicar, adulterar, dormir, descansar, parrandear, ver televisión, trabajar, sufrir, etc., etc., pues en ellos se encuentra atrapado nuestro fuego (la capacidad de amar). Esta esfera está relacionada con el Centro Emocional Inferior.  Cuarta Infradimensión - Esfera del Sol: El Sol está relacionado con el equilibrio, y éste con la Ley de la Balanza. En esta región de nuestro Microcosmos encontramos dos clases de defectos que siempre impiden llegar al equilibrio y convertirnos en un sistema auto-egocrático. Debemos estudiar todos nuestros excesos y deficiencias, originados y expresados en yoes derrochadores y yoes avaros. Los unos invierten mal nuestra riqueza interior y exterior, la despilfarran. Los otros la guardan, la retienen, e impiden que hagamos lo que hay que hacer, hasta que los yoes ladrones se la roban. Estos defectos nos convierten en mendigos, pues no dejan que se haga la construcción de los Cuerpos Existenciales. Esta esfera se encuentra relacionada con el Centro Intelectual Inferior.  Quinta Infradimensión - Esfera de Marte: Relacionada con el Centro Motor, que maneja nuestras obras y palabras. Aquí encontramos la Fuerza, el buen o mal uso de la misma, el defecto de la Ira. Por lo tanto, aparecen los yoes de la violencia con palabras y obras, los insultadores, agresores, peleadores, que afloran en el diario vivir y agotan nuestra Energía Creadora Sexual en reacciones innecesarias durante la interrelación con los demás seres. Debemos cambiar la forma de reaccionar ante cualquier situación que se nos presente, es necesario observar nuestra impaciencia y a todo lo que nos lleva. Aquí están las gentes irónicas, furiosas, los soberbios, altaneros, orgullosos, y todas las monstruosas creaciones del yo de la Ira.  Sexta Infradimensión - Esfera de Júpiter: Júpiter es el dadivoso del sistema solar. Contrario a esto, en este círculo encontramos a todos nuestros yoes tiranos, los yoes dictadores, los yoes acaparadores, los yoes que se adueñan de las cosas, de las tierras, los yoes egoístas que retienen el dinero para originar escasez y recesión económica, etc. A todos los padres que obligan a sus hijos a comer algo que no les gusta, a estudiar, a los padres que retienen para sí los dineros de la familia. A los yoes que no dejan que los demás opinen lo que les parece o actúen con libre albedrío, los que quieren que las personas hagan lo que ellos quieren. Todos los que atentan contra el Amor y lo Divino, los blasfemos, los escépticos, los materialistas, los ateos. Esta región está relacionada con el Centro Emocional Superior.  Séptima Infradimensión - Esfera de Saturno: Relacionada con el Centro Intelectual Superior. Tiene a cargo el manejo de la naturaleza. Aquí encontramos todos los delitos contra el Espíritu Santo, contra Natura y violentos contra el Arte: Los yoes fornicarios, yoes masturbadores, yoes homosexuales, yoes de lesbianismo, yoes adúlteros, yoes de la lascivia, yoes de pornografía, yoes de prostitución, yoes que practican sexo con animales, yoes que practican sexo anal, yoes que practican sexo oral, yoes auto- homosexuales, yoes abusadores sexuales, yoes que practican el sexo varias veces al día, yoes que copulan estando la mujer en embarazo, yoes que copulan estando la mujer en menstruación, yoes que se auto-obligan a practicar el sexo, yoes que obligan a su esposa a practicar no teniendo ella deseo, yoes violadores, yoes que derraman la energía fuera del templo, yoes que utilizan anticonceptivos, yoes que abortan, yoes que se castran, yoes que obligan a castrar a otros, yoes que castran a los animales, yoes que hacen injertos, yoes de brujería, yoes que critican, yoes que calumnian, etc., etc., etc. Existe violencia contra Dios en los bribones del intelecto que le niegan la posibilidad espiritual al hombre. Los violentos contra sí mismos, los suicidas. Los violentos contra sus propios bienes y los bienes de otros. Todos estos defectos debemos trabajarlos para poder lograr la pureza en el sexo y llegar a las verdaderas prácticas de Supra-sexo. Además, debemos observar nuestro comportamiento frente a nuestra Madre Naturaleza: los daños contra la ecología, la contaminación de las aguas, el aire, la tierra, los elementales, etc., etc.  Octava Infradimensión - Esfera de Urano: Urano está relacionado con el Espíritu Santo, la Energía Creadora Sexual, nuestra Madre Divina. El Verbo mismo, la Verdad. En esta esfera, por el contrario, encontramos a todos los mentirosos, falsificadores, a todos los que falsifican las religiones, falsificadores de moneda, suplantadores de personas, a los incestuosos, a los sembradores de discordia, los malos consejeros, los magos negros que invitan a otros a fornicar, los que prometen y no cumplen, los escandalosos, los cismáticos, los falsos, los hipócritas, etc., etc.  Novena Infradimensión - Esfera de Neptuno: Nos encontramos ahora mismo en el aparato sexual. Aquí encontramos a todos los yoes traidores de nuestra psicología. Cada uno de nuestros deseos, cada una de nuestras justificaciones y lavados de manos, cada una de nuestras malas voluntades que prefieren hacer la voluntad de los yoes que de la Conciencia. Para el trabajo esotérico debemos descubrir a cada uno de nuestros yoes traidores, que se manifiestan a lo largo del día. A este procedimiento se le denomina Conocimiento de Sí Mismo. De estas Infradimensiones saldrá la Luz que ilumine nuestras tinieblas interiores o la Sabiduría del Mal, y el Amor que está atrapado en esos defectos. En estas Infradimensiones se encuentra atrapado nuestro Mercurio. Debemos enseñar y estimular a los alumnos para el trabajo de la Muerte Psicológica con el objeto de emancipar esta Esencia embotellada. De la comprensión de los agregados psicológicos que se han visto dependerá el equilibrio de los centros y el rescate de nuestras energías para la creación. Fin Conferencia 09."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p032-img01.png",
+        "alt": "Imagen extraída de Fase A, página 32",
+        "caption": "",
+        "sourcePage": 32
       }
     ]
   },
@@ -744,7 +1018,22 @@
       35,
       36
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p034-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p034-img01.png",
+        "alt": "Imagen extraída de Fase A, página 34",
+        "caption": "",
+        "sourcePage": 34
+      },
+      {
+        "id": "fase-a-p035-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p035-img01.png",
+        "alt": "Imagen extraída de Fase A, página 35",
+        "caption": "",
+        "sourcePage": 35
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -826,6 +1115,20 @@
         "text": "¿CÓMO SE FABRICAN LOS CUERPOS EXISTENCIALES DE SER?"
       },
       {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p034-img01.png",
+        "alt": "Imagen extraída de Fase A, página 34",
+        "caption": "",
+        "sourcePage": 34
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p035-img01.png",
+        "alt": "Imagen extraída de Fase A, página 35",
+        "caption": "",
+        "sourcePage": 35
+      },
+      {
         "type": "paragraph",
         "text": "Requisitos para el Trabajo:  Es necesario conseguir una pareja estable del sexo opuesto. Debe estar interesada en colaborar con el trabajo que vamos a hacer, puesto que no se puede estar cambiando de pareja. En caso de tener que hacerlo tendríamos que esperar un tiempo mínimo de un año (pausa magnética). A la pareja hay que valorarla y quererla, pues con ella vamos a hacer el Verdadero Amor.  Y una obra de amor se alimenta con amor.  Tenemos que valorar la Energía Creadora Sexual y su importancia dentro de la Obra. En la medida que comprendamos que esa Energía es nuestra Madre Divina, que está encargada de hacer toda la Creación, estas comprensiones nos permitirán ir valorándola gradualmente hasta que eliminemos al yo fornicario, pues la Castidad es el fundamento de toda la obra.  Ambos miembros deben conocer el trabajo que se va a hacer muy bien e irlo perfeccionando cada día.  El secreto de la práctica consiste en la conexión del Lingam masculino con el Yoni femenino sin derramar la Energía Creadora Sexual. Práctica de Transmutación de la Energía Sexual * Conjuración del Belilín y Círculo Mágico de protección (nunca pueden omitirse). * Súplica de asistencia al Padre Interior y a la Madre Divina de cada uno para la práctica. * Prender el fuego con caricias y besos hasta lograr una perfecta lubricación del Yoni femenino para la penetración. * Conexión o penetración del Lingam en el Yoni (del pene en la vagina). * El Proceso Respiratorio tiene tres etapas:"
       },
@@ -904,7 +1207,22 @@
       39,
       40
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p037-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p037-img01.png",
+        "alt": "Imagen extraída de Fase A, página 37",
+        "caption": "",
+        "sourcePage": 37
+      },
+      {
+        "id": "fase-a-p038-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p038-img01.png",
+        "alt": "Imagen extraída de Fase A, página 38",
+        "caption": "",
+        "sourcePage": 38
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -914,6 +1232,20 @@
         "type": "heading",
         "level": 3,
         "text": "¿QUÉ ES EL ALMA?"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p037-img01.png",
+        "alt": "Imagen extraída de Fase A, página 37",
+        "caption": "",
+        "sourcePage": 37
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p038-img01.png",
+        "alt": "Imagen extraída de Fase A, página 38",
+        "caption": "",
+        "sourcePage": 38
       },
       {
         "type": "paragraph",
@@ -1057,7 +1389,29 @@
       45,
       46
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p044-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p044-img01.png",
+        "alt": "Imagen extraída de Fase A, página 44",
+        "caption": "",
+        "sourcePage": 44
+      },
+      {
+        "id": "fase-a-p045-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p045-img01.png",
+        "alt": "Imagen extraída de Fase A, página 45",
+        "caption": "",
+        "sourcePage": 45
+      },
+      {
+        "id": "fase-a-p045-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p045-img02.png",
+        "alt": "Imagen extraída de Fase A, página 45",
+        "caption": "",
+        "sourcePage": 45
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -1200,6 +1554,27 @@
         "type": "heading",
         "level": 3,
         "text": "PRACTICA DE TRASLADO DE FONDOS."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p044-img01.png",
+        "alt": "Imagen extraída de Fase A, página 44",
+        "caption": "",
+        "sourcePage": 44
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p045-img01.png",
+        "alt": "Imagen extraída de Fase A, página 45",
+        "caption": "",
+        "sourcePage": 45
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p045-img02.png",
+        "alt": "Imagen extraída de Fase A, página 45",
+        "caption": "",
+        "sourcePage": 45
       },
       {
         "type": "paragraph",
@@ -1595,7 +1970,22 @@
       54,
       55
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p053-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p053-img01.png",
+        "alt": "Imagen extraída de Fase A, página 53",
+        "caption": "",
+        "sourcePage": 53
+      },
+      {
+        "id": "fase-a-p055-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p055-img01.png",
+        "alt": "Imagen extraída de Fase A, página 55",
+        "caption": "",
+        "sourcePage": 55
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -1622,6 +2012,20 @@
         "type": "heading",
         "level": 3,
         "text": "¿QUÉ ES EL EGO?"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p053-img01.png",
+        "alt": "Imagen extraída de Fase A, página 53",
+        "caption": "",
+        "sourcePage": 53
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p055-img01.png",
+        "alt": "Imagen extraída de Fase A, página 55",
+        "caption": "",
+        "sourcePage": 55
       },
       {
         "type": "paragraph",
@@ -1735,7 +2139,15 @@
       61,
       62
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p060-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p060-img01.png",
+        "alt": "Imagen extraída de Fase A, página 60",
+        "caption": "",
+        "sourcePage": 60
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -1770,6 +2182,13 @@
       {
         "type": "paragraph",
         "text": "vocal por vocal, repitiendo todo el procedimiento respiratorio para cada vocal.  La práctica se prolongará durante todo el tiempo que la pareja lo desee pero deberán retirarse sin eyacular o derramar la Energía Creadora Sexual.  No se practicará sino una vez en la noche.  Con paciencia, prudencia y perseverancia se irá avanzando vértebra por vértebra y cuerpo por cuerpo. Segundo Factor: MORIR La Muerte Psicológica se refiere a la liberación de la Esencia, o Energía Creadora Sexual, que en estos momentos se encuentra atrapada por el yo psicológico o las formas de ser de uno mismo. Para poder iniciar el proceso de la Muerte Psicológica debemos aprender a auto- observarnos. Y esto resulta ser lo más difícil por la mecanicidad en la que nos encontramos. Es necesario saber diferenciar los actos del Ego, los actos de la personalidad y los de la Conciencia. ¿Qué se puede observar en el mundo interior? 1 Los distintos pensamientos 2 Las charlas internas entre los yoes 3 Las emociones agradables 4 Las emociones desagradables 5 Los estados de ánimo en que nos encontramos 6 Las reacciones mecánicas 7 Todo lo que nos altera, cualquier situación del mundo físico Cuando uno descubre cualquiera de estas manifestaciones nos hacemos conscientes de lo que sucede interiormente. Luego le pedimos a la Madre Divina que desintegre el defecto o yo que se manifestó. En la medida que trabajamos con seriedad con este procedimiento iremos liberando la Esencia, equilibrando nuestros centros y despertando la Conciencia. Cada vez veremos detallitos más pequeños e insignificantes, lo que nos permitirá ver el avance. El sentido de la auto-observación se irá agudizando progresivamente, en la medida que lo usemos, hasta que despertemos completamente. Ejemplo: voy por la calle conduciendo tranquilamente, al llegar a la esquina otro vehículo se me atraviesa. Si en ese instante no me identifico con lo que me está pasando podré observar todo lo que sucede en mi mundo interior; veamos:  Aparece un yo que me dice que le grite “estúpido”.  Otro, “insúltelo”.  Otro, “¿Qué se está creyendo?”  Otro, “¡Alcáncelo!”.  Observo que tengo ganas de pelear.  Observo que mi Centro Emocional está contraído.  Observo que un yo quiere vengarse.  Me pregunto quién le enseño a manejar.  Pienso, “¡Ojalá se estrelle!”.  Otro me dice que pudo habernos rayado el automóvil.  No puedo dejar de pensar en esto.  “¡Que irresponsable!”, dice otro.  Otros yoes hacen comentarios de lo que sucedió.  Siento resentimiento por lo que pasó. Un tiempo después sigo recordando la escena:  Aún tengo ira.  No puedo olvidar lo que sucedió.  Me siento debilitado. Cada una de estas manifestaciones está producida por un yo diferente, y debo suplicarle a la Madre Divina que me lo elimine. Otro ejemplo: Pasa una mujer muy bella cerca de uno. Si me auto-observo descubro yoes en mi cabeza que la están idealizando, si observo el Centro Emocional me siento enamorado o atraído por ella, si observo el Centro Instintivo y el Sexual noto una actividad morbosa inconfundible. ¿Qué tengo que hacer? Al observar que la estoy idealizando pido muerte para ese detalle. Al observar que me estoy enamorando pido muerte para ese sentimiento. Y al observar la sensación instintiva pido muerte para ese yo. Si cualquiera de ellos persiste continúo pidiéndole a la Madre Divina que lo elimine hasta que no aflore ninguno. A este procedimiento se le denomina Muerte en Marcha, e implica estar todo el día en vigilia para poder darme cuenta de cada detalle. Si me siento un rato a reflexionar sobre los distintos eventos del día y los estados en que me encontraba puedo hacer nuevos descubrimientos y continuar pidiéndole a la Madre Divina que me elimine cada cosa que vaya comprendiendo. A este procedimiento se le denomina Meditación Reflexiva. Y nos ayuda a liberar grandes cantidades de Conciencia. Tercer Factor: SACRIFICIO POR LA HUMANIDAD El Sacrificio por la Humanidad es llevar este conocimiento desinteresadamente a toda la humanidad. Sin ningún tipo de distinción de raza, color, riqueza, pobreza, posición social, etc. El Conocimiento hay que entregarlo sin recibir nada a cambio, completamente gratuito, de lo contrario no es sacrificio sino negocio. Nadie tendría con qué pagar este conocimiento. La sabiduría es el principio de todo. Si no la recibimos morimos ignorantes de la razón misma de existir. Si reflexionamos en esto y valoramos el Conocimiento que tenemos nos daremos cuenta de la responsabilidad que esto representa. Imaginar que todos nuestros hermanos duermen, sin saber siquiera para qué existen, produce terror. El Conocimiento hay que entregarlo puro y limpio, sin agregarle ni quitarle nada, sin mezclarlo con conocimientos pseudo-esotéricos o subjetivos. Condiciones para sacrificarnos:  Debemos entregar el conocimiento gratuitamente.  Debemos entregarlo a todo el mundo.  Debemos entregarlo puro, sin agregarle otras cosas.  No debemos quitarle o esconder nada, pues esto sería adulterarlo.  No debemos mezclarlo con otros conocimientos, Algunas razones para sacrificarnos por la humanidad: 1 La razón de ser del Ser es el mismo Ser. 2 Desegoistizarnos, dejar de ser egoístas. 3 Una obra de Amor se alimenta con Amor. 4 Cada yo tiene su propia deuda, si no tenemos con qué pagar nos estancamos. 5 Debemos el Karma de siete existencias, si pretendemos auto-realizarnos debemos pagar de contado. 6 Cuando uno debe mucho necesita tener buenos ingresos. 7 Cuando uno se sacrifica por la humanidad recibe Dharma. 8 El Sacrificio genera los méritos del corazón para poder avanzar. 9 De lo que uno da recibe, el que nada da nada recibe. 10 El que da sabiduría recibe sabiduría. 11 El que tiene y no da de los que tiene hasta lo poco que tiene le será quitado. 12 Los méritos del corazón nos permiten avanzar en el trabajo del Nacimiento. 13 Si una persona enseña, cada vez que enseña comprende algo mejor. 14 El egoísta avanza muy lentamente, si es que avanza. 15 Cada vez que le ayudamos al Padre a dar el conocimiento Él nos enseña algo. 16 Cada vez que repetimos el temario lo comprendemos mejor. 17 Si estamos enseñando vamos creando un Centro de Gravedad en torno al Trabajo Esotérico. 18 Si dejamos de enseñar nos enfriamos y nos estancamos en los otros dos factores. 19 Los distintos yoes quieren que nos olvidemos de este trabajo. Si no enseñamos pasa eso. Diferentes formas de sacrificarnos por la humanidad: 1 Invitando a nuestros amigos, familiares y conocidos. 2 Invitando a desconocidos. 3 Repartiendo volantes y pegando afiches. 4 Haciendo publicidad o campañas publicitarias. 5 Preparándonos para enseñar. 6 Fogueándonos para perder el miedo que no nos deja hacer. 7 Haciendo introducciones en las salas. 8 Dictando conferencias. 9 Abriendo salas donde se pueda enseñar el Conocimiento. 10 Preparando personal para que ellos continúen enseñando. 11 Fogueando a todo el personal que se prepara. 12 Motivando a la gente para que arranquen la práctica de los Tres Factores. 13 Dirigiendo a los grupos que se han organizado. 14 Despertando para poder orientarlos. Si comprobamos la fuerza que se recibe al dar este conocimiento empezaremos a formar un grupo que nos permita tener un Centro de Gravedad en el Trabajo Esotérico Gnóstico. Fin Conferencia 17."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p060-img01.png",
+        "alt": "Imagen extraída de Fase A, página 60",
+        "caption": "",
+        "sourcePage": 60
       }
     ]
   },
@@ -1927,11 +2346,26 @@
       73,
       74
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p074-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p074-img01.png",
+        "alt": "Imagen extraída de Fase A, página 74",
+        "caption": "",
+        "sourcePage": 74
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 20 EL PAÍS PSICOLÓGICO Incuestionablemente, así como existe el País Exterior en el cual vivimos, así también en nuestra intimidad existe el País Psicológico. Las gentes no ignoran jamás la ciudad o la comarca donde viven, desafortunadamente sucede que desconocen el lugar psicológico donde se hallan ubicadas. En un instante dado cualquiera sabe en qué barrio o colonia se encuentra, más en el terreno psicológico no sucede lo mismo, normalmente las gentes ni remotamente sospechan en un momento dado el lugar de su País Psicológico en donde se han metido. Así como en el mundo físico existen colonias de gentes decentes y cultas, así también sucede en la comarca psicológica de cada uno de nosotros; no hay duda de que existen colonias muy elegantes y hermosas. Así como en el mundo físico hay colonias o barrios con callejuelas peligrosísimas llenas de asaltantes, así también sucede lo mismo en la comarca psicológica de nuestro interior. Todo depende de la clase de gente que nos acompañe; si tenemos amigos borrachos iremos a parar a la cantina, y si éstos últimos son calaveras, indubitablemente nuestro destino estará en los prostíbulos. Dentro de nuestro País Psicológico cada cual tiene sus acompañantes, sus YOES, éstos los llevarán a uno a donde deben llevarlo de acuerdo con sus características psicológicas. Una dama virtuosa y honorable, magnífica esposa, de conducta ejemplar, viviendo en una hermosa mansión en el mundo físico, debido a sus YOES lujuriosos podría estar ubicada en antros de prostitución dentro de su País Psicológico. Un caballero honorable, de honradez intachable, magnífico ciudadano, podría dentro de su comarca psicológica encontrarse ubicado en una cueva de ladrones, debido a sus pésimos acompañantes, YOES del robo, muy sumergidos dentro del inconsciente. Un anacoreta y penitente, posiblemente un monje azul viviendo austero, dentro de su celda en algún monasterio, podría psicológicamente encontrarse ubicado en una colonia de asesinos, pistoleros, atracadores, drogadictos, debido precisamente a YOES infra- conscientes o inconscientes, sumergidos profundamente dentro de los recovecos más difíciles de su psiquis. Por algo se nos ha dicho que hay mucha virtud en los malvados y que hay mucha maldad en los virtuosos. Muchos santos canonizados aún viven todavía dentro de los antros psicológicos del robo o en casas de prostitución. Esto que estamos afirmando en forma enfática podría escandalizar a los mojigatos, a los pietistas, a los ignorantes ilustrados, a los dechados de sabiduría, pero jamás a los verdaderos psicólogos. Aunque parezca increíble, entre el incienso de la oración también se esconde el delito, entre las cadencias del verso también se esconde el delito, bajo la cúpula sagrada de los santuarios más divinos el delito se reviste con la túnica de la santidad y la palabra sublime. Entre los fondos profundos de los santos más venerables, viven los YOES del prostíbulo, del robo, del homicidio, etc. Acompañantes infrahumanos escondidos entre las insondables profundidades del inconsciente. Mucho sufrieron por tal motivo los diversos santos de la historia, recordemos las tentaciones de San Antonio, todas aquellas abominaciones contra las que tuvo que luchar nuestro hermano Francisco de Asís. Sin embargo, no todo lo dijeron esos santos y la mayor parte de los anacoretas callaron. Uno se asombra al pensar que algunos anacoretas penitentes y santísimos, vivan en las colonias psicológicas de la prostitución y del robo. Empero son santos y si todavía no han descubierto esas cosas espantosas de su psiquis, cuando las descubran usarán silicios sobre su carne, ayunarán, posiblemente se azotarán, y rogarán a su divina madre KUNDALINI elimine de su psiquis esos malos acompañantes que en esos antros tenebrosos de su propio País Psicológico, los tiene metidos. Mucho han dicho las distintas religiones sobre la vida después de la muerte y el más allá. Que no se devanen más los sesos las pobres gentes sobre lo que hay allá del otro lado, más allá del sepulcro. Incuestionablemente después de la muerte cada cual continúa viviendo en la colonia Psicológica de siempre. El ladrón en los antros de los ladrones continuará; el lujurioso en las casas de cita proseguirá como fantasma de mal agüero, el iracundo, el furioso seguirá viviendo en las callejuelas peligrosas del vicio y de la ira, allí también donde brilla el puñal y suenan los tiros de las pistolas. La Esencia en sí misma es muy hermosa, vino de arriba de las estrellas y desgraciadamente está metida dentro de todos estos yoes que llevamos dentro. Por oposición la Esencia puede desandar el camino, regresar al punto de partida original, volver a las estrellas, más debe libertarse primero de sus malos acompañantes que la tienen metida en los suburbios de la perdición. Cuando Francisco de Asís y Antonio de Padua, insignes Maestros Cristificados, descubrieron dentro de su interior los yoes de la perdición, sufrieron lo indecible y no hay duda de que a base de Trabajos Conscientes y Padecimientos Voluntarios, lograron reducir a polvareda cósmica a todo ese conjunto de elementos inhumanos que en su interior vivían. Incuestionablemente esos Santos se Cristificaron y regresaron al punto de partida original después de haber sufrido mucho. Ante todo es necesario, es urgente, inaplazable que el Centro Magnético que en forma anormal tenemos establecido en nuestra falsa personalidad, sea transferido a la Esencia, así podrá iniciar el hombre completo su viaje desde la personalidad hasta las estrellas, ascendiendo en forma didáctica progresiva, de grado en grado por la Montaña del SER. En tanto continúe el Centro Magnético establecido en nuestra personalidad ilusoria viviremos en los antros psicológicos más abominables; aunque en la vida práctica seamos magníficos ciudadanos. Cada cual tiene un Centro Magnético que le caracteriza: el comerciante tiene el Centro Magnético del comercio y por ello se desenvuelve en los mercados y atrae lo que le es afín, compradores y mercaderes. El hombre de ciencia tiene en su personalidad el Centro Magnético de la ciencia y por ello atrae hacia sí todas las cosas de la ciencia, libros, laboratorios, etc. El esoterista tiene en sí mismo el centro magnético del esoterismo, y como quiera que esta clase de centro se torne diferente a las cuestiones de la personalidad, indubitablemente se sucede por tal motivo la transferencia. Cuando el Centro Magnético se establece en la Conciencia, es decir, en la Esencia, entonces se inicia el regreso del Hombre total a las estrellas. Fin Conferencia 20."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p074-img01.png",
+        "alt": "Imagen extraída de Fase A, página 74",
+        "caption": "",
+        "sourcePage": 74
       }
     ]
   },
@@ -2132,7 +2566,22 @@
       88,
       89
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p088-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p088-img01.png",
+        "alt": "Imagen extraída de Fase A, página 88",
+        "caption": "",
+        "sourcePage": 88
+      },
+      {
+        "id": "fase-a-p088-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p088-img02.png",
+        "alt": "Imagen extraída de Fase A, página 88",
+        "caption": "",
+        "sourcePage": 88
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -2142,6 +2591,20 @@
         "type": "heading",
         "level": 3,
         "text": "\"PARACAIDISTAS\"."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p088-img01.png",
+        "alt": "Imagen extraída de Fase A, página 88",
+        "caption": "",
+        "sourcePage": 88
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p088-img02.png",
+        "alt": "Imagen extraída de Fase A, página 88",
+        "caption": "",
+        "sourcePage": 88
       },
       {
         "type": "paragraph",
@@ -2261,11 +2724,40 @@
       93,
       94
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p093-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p093-img01.png",
+        "alt": "Imagen extraída de Fase A, página 93",
+        "caption": "",
+        "sourcePage": 93
+      },
+      {
+        "id": "fase-a-p094-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p094-img01.png",
+        "alt": "Imagen extraída de Fase A, página 94",
+        "caption": "",
+        "sourcePage": 94
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 26 EL MUNDO DE RELACIONES El mundo de relaciones tiene tres aspectos muy diferentes que en forma precisa necesitamos aclarar. Primero: Estamos relacionados con el cuerpo planetario, es decir con el cuerpo físico. Segundo: Vivimos en el planeta Tierra y por secuencia lógica estamos relacionados con el mundo exterior y con las cuestiones que atañen a nosotros, familiares, negocios, dineros, cuestiones de oficio, profesión, política, etc., etc., etc. Tercero: La relación del hombre consigo mismo. Para la mayoría de las gentes este tipo de relación no tiene la menor importancia. Desafortunadamente a las gentes sólo les interesan los dos primeros tipos de relaciones, mirando con la más absoluta indiferencia el tercer tipo. Alimento, salud, dinero, negocios, constituyen realmente las principales preocupaciones del “Animal Intelectual” equivocadamente llamado \"hombre\". Ahora bien: Resulta evidente que tanto el cuerpo físico como los asuntos del mundo son exteriores a nosotros mismos. El Cuerpo Planetario (cuerpo físico), a veces se encuentra enfermo, a veces sano y así sucesivamente. Creemos siempre tener algún conocimiento de nuestro cuerpo físico, más en realidad ni los mejores científicos del mundo saben mucho sobre el cuerpo de carne y hueso. No hay duda de que el cuerpo físico, dada su tremenda y complicada organización, está ciertamente mucho más allá de nuestra comprensión. En lo que respecta al segundo tipo de relaciones, somos siempre víctimas de las circunstancias; es lamentable que todavía no hayamos aprendido a originar conscientemente las circunstancias. Son muchas las gentes incapaces de adaptarse a nada o a nadie o tener éxito verdadero en la vida. Al pensar en sí mismos desde el ángulo del Trabajo Esotérico Gnóstico se hace urgente averiguar con cual de estos tres tipos de relaciones estamos en falta. Puede suceder el caso concreto de que estemos equivocadamente relacionados con el cuerpo físico y a consecuencia de ello estemos enfermos. Puede suceder que estemos mal relacionados con el mundo exterior y como resultado tengamos conflictos, problemas económicos y sociales, etc., etc., etc. Puede que estemos mal relacionados consigo mismos y que secuencialmente suframos mucho por falta de iluminación interior. Obviamente si la lámpara de nuestra recámara no se encuentra conectada a la instalación eléctrica, nuestro aposento estará en tinieblas. Quienes sufren por falta de iluminación interior, deben conectar su mente con los Centros Superiores de su Ser. Incuestionablemente, necesitamos establecer correctas relaciones no sólo con nuestro Cuerpo Planetario (cuerpo físico) y con el mundo exterior sino también con cada una de las partes de nuestro propio Ser. Los enfermos pesimistas, cansados de tantos médicos y medicinas, ya no desean curarse; los pacientes optimistas luchan por vivir. En el Casino de Montecarlo muchos millonarios que perdieron su fortuna en el juego se suicidaron. Millones de madres pobres trabajan para sostener a sus hijos. Son incontables los aspirantes deprimidos que por falta de poderes psíquicos y de iluminación intima han renunciado al Trabajo Esotérico sobre sí mismos. Pocos son los que saben aprovechar las adversidades. En tiempos de rigurosa tentación, abatimiento y desolación uno debe apelar a la íntima recordación de sí mismo. En el fondo de cada uno de nos está la Tonantzin Azteca, la Stella Maris, la Isis Egipcia, Dios Madre, aguardándonos para sanar nuestro adolorido corazón. Cuando uno mismo se da el choque del “Recuerdo de Sí”, se produce realmente un cambio milagroso en todo el trabajo del cuerpo, de modo que las células reciben un alimento diferente. Fin Conferencia 26."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p093-img01.png",
+        "alt": "Imagen extraída de Fase A, página 93",
+        "caption": "",
+        "sourcePage": 93
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p094-img01.png",
+        "alt": "Imagen extraída de Fase A, página 94",
+        "caption": "",
+        "sourcePage": 94
       }
     ]
   },
@@ -2298,11 +2790,26 @@
       95,
       96
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p096-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p096-img01.png",
+        "alt": "Imagen extraída de Fase A, página 96",
+        "caption": "",
+        "sourcePage": 96
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 27 TÉCNICA PARA DISOLVER EL YO. LOS DETALLES Este capítulo esotéricamente se titula “La Muerte”, porque el que empieza a desintegrar sus defectos empieza a salirse del círculo donde está metida toda la humanidad. Entonces, cuando lo van a invitar a hacer una fechoría, dicen los demás: “no sirve para nada, ese es un muerto”, porque no sigue el camino del resto de la humanidad. Todo ser humano lleva dentro de sí una chispa divina que se llama Alma, Budhata o Esencia. En fin, tiene diferentes nombres, pero en realidad es una chispa divina que nos impulsa y nos da fuerza para emprender un trabajo espiritual, como el que les estoy enseñando. Esa Esencia o alma está atrapada en todas nuestras maldades, defectos o yoes psicológicos, a los que esotéricamente se les dice “Ego”, que son los que no la dejan manifestar con libertad porque toman la vocería y el mando de la persona. Ya con el trabajo de la desintegración de los defectos va creciendo y se va fortaleciendo, va manifestándose con más claridad, con más fuerza. Se va convirtiendo en alma. Voy a dar un ejemplo: este árbol está parado en sus raíces principales, ellas no lo alimentan sino que los sostienen contra los vientos y el peso del mismo para no caerse, no derrumbarse. Y sus raíces pequeñísimas son las que se extienden por el resto de la tierra, y van absorbiendo la sabia para alimentarlo. Asimismo es el Ego de nosotros o de la humanidad. Las raíces gruesas que sostienen al árbol simbolizan los defectos capitales, como la lujuria, la venganza, la ira, el orgullo y otros más. Las raíces pequeñas simbolizan los detalles, aquellas manifestaciones pequeñísimas que pertenecen a tal o cual defecto, que no creemos que son defectos pero que son la alimentación de él. El Ego se alimenta por todos esos detalles diminutos que tenemos en gran cantidad. Hay que empezar a auto-observarnos para ver los miles y miles de detalles negativos que tenemos, que son los que nutren el tronco. Así le toca a todo el que quiera salvarse del desastre que viene: ponerse a quitarle alimentación a ese árbol, que son las raíces diminutas. Detalles negativos como los malos pensamientos, el odio, la envidia que siente uno contra otras personas, la ambición, cogerse monedas y cosas insignificantes, echar mentiras, decir palabras llenas de orgullo, la codicia; en fin, todas esas cosas que son negativas en el fondo debe empezar uno a desintegrarlas seriamente. Hay otra chispa divina que se llama la Madre Divina, cuya misión es desintegrar los defectos con una lanza que ella posee. Por diminuto que sea el detalle debe pedírsele a la Madre Divina interna: “Madre Mía sácame este defecto o desintégramelo con tu lanza”. Ella lo hará así porque esa es su misión, ayudarnos en esa forma para irnos liberando. Así no crece más el árbol, sino que se va desnutriendo, se va secando. Lo que enseño aquí es para llevarlo a la práctica, a los hechos: donde vaya, esté trabajando o lo que esté haciendo, debe ponerle cuidado a la mente, corazón y sexo. Son los tres centros por donde se manifiesta todo defecto, y cuando se está manifestando, sea por cualquiera de esos tres centros, enseguida viene la petición a la Madre Divina para que Ella proceda a desintegrarlo. Con este trabajo que estoy señalando de la Muerte del Ego se adquiere la castidad científica y se aprende a amar a la humanidad. El que no trabaje con la desintegración de los defectos no puede llegar jamás a la castidad, ni puede llegar a sentir amor por los demás por que no se ama a sí mismo. La desintegración de los defectos y el desdoblamiento astral son las únicas formulas para el rescate. Ejemplo: Invitan a una muchacha a bailar a una discoteca, ésta le pide permiso a su mamá, y la madre se lo niega. Imaginemos la reacción interior:  Se siente frustrada.  Le da ira.  El amor propio reacciona.  Se compara con sus compañeras.  No quiere obedecer.  Un yo le dice que la insulte.  Otro yo quiere alegar.  Otro yo llora.  Otro yo grita y contesta con rabia.  Otro yo quiere pegarle.  Otro quiere pelear, discutir.  Otro la quiere empujar.  Otro yo tiene temor por lo que pueda hacer el novio.  Otro se preocupa porque se lo pueden quitar.  Otro se preocupa por el qué dirán los amigos.  Otro se imagina lo bien que la pasarán.  Otro se preocupa por el qué pensarán.  Otro yo quiere tomar.  “No debí haberle dicho nada a esta vieja”, dice otro.  Le da más rabia.  Otro yo quiere bailar.  Otro yo se siente aburrido.  Otro quiere fumar.  Otro se siente encerrado.  Otro yo quiere suicidarse.  Otro dice: “qué vida tan aburrida”.  “¿Por qué habré nacido en esta familia?”.  Otro yo siente resentimiento con la mamá.  Otro yo quisiera acariciarse con el novio.  El yo de la lujuria protesta.  El yo de la lujuria sufre.  El yo del odio siente mucho rencor con la mamá.  Uno dice: “Ojalá se muera rápido esta vieja”.  Otro: “Algún día me vengaré”.  Y otro: “No se la perdono”.  “A lo mejor mi papá sí me deja”.  Otro propone: “Mejor volémonos de la casa”.  Y otro dice: “Me da miedo hacerlo”. Pasa algún tiempo y la joven continúa recordando todo el sufrimiento que le originó su mamá, aún quiere vengarse, no se cansa de contarle a la gente lo mala que es su mamá, etc. Fin Conferencia 27."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p096-img01.png",
+        "alt": "Imagen extraída de Fase A, página 96",
+        "caption": "",
+        "sourcePage": 96
       }
     ]
   },
@@ -2336,7 +2843,15 @@
       98,
       99
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p099-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p099-img01.png",
+        "alt": "Imagen extraída de Fase A, página 99",
+        "caption": "",
+        "sourcePage": 99
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -2346,6 +2861,13 @@
         "type": "heading",
         "level": 3,
         "text": "EL CRISTO UNIVERSAL."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p099-img01.png",
+        "alt": "Imagen extraída de Fase A, página 99",
+        "caption": "",
+        "sourcePage": 99
       },
       {
         "type": "paragraph",
@@ -2395,7 +2917,22 @@
       104,
       105
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p104-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p104-img01.png",
+        "alt": "Imagen extraída de Fase A, página 104",
+        "caption": "",
+        "sourcePage": 104
+      },
+      {
+        "id": "fase-a-p104-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p104-img02.png",
+        "alt": "Imagen extraída de Fase A, página 104",
+        "caption": "",
+        "sourcePage": 104
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -2405,6 +2942,20 @@
         "type": "heading",
         "level": 3,
         "text": "CONCEPTO Y REALIDAD."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p104-img01.png",
+        "alt": "Imagen extraída de Fase A, página 104",
+        "caption": "",
+        "sourcePage": 104
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p104-img02.png",
+        "alt": "Imagen extraída de Fase A, página 104",
+        "caption": "",
+        "sourcePage": 104
       },
       {
         "type": "paragraph",
@@ -2571,11 +3122,40 @@
       110,
       111
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p110-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p110-img01.png",
+        "alt": "Imagen extraída de Fase A, página 110",
+        "caption": "",
+        "sourcePage": 110
+      },
+      {
+        "id": "fase-a-p111-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p111-img01.png",
+        "alt": "Imagen extraída de Fase A, página 111",
+        "caption": "",
+        "sourcePage": 111
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 32 EL CAMBIO RADICAL En tanto un hombre prosiga con el error de creerse a sí mismo Uno, Único, Individual, es evidente que el cambio radical será algo más que imposible. El hecho mismo de que el Trabajo Esotérico comience con la rigurosa observación de sí mismo, nos está indicando una multiplicidad de factores Psicológicos, Yoes o elementos indeseables que es urgente extirpar, erradicar de nuestro interior. Incuestionablemente en modo alguno sería posible eliminar errores desconocidos, urge observar previamente aquello que queremos separar de nuestra Psiquis. Este tipo de Trabajo no es externo sino interno y quienes piensen que cualquier manual de urbanidad o sistema ético externo y superficial les pueda llevar al éxito, estarán de hecho totalmente equivocados. El hecho concreto y definitivo de que el Trabajo íntimo empiece con la atención concentrada en la observación plena de sí mismo, es motivo más que suficiente como para demostrar que esto exige un esfuerzo personal muy particular de cada uno de nosotros. Hablando francamente y sin ambages, aseveramos en forma enfática lo siguiente: Ningún ser humano podría hacer este Trabajo por nosotros. No es posible cambio alguno en nuestra Psiquis, sin la observación directa de todo ese conjunto de factores subjetivos que llevamos dentro. Dar por aceptado la multiplicidad de errores, descartando la necesidad de estudio y observación directa de los mismos, significa de hecho una evasiva o escapatoria, una huida de sí mismo, una forma de auto-engaño. Sólo a través del esfuerzo riguroso de la observación juiciosa de sí mismo, sin escapatorias de ninguna especie, podremos evidenciar realmente que no somos \"Uno\" sino \"Muchos\". Admitir la pluralidad del YO y evidenciarla a través de la observación rigurosa, son dos aspectos diferentes. Alguien puede aceptar la Doctrina de los muchos Yoes, sin haberlo jamás evidenciado; esto último sólo es posible auto-observándose cuidadosamente. Rehuir el Trabajo de observación íntima, buscar evasivas, es signo inconfundible de degeneración. Mientras un hombre sustente la ilusión de que es siempre una y la misma persona, no puede cambiar, y es obvio que la finalidad de este Trabajo es precisamente lograr un cambio gradual en nuestra vida interior. La transformación radical es una posibilidad definida que normalmente se pierde cuando no se trabaja sobre sí mismo. El punto inicial del cambio radical permanece oculto mientras el hombre continúe creyéndose Uno. Quienes rechazan la Doctrina de los muchos Yoes, demuestran claramente que jamás se han auto-observado seriamente. La severa observación de sí mismo sin escapatorias de ninguna especie, nos permite verificar por sí mismos el crudo realismo de que no somos \"Uno\" sino \"Muchos\". En el mundo de las opiniones subjetivas, diversas teorías seudo-esotéricas o seudo- ocultistas, sirven siempre de callejón para huir de sí mismos... Incuestionablemente la ilusión de que se es siempre una y la misma persona, sirve de escollo para la auto-observación... Alguien podría decir: \"Sé que no soy Uno sino Muchos, la Gnosis me lo ha enseñado\". Tal afirmación, aunque fuese muy sincera si no existiese plena experiencia vivida sobre ese aspecto doctrinario, obviamente tal afirmación sería algo meramente externo y superficial. Evidenciar, experimentar y comprender es lo fundamental, sólo así es posible trabajar conscientemente para lograr un cambio radical. Afirmar es una cosa y comprender es otra. Cuando alguien dice: \"Comprendo que no soy Uno sino Muchos\", si su comprensión es verdadera y no mera palabrería insustancial de charla ambigua, esto indica, señala, acusa, plena verificación de la Doctrina de los Muchos Yoes. Conocimiento y Comprensión son diferentes. El primero de estos es de la mente, el segundo del corazón. El mero conocimiento de la Doctrina de los Muchos Yoes de nada sirve; desafortunadamente por estos tiempos en que vivimos, el conocimiento ha ido mucho más allá de la comprensión, porque el pobre animal intelectual equivocadamente llamado hombre, desenvolvió exclusivamente el lado del conocimiento olvidando lamentablemente el correspondiente lado del Ser. Conocer la Doctrina de los Muchos Yoes y comprenderla, es fundamental para todo cambio radical verdadero. Cuando un hombre comienza a observarse detenidamente a sí mismo, desde el ángulo de que no es Uno sino Muchos, obviamente ha iniciado él Trabajo serio sobre su naturaleza interior. Sólo a través de la auto-observación podremos evidenciar que no somos “Uno” sino “Muchos” Fin Conferencia 32."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p110-img01.png",
+        "alt": "Imagen extraída de Fase A, página 110",
+        "caption": "",
+        "sourcePage": 110
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p111-img01.png",
+        "alt": "Imagen extraída de Fase A, página 111",
+        "caption": "",
+        "sourcePage": 111
       }
     ]
   },
@@ -2610,7 +3190,15 @@
       114,
       115
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p112-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p112-img01.png",
+        "alt": "Imagen extraída de Fase A, página 112",
+        "caption": "",
+        "sourcePage": 112
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -2620,6 +3208,13 @@
         "type": "heading",
         "level": 3,
         "text": "LEY DE OCTAVAS."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p112-img01.png",
+        "alt": "Imagen extraída de Fase A, página 112",
+        "caption": "",
+        "sourcePage": 112
       },
       {
         "type": "paragraph",
@@ -2773,11 +3368,26 @@
       124,
       125
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p125-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p125-img01.png",
+        "alt": "Imagen extraída de Fase A, página 125",
+        "caption": "",
+        "sourcePage": 125
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 36 MEDITACIÓN Y KOANES La Meditación es el pan del sabio. Hay que saber ser serios, hay que saber cambiar, si es que en realidad de verdad no queremos fracasar en el trabajo Esotérico. La Meditación resulta fundamental cuando sinceramente queremos nosotros tal cambio. Quien no sabe meditar, el superficial, el intonso, jamás podrá disolver el Ego; será siempre un leño impotente entre el furioso mar de la vida. Cuando uno quiere sabiduría no le queda más remedio que aprender a meditar, Meditar es entrar en la Sexta y en la Séptima Dimensión, y esto sólo se puede hacer de una forma: amordazando al Ego y liberando la Esencia. Ese ejercicio, después de que se aprende a hacer, se vuelve muy simple. Necesitamos volvernos serios y dejar a un lado tantas tonterías que abundan por allí en el pseudo-esoterismo y pseudo-ocultismo barato. En modo alguno deseamos la Meditación intrascendente, superficial y vana. Nos interesa la meditación trascendental y real. Hay que saber distinguir y manejar qué es una cosa y qué es la otra. La Meditación Trascendental es diferente, busca cambios en el Ser. ¿Qué es un Koan? Un Koan es una frase sin respuesta, generalmente paradójica. La mente siempre intentará responderla, pero no puede porque no conoce. Entonces se satura y se agota el proceso del pensar, y deja paso a la Conciencia. Así se amordaza al Ego y se libera la Esencia por algunos instantes. Algunos Koanes: (Siempre deberá usarse uno solamente).  Si estas dos manos cuando se estrellan suenan así (ruido de aplauso), ¿cómo suena una? Y nos concentramos en cómo suena una. Y esperamos la respuesta hasta que la Esencia se escape.  Nos preguntamos: “¿dónde está la Verdad?”. Y nos quedamos en espera de la respuesta.  Nos preguntamos: “¿dónde está el vacío?”. Esa es otra frase sin respuesta. Cuando veamos el hueco allí nos vamos, porque estamos buscando un hueco. Entonces solamente nos preguntamos: “¿dónde está el vacío?” hasta que veamos el hueco.  “Si todas las cosas se reducen a la Unidad, ¿a qué se reduce la Unidad?”. Ahí nos quedamos quietos en espera hasta que se dé. El Koan es necesario hasta que se dé la escapada. El primero de todos es muy efectivo. Ustedes hacen esto, imaginan cómo suena una, y se quedan ahí hasta que se liberan. Práctica para la Meditación con Koanes 1- Primero siempre hay que buscar un lugar tranquilo, lo puede hacer en el día en la oficina o en un sitio donde se pueda encerrar y que nadie lo moleste o tener un cuarto de Meditación. Ya se verá la importancia de tener esa clase de sitio. Este es un lugar para buscar el Poder y la Sabiduría, entonces, es un lugar muy especial. 2- Conjuración del Belilín y Círculo Mágico. 3- Súplica al Padre y a la Madre de Asistencia. Con nuestras propias palabras y con buena imaginación. 4- Relajación. Lo más simple posible, viendo que nuestro cuerpo se encuentre muy cómodo, que nada lo mortifique, es recomendable recorrerlo todo. Cuando lo sintamos bien relajado damos el siguiente paso. 5- Pensamiento Evolutivo: Por ejemplo: preparo un terreno, lo desyerbo, desinfecto la tierra, la abono, preparo un semillero, coloco las semillas hasta que germinen, hago los surcos, las trasplanto, las riego, imagino cómo nacen y crecen, al cabo de un tiempo dan botones, empiezan a florecer, se pone bellísimo el rosal, siento su aroma, da flores y flores. 6- Pensamiento Involutivo: Imagino cómo el rosal se va marchitando, secando, ya no da rosas, se seca totalmente, el viento lo tumba, el viento se lleva las ramas caídas, todo se acabó. 7- Síntesis del pensamiento o quietud de la mente. 8- Colocar el Koan. Practicar pacientemente hasta lograrlo, la práctica hace al Maestro. Fin Conferencia 36 de Fase A"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p125-img01.png",
+        "alt": "Imagen extraída de Fase A, página 125",
+        "caption": "",
+        "sourcePage": 125
       }
     ]
   },
@@ -2977,11 +3587,40 @@
       136,
       137
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p137-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p137-img01.png",
+        "alt": "Imagen extraída de Fase A, página 137",
+        "caption": "",
+        "sourcePage": 137
+      },
+      {
+        "id": "fase-a-p137-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p137-img02.png",
+        "alt": "Imagen extraída de Fase A, página 137",
+        "caption": "",
+        "sourcePage": 137
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Conf. 40 SACRIFICIO POR LA HUMANIDAD Ya que esta conferencia habla de uno de los Tres Factores de la Revolución de la Conciencia es importante que profundicemos. El Sacrificio por la Humanidad es entregar el Conocimiento desinteresadamente a toda la Humanidad. El término Sacrificio quiere decir Sacro Oficio, u Oficio Sagrado. El Oficio Sagrado es el de la Sabiduría, está relacionado con la Fuerza del Padre. El Oficio del Padre es el de la Enseñanza, el de dar la Sabiduría. Cuando enseñamos a los demás hermanos de la Humanidad la forma de Auto-Realizarse íntimamente encarnamos la Fuerza del Padre. Es evidente que toda la humanidad ignora para qué vive. Las gentes no tienen la menor idea de para qué nacieron. Nadie se los ha dicho. Viven en estado de hipnotismo, totalmente fascinadas, y tienen la Conciencia completamente dormida. Nosotros, cuando ya lo sabemos, tenemos la responsabilidad de enseñar cuál es la Razón de existir, para qué nacimos, cuáles son las posibilidades de Ser, cómo podemos integrarnos con el Ser, para que cada uno haga lo que mejor le parezca, respetando siempre el Libre Albedrío. Normalmente en el término sacrificio vemos sufrimiento, porque estamos completamente egoistizados. Esa fuerza del egoísmo hace que nos cueste mucho trabajo hacerlo, desarrollarlo. El Ego (de él proviene el egoísmo) siempre se va a oponer a que lo hagamos. La mayoría de las personas cuando llegan a los Tres Factores piensan que son muy fáciles de llevar a la práctica; pero cuando los van a aplicar no entienden por qué se les vuelve tan difícil. Normalmente el Sacrificio sería muy simple. Realmente se vuelve complicado debido a que dentro de nosotros cargamos no con un egoísta, sino con millones de egoístas que apuntan en diferentes direcciones. Además, tenemos en nuestro interior el yo del temor, que no es un temor, sino millones de temores que no nos dejan servir desinteresadamente. El Amor siempre se ve en las Obras; el desamor, a raíz del temor, en la omisión. Cuando empezamos a sacrificarnos por la humanidad automáticamente empezamos a des- egoistizarnos. Estudiemos esto: la palabra des-egoistizarnos quiere decir dejar de ser egoístas, o compartir lo que tenemos con los demás. Si en verdad queremos lograr algo debemos eliminar el Ego y el egoísmo en nosotros, y la clave está en el Sacrificio por la Humanidad. ¿Qué es lo único que verdaderamente tenemos, cuál es nuestro Patrimonio? Es nuestro Conocimiento, la Sabiduría que nos permite Revolucionarnos, Liberarnos y Auto- Realizarnos en una existencia. Si reflexionamos en esto, si valoramos lo que poseemos, nos daremos cuenta de que este Conocimiento no podría comprarse ni con todo el oro del mundo. Cuando lo compartimos con otras personas estamos dejando de ser egoístas, le estamos dando a los demás la posibilidad de que ellos también puedan auto-realizarse. Pero comprendamos desde ahora que no debemos convencer a nadie, debemos decirles, pero no rogarles; quien no esté preparado no podrá iniciar el Camino. Y cada uno debe convencerse a sí mismo. Condiciones para el Sacrificio por la Humanidad:  Debemos entregarlo puro, sin agregarle otras cosas que no son del Conocimiento. Son Tres Factores y nada más.  Debemos entregar el conocimiento gratuitamente, si se cobra no es sacrificio sino negocio. Todas las religiones cometieron ese error.  Debemos entregarlo a todo el mundo sin distinción de sexo, color, clase social, riqueza, raza, etc.  No debemos modificarlo, estamos dormidos y no podemos alterar lo que Seres despiertos organizaron. Cada una de las pistas para el despertar de la Conciencia fueron ordenadas para ese objetivo.  No debemos quitarle o esconder nada, pues esto sería adulterarlo. Esto pasó con los cristianos, que escondieron los Misterios del Sexo, le castraron el Factor Nacer.  No debemos mezclarlo con otros conocimientos, pues esto lo adulteraría y ya no sería este Conocimiento. ¿Por qué es un deber entregar este Conocimiento? Veamos algunas razones para sacrificarnos por la humanidad y reflexionemos un poco en cada una de ellas:  El Ser es el Ser, y la razón de ser del Ser es el mismo Ser.  Para podernos desegoistizar, darle un duro golpe al Ego.  Una obra de Amor se alimenta con Amor. El Amor está en las obras, si no hacemos obras concientes por los demás no despertamos el Amor.  Las chispas liberadas con la muerte deben despertar el Amor y aprender a servir.  Para poder lograr los méritos del corazón.  Al León de la Ley se le combate con la caridad. Haciendo obras concientes por la humanidad tendremos la Ley a favor.  El que da, de lo que da recibe. El que quiere Sabiduría tiene que dar Sabiduría.  Si uno ayuda a despertar a otros, a uno le ayudan.  El que tiene y no da de lo que tiene hasta lo poco que tiene le será quitado. Cuando se tiene conocimiento se tiene una responsabilidad terrible. Si uno no lo da se le viene la Ley encima. Por el hecho de tener le cobran, porque es un derecho costoso, terriblemente costoso. ¿Y cómo le cobran?: El Karma de tener la Sabiduría y no darla se paga con la ceguera. Normalmente es el karma de los que tuvieron el conocimiento y lo escondieron; entonces, les esconden también la luz, porque la Luz representa la Sabiduría.  Equilibrar el factor Nacer. Una persona que se sacrifica por la humanidad puede nacer diez veces más rápido que el egoísta.  Equilibrar el factor Morir. Cada uno de nuestros yoes tiene su propia deuda, si queremos eliminarlos tendremos que pagar lo que deben.  Debemos el Karma de siete existencias, si nos vamos a Auto-realizar en una debemos pagarlo de contado.  El Sacrificio por la Humanidad produce el Dharma, o dinero cósmico, con el que podemos pagar el Karma.  Cuando enseñamos estamos en contacto con la fuerza del Padre, Él nos enseña cuando nosotros lo hacemos.  Recibir Fuerza para los diferentes trabajos: Desdoblarnos, Retrospecciones, Meditar, etc.  Para comprender mejor el Conocimiento.  Para que no se nos olvide el Conocimiento.  Para volvernos más profundos en el Conocimiento, mientras va despertando la Conciencia.  Porque una mayor Conciencia implica un mayor compromiso con el Ser.  Para no caer en la Entropía o Noche Cósmica.  El que trabaja para el Cristo lo encarna.  Nos liberamos para volvernos útiles al Ser, no más malos.  El placer que produce trabajar desinteresadamente.  Para conseguir el Discípulo, lo que nos permitirá entrar en el Absoluto. Indudablemente, si continuamos observando, todo el mundo cree que con haber escuchado las conferencias una vez es suficiente. Pero en la medida en que repasamos los temas, el Ser nos va enseñando nuevos detallitos, mientras les vamos enseñando a los demás. Entonces los instructores se vuelven más profundos, y esa profundidad es de repasar el mismo tema. Tomamos el temario, nos centramos en él y vamos viendo desde la conferencia uno hasta la conferencia cincuenta. Pero cada vuelta la vamos viendo con más profundidad, vamos descubriendo nuevas cosas, no se vuelve rutinario, sino que comprendemos cada vez más y más. Cuando uno dice: “el pan nuestro de cada día”, se está refiriendo a la Sabiduría que llega del Padre diariamente a nuestro corazón. Entonces, cuando uno le hace la súplica de: “dadnos el pan nuestro de cada día” está pidiendo Sabiduría para poderse alimentar. Porque no solamente de comida física se vive, sino también de esas manifestaciones que vienen de los mundos superiores. Las dos glándulas pineal y pituitaria, a través de un camino secreto, por una puerta muy especial, pueden mandar hasta el corazón la Sabiduría del Padre, pero hay que sentirla, hay que vivirla. Diversas formas de Sacrificarnos por la Humanidad. El Sacrificio por la Humanidad consta de dos grandes aspectos: Pescar y Enseñar. Pescar es buscar personas interesadas en hacer la Obra. Aquí resaltan las diversas formas de divulgación y publicidad. Para enseñar primero hay que aprender las conferencias y luego prepararse. Veamos distintas formas de hacer Sacrificio por la Humanidad:  La primera forma es cuando uno empieza a asistir a las conferencias.  Luego invita a los conocidos, familiares, amigos, vecinos, etc., a que asistan a las conferencias.  Cuando uno ha invitado a todos los conocidos, familiares y amigos, hay que seguir con el resto de la humanidad. Entonces se podrá repartir volantes e invitar a la gente a asistir.  Se pueden pegar afiches o hacer otros tipos de campañas publicitarias.  Para poder sacrificarnos por la humanidad debemos prepararnos reflexionando y comprendiendo lo que hemos aprendido.  Más adelante la persona se fogueará para poder dictar los temarios en una sala.  Una vez que hemos aprendido vamos dando introducciones a las personas nuevas.  Luego se podrá colaborar dictando conferencias en las mismas salas donde se está asistiendo.  Posteriormente abrirá su primera sala y se hará cargo de ella.  Después se abrirán salas en otros lugares para difundir el Conocimiento por otras partes.  Más tarde se convertirá en un instructor internacional e irá a abrir grupos a otros países.  Luego dirigirá los grupos y los orientará.  Escribiendo libros del Conocimiento.  Haciendo campañas publicitarias: locales, nacionales o mundiales.  Despertando para poder hacer un Sacrificio más consciente. Reflexionemos en esto. Lo importante es que cuando uno se decide a enseñar, -no importa dónde, puede ser en la calle, en un parque, en una cafetería, etc.- todo lo que enseña se vuelve fuerza, y esa fuerza la necesitamos para poder avanzar. Entonces, es urgente reflexionar sobre esta conferencia para cambiar la actitud. Debemos servir a la humanidad, decidirnos a empezar, porque muchas personas quieren servir pero la timidez no deja. Empecemos. ¿Por qué tanta gente llega y por qué tan poquitos se quedan? Pues porque no tienen con qué sostenerse dentro del bus (que simboliza la sala de conferencias). Por eso están saliéndose permanentemente. La fórmula es: EMPEZAR A HACER. Fin Conferencia 40."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p137-img01.png",
+        "alt": "Imagen extraída de Fase A, página 137",
+        "caption": "",
+        "sourcePage": 137
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p137-img02.png",
+        "alt": "Imagen extraída de Fase A, página 137",
+        "caption": "",
+        "sourcePage": 137
       }
     ]
   },
@@ -3016,7 +3655,29 @@
       140,
       141
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p138-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p138-img01.png",
+        "alt": "Imagen extraída de Fase A, página 138",
+        "caption": "",
+        "sourcePage": 138
+      },
+      {
+        "id": "fase-a-p138-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p138-img02.png",
+        "alt": "Imagen extraída de Fase A, página 138",
+        "caption": "",
+        "sourcePage": 138
+      },
+      {
+        "id": "fase-a-p140-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p140-img01.png",
+        "alt": "Imagen extraída de Fase A, página 140",
+        "caption": "",
+        "sourcePage": 140
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -3026,6 +3687,27 @@
         "type": "heading",
         "level": 3,
         "text": "FUERZAS CÓSMICAS"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p138-img01.png",
+        "alt": "Imagen extraída de Fase A, página 138",
+        "caption": "",
+        "sourcePage": 138
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p138-img02.png",
+        "alt": "Imagen extraída de Fase A, página 138",
+        "caption": "",
+        "sourcePage": 138
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p140-img01.png",
+        "alt": "Imagen extraída de Fase A, página 140",
+        "caption": "",
+        "sourcePage": 140
       },
       {
         "type": "paragraph",
@@ -3429,7 +4111,22 @@
       156,
       157
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p155-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p155-img01.png",
+        "alt": "Imagen extraída de Fase A, página 155",
+        "caption": "",
+        "sourcePage": 155
+      },
+      {
+        "id": "fase-a-p155-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p155-img02.png",
+        "alt": "Imagen extraída de Fase A, página 155",
+        "caption": "",
+        "sourcePage": 155
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -3439,6 +4136,20 @@
         "type": "heading",
         "level": 3,
         "text": "LAS POLUCIONES NOCTURNAS"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p155-img01.png",
+        "alt": "Imagen extraída de Fase A, página 155",
+        "caption": "",
+        "sourcePage": 155
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p155-img02.png",
+        "alt": "Imagen extraída de Fase A, página 155",
+        "caption": "",
+        "sourcePage": 155
       },
       {
         "type": "paragraph",
@@ -3678,7 +4389,29 @@
       161,
       162
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p162-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p162-img01.png",
+        "alt": "Imagen extraída de Fase A, página 162",
+        "caption": "",
+        "sourcePage": 162
+      },
+      {
+        "id": "fase-a-p162-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p162-img02.png",
+        "alt": "Imagen extraída de Fase A, página 162",
+        "caption": "",
+        "sourcePage": 162
+      },
+      {
+        "id": "fase-a-p162-img03",
+        "src": "/assets/conferencias/fase-a/fase-a-p162-img03.png",
+        "alt": "Imagen extraída de Fase A, página 162",
+        "caption": "",
+        "sourcePage": 162
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -3688,6 +4421,27 @@
         "type": "heading",
         "level": 3,
         "text": "ASTRAL"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p162-img01.png",
+        "alt": "Imagen extraída de Fase A, página 162",
+        "caption": "",
+        "sourcePage": 162
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p162-img02.png",
+        "alt": "Imagen extraída de Fase A, página 162",
+        "caption": "",
+        "sourcePage": 162
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p162-img03.png",
+        "alt": "Imagen extraída de Fase A, página 162",
+        "caption": "",
+        "sourcePage": 162
       },
       {
         "type": "paragraph",
@@ -3758,7 +4512,57 @@
       168,
       169
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-a-p164-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p164-img01.png",
+        "alt": "Imagen extraída de Fase A, página 164",
+        "caption": "",
+        "sourcePage": 164
+      },
+      {
+        "id": "fase-a-p165-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p165-img01.png",
+        "alt": "Imagen extraída de Fase A, página 165",
+        "caption": "",
+        "sourcePage": 165
+      },
+      {
+        "id": "fase-a-p166-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p166-img01.png",
+        "alt": "Imagen extraída de Fase A, página 166",
+        "caption": "",
+        "sourcePage": 166
+      },
+      {
+        "id": "fase-a-p167-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p167-img01.png",
+        "alt": "Imagen extraída de Fase A, página 167",
+        "caption": "",
+        "sourcePage": 167
+      },
+      {
+        "id": "fase-a-p167-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p167-img02.png",
+        "alt": "Imagen extraída de Fase A, página 167",
+        "caption": "",
+        "sourcePage": 167
+      },
+      {
+        "id": "fase-a-p168-img01",
+        "src": "/assets/conferencias/fase-a/fase-a-p168-img01.png",
+        "alt": "Imagen extraída de Fase A, página 168",
+        "caption": "",
+        "sourcePage": 168
+      },
+      {
+        "id": "fase-a-p168-img02",
+        "src": "/assets/conferencias/fase-a/fase-a-p168-img02.png",
+        "alt": "Imagen extraída de Fase A, página 168",
+        "caption": "",
+        "sourcePage": 168
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -3768,6 +4572,55 @@
         "type": "heading",
         "level": 3,
         "text": "LA UNIDAD"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p164-img01.png",
+        "alt": "Imagen extraída de Fase A, página 164",
+        "caption": "",
+        "sourcePage": 164
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p165-img01.png",
+        "alt": "Imagen extraída de Fase A, página 165",
+        "caption": "",
+        "sourcePage": 165
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p166-img01.png",
+        "alt": "Imagen extraída de Fase A, página 166",
+        "caption": "",
+        "sourcePage": 166
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p167-img01.png",
+        "alt": "Imagen extraída de Fase A, página 167",
+        "caption": "",
+        "sourcePage": 167
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p167-img02.png",
+        "alt": "Imagen extraída de Fase A, página 167",
+        "caption": "",
+        "sourcePage": 167
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p168-img01.png",
+        "alt": "Imagen extraída de Fase A, página 168",
+        "caption": "",
+        "sourcePage": 168
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-a/fase-a-p168-img02.png",
+        "alt": "Imagen extraída de Fase A, página 168",
+        "caption": "",
+        "sourcePage": 168
       },
       {
         "type": "paragraph",
@@ -3949,7 +4802,15 @@
       6,
       7
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p004-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p004-img01.png",
+        "alt": "Imagen extraída de Fase B, página 4",
+        "caption": "",
+        "sourcePage": 4
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -4026,6 +4887,13 @@
           "A cada detallito observado le vamos suplicando a la Madre que lo desintegre.",
           "Puede hacerse hasta lograr la concentración perfecta."
         ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p004-img01.png",
+        "alt": "Imagen extraída de Fase B, página 4",
+        "caption": "",
+        "sourcePage": 4
       }
     ]
   },
@@ -4266,11 +5134,40 @@
       13,
       14
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p013-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p013-img01.png",
+        "alt": "Imagen extraída de Fase B, página 13",
+        "caption": "",
+        "sourcePage": 13
+      },
+      {
+        "id": "fase-b-p013-img02",
+        "src": "/assets/conferencias/fase-b/fase-b-p013-img02.png",
+        "alt": "Imagen extraída de Fase B, página 13",
+        "caption": "",
+        "sourcePage": 13
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Cada uno de los centros de la máquina humana tiene su propio hidrogeno, que es la energía con la cual trabaja. En nosotros los cinco centros inferiores están caídos, desequilibrados. Tenemos que poner orden en nuestro interior para que cada centro pueda trabajar con su propio hidrógeno. Todos los centros le roban energía al centro sexual y éste a su vez, para poder trabajar, le roba energía a los demás centros, cargándose así de hidrógenos más pesados. Entonces ocurre el desequilibrio sexual y el de toda la máquina humana. Es muy importante tener esto en cuenta porque el equilibrio de los centros es básico para la Obra. Para que cada centro trabaje con su propio hidrógeno, debemos empezar el trabajo psicológico, o sea la muerte en marcha, que es muy importante para esto. Porque mientras el centro sexual esté trabajando con hidrógenos más pesados no puede producir la energía que se necesita para fabricar los Cuerpos Solares. En el trabajo de la Castidad, que es fundamental para nosotros, debemos ir purificando el Mercurio (la Energía Creadora Sexual, las Aguas). Esto es muy importante, básico si se quiere ingresar al Esoterismo, a la Alquimia. Se comienza con el Mercurio Negro (seco), el cual a través de la muerte psicológica y la transmutación sexual pasa luego al color blanco. Después, luego de pasar por más purificaciones el Mercurio Blanco pasa al color amarillo, el cual indica que se van equilibrando los centros. Aún así es necesario intensificar mucho más el trabajo para llegar al Mercurio Rojo. El color rojo indica que se ha despertado el Kundalini, el Fuego Sagrado con el que vamos a fabricar nuestros Cuerpos Solares. Así vemos la importancia que tiene el equilibrio de los centros inferiores para poder elaborar en nosotros, en nuestro propio laboratorio, la energía o sea el Hidrógeno 12, que es el del sexo. Una vez transmutado sexualmente, este Hidrógeno 12 pasa a ser Hidrógeno Si - 12, que es el Fuego Sagrado, la energía sexual ya transmutada. Esta es una conferencia a la que no se le pone mucho cuidado aunque es importantísima. Equilibrar los centros es fundamental para poder empezar el trabajo de la Revolución de la Conciencia. Sin equilibrio no puede producirse el Hidrógeno Si – 12 y entonces, ¿cuándo va uno a despertar el Kundalini?, ¿cuándo va uno a fabricar los cuerpos solares? ¡Jamás, si uno no equilibra los centros! Puede estarse practicando magia sexual, pero si no se han equilibrado los centros, si están trabajando con otros hidrógenos más pesados que el que le corresponde a cada uno, se está perdiendo lamentablemente el tiempo porque es imposible que el Kundalini despierte con todos los centro así dislocados. La muerte en marcha, el trabajo psíquico, es muy importante para ir equilibrando cada centro con su propio hidrógeno. Mientras no haya equilibrio de los centros uno está perdido y no puede llegar a nada. Aunque uno crea que va bien, pierde su tiempo lamentablemente. Todo esto es una base para empezar un trabajo ya en serio, verdadero, porque mientras el centro sexual y los demás centros inferiores trabajen mal por el cruce de hidrógenos la máquina humana no puede producir su propia energía. Debemos desapegarnos de todos los juguetes que nos puso la naturaleza ¿qué es todo lo que vemos en este mundo, en este planeta? Son juguetes que nos pone la naturaleza, pues como a ella no le interesa ni le conviene que nos liberemos, entonces nos pone todos sus entretenimientos, como cuando se le compran juguetes a un niño para mantenerlo contento y distraído, exactamente igual. Y nosotros como bobos nos entretenemos con todos esos juguetes y olvidamos el trabajo sobre sí mismos. PREGUNTA -¿Este hidrógeno sexual SI-12 es el que viene a dar a la persona la potencia sexual que se necesita para la magia sexual? V.M. RABOLÚ -Bueno, muchos tienen la potencia sexual, peso no están trabajando con su propia energía, que es el Hidrógeno-12, sino que están trabajando con otros hidrógenos más pesados; entonces, vienen las caídas sexuales, poluciones y miles de cosas, porque está desequilibrada la parte sexual. Hay que empezar el trabajo de muerte psicológica, de lo contrario no se pueden equilibrar los centros. PREGUNTA -O sea, nosotros tenemos el Hidrógeno 12 y tenemos el trabajo de la muerte en marcha. V.M. RABOLÚ -El Hidrógeno 12 es cuando ya empieza a trabajar, a equilibrar la parte sexual y el SI-12 es cuando ya se transmuta, que es el resultado del Fuego. No hay que confundir el 12 con el SI-12. El 12 es la energía sin transmutar y el SI-12 cuando ya está transmutada, que es el resultado del Fuego. PREGUNTA. -A medida que va uno trabajando en la muerte psicológica de los defectos, ¿cada centro va trabajando con su propio hidrógeno? V.M. RABOLÚ -Su propio hidrógeno y viene el cambio de los colores de la energía, de acuerdo al trabajo psicológico que uno hace. Entonces la parte sexual va trabajando más equilibradamente, el centro sexual entra a trabajar con su propio hidrógeno y entonces ya hay un equilibrio. PREGUNTA -¿Ya no le roba a los otros? V.M. RABOLÚ -Ya no le roba ni se deja robar, porque todo está buscando su equilibrio, cada cual, cada centro con su propio hidrógeno. Los cambios que van ocurriendo en el trabajo de la Gran Obra, son cambios que tenemos que provocarlos. No hay que dejar las cosas a la deriva, sino ir provocando estos cambios. Primero: Empezamos a trabajar con la energía en bruto, de color negro. ¿Cuál es el Mercurio Negro? ¡Los yoes! Los yoes están completamente vivos en la primera etapa del trabajo. El color negro es por los yoes que contaminan el Mercurio. Segundo: Cuando queremos provocar un cambio en nosotros, debemos empezar de una vez a eliminar el Mercurio Negro,  para provocar este cambio al color blanco. Eso es transformación de energía en octavas superiores. Tercero: Cuando nosotros empezamos a trabajar y a eliminar el Mercurio Negro, van uniéndose las Sales, se van atrayendo fuerzas positivas que van transformando de inmediato el Trabajo y van ocurriendo los cambios. Ahora tenemos el amarillo, pero en el Mercurio Amarillo todavía el trabajo es deficiente, completamente deficiente. Cuarto: Cuando transformamos estas tres fuerzas, dando un “shock” en octavas superiores para cristalizar estos mercurios, el resultado del Trabajo es el color rojo, o sea, el Fuego Sagrado, que es el último. Con este Fuego es que vamos a trabajar en octavas superiores para cristalizar  los Cuerpos de Fuego, con esto es que vamos a fabricar los Cuerpos Solares, en octavas superiores, pero tenemos estos colores primero: el color negro, el blanco, el amarillo para que el resultado de la transformación de estas tres fuerzas nos de la cuarta fuerza que es el rojo, el resultado de la regeneración, del trabajo”. PREGUNTA -¿El color de esa energía, tanto en el varón como en la dama es el mismo? V.M. RABOLÚ - Lo mismo. Igual, no hay diferencia. PREGUNTA -Maestro, ¿el primero, segundo y tercer aspecto está relacionado con el Azufre? V.M. RABOLÚ - Con el Azufre, la Sal y el Mercurio. El Mercurio Negro se le llama a los yoes, a ese mercurio en bruto, tenemos que transformarlo cuando empezamos a morir. Entonces, cuando se empieza a morir, se dice esotéricamente que se está ”blanqueando el latón”, que hay transformación. PREGUNTA - Sobre la fecundación del Azufre al Mercurio. V.M. RABOLÚ - Entonces cuando empieza la transformación del Mercurio, a morir el color negro, viene la fecundación: la Sal, el Mercurio y el Azufre, son las tras fuerzas. PREGUNTA - ¿El Azufre es la energía? V.M. RABOLÚ - Claro, en bruto. Estamos hablando en bruto. Después vienen los resultados, porque todo es creación, todo es transmutación - Todo hay que crearlo, dentro de nosotros no tenemos nada. PREGUNTA  - ¿La Sal que viene siendo, Maestro? V.M. RABOLÚ - La Sal viene a ser la parte material. PREGUNTA - ¿En cual de esos cuatro trabajos conseguimos el control total de las energías? V.M. RABOLÚ - En su totalidad cuando transformamos el Mercurio Negro. Porque por el Mercurio Negro viene la debilidad y no puede haber transformación, pero cuando nosotros trabajamos con las tres fuerzas, o sea, hemos transformado nuestro trabajo, ya nace la cuarta fuerza, que es el Fuego, entonces ya hay control, porque en el momento que se despierta el Fuego Sagrado, es porque ha habido un control, entonces se empieza a trabajar. Desde ahí es de donde se empieza la Obra, cuando creamos esa cuarta fuerza, o sea del resultado de la unión de tres fuerzas nace la cuarta que es el fuego, entonces ya hay un control, ya el Trabajo va perfeccionándose. Ahora, este Trabajo no lo podemos dejar ahí, seguimos trabajando con el Fuego pero en octavas superiores, y para trabajar con octavas superiores tenemos que ir regenerando todavía más, perfeccionando para poder elevar en octavas superiores para que esto cristalice en otros mundos, otros planos, otros cuerpos: Cristalización en octavas superiores. Gráficos complementarios Cada vez que un centro agota sus 7´de u de E, el Instintivo se las repone, vaciando las reservas del depósito sexual. Entonces el centro Sexual sólo puede funcionar con la E de los otros tres centros. Fórmula Alquímica del Trabajo Esotérico: Equilibrio entre los Tres Factores"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p013-img01.png",
+        "alt": "Imagen extraída de Fase B, página 13",
+        "caption": "",
+        "sourcePage": 13
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p013-img02.png",
+        "alt": "Imagen extraída de Fase B, página 13",
+        "caption": "",
+        "sourcePage": 13
       }
     ]
   },
@@ -4305,7 +5202,71 @@
       17,
       18
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p015-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p015-img01.png",
+        "alt": "Imagen extraída de Fase B, página 15",
+        "caption": "",
+        "sourcePage": 15
+      },
+      {
+        "id": "fase-b-p017-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img01.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img02",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img02.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img03",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img03.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img04",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img04.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img05",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img05.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img06",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img06.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img07",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img07.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "id": "fase-b-p017-img09",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img09.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -4345,6 +5306,69 @@
         "type": "heading",
         "level": 3,
         "text": "TABLA DE CENTROS, CHAKRAS E IGLESIAS."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p015-img01.png",
+        "alt": "Imagen extraída de Fase B, página 15",
+        "caption": "",
+        "sourcePage": 15
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img01.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img02.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img03.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img04.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img05.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img06.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img07.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p017-img09.png",
+        "alt": "Imagen extraída de Fase B, página 17",
+        "caption": "",
+        "sourcePage": 17
       },
       {
         "type": "paragraph",
@@ -4694,11 +5718,26 @@
       30,
       31
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p031-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p031-img01.png",
+        "alt": "Imagen extraída de Fase B, página 31",
+        "caption": "",
+        "sourcePage": 31
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "¿Qué es un Hannasmussen? Hannasmussen es la persona que tiene dos centros de gravedad. Es decir que sirve al Diablo y al Ser al mismo tiempo. Hannasmussen somos toda la humanidad en mayor o menor escala. Hay cuatro clases de Hannasmussen:  Primera categoría: Está formada por las personas del mundo exterior, que no conocen el Esoterismo ni les interesa. Sólo tienen cuerpo planetario. Tal clase de persona acumula en vida un algo fatal peligroso: las mismas actividades del ego en su psiquis. A la hora de la muerte, lo único que sobrevive ahí, es un montón de diablos que no tienen ningún valor, es basura. Cuando una de estas personas concluye su existencia 108, como no trabajó con la Transmutación, ni con los Tres Factores, se desintegra muy rápidamente en la Involución, pues como nunca transmutó no cristalizó su Energía.  Segunda categoría: Está formada por los que ya tienen un Cuerpo Astral creado y no murieron en sí mismos. Crearon el Cuerpo Astral para su uso particular, pero no prosiguieron el trabajo esotérico, les faltó continuidad de propósitos por no tener un centro de gravedad permanente. Se dedicaron a la hechicería y la magia negra. Cuando concluyen sus 108 existencias ingresan en la Involución, que es mucho más lenta, por que su Cuerpo Astral demora más tiempo para desintegrarse.  Tercera categoría: Está formada por aquellos que fabricaron todos sus Cuerpos Solares y no murieron en sí mismo (los Nirvanos). En este caso el proceso involutivo es todavía mucho más lento. No les queda mas remedio que eliminar lo que tiene de Hannasmussen disolviendo el Ego o involucionando definitivamente entre las entrañas de la Tierra. Prácticamente son casos perdidos, abortos de la Madre Cósmica.  Cuarta categoría: Está formada por los Tronos caídos, los Bodhisattvas, Dioses que se dejaron caer. Esto es cuando un Maestro, una Jerarquía “tira la piedra al agua” (disuelve todos sus Cuerpos). Se titula “Trono caído” porque desaparece de su Trono. Entonces se fabrica la doble personalidad: la del Ángel y la del Demonio. Es claro que si no se resuelven a disolver lo que tienen de Hannasmussen, también les toca involucionar entre las entrañas de la Tierra, como lo están haciendo Moloch y muchos otros."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p031-img01.png",
+        "alt": "Imagen extraída de Fase B, página 31",
+        "caption": "",
+        "sourcePage": 31
       }
     ]
   },
@@ -4924,11 +5963,40 @@
       42,
       43
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p042-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p042-img01.png",
+        "alt": "Imagen extraída de Fase B, página 42",
+        "caption": "",
+        "sourcePage": 42
+      },
+      {
+        "id": "fase-b-p043-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p043-img01.png",
+        "alt": "Imagen extraída de Fase B, página 43",
+        "caption": "",
+        "sourcePage": 43
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": " El objetivo de esta conferencia es conocer estas escuelas.  Comprender por qué no nos permiten llegar a la autorrealización del ser.  Ver adónde nos conducen.  Aprender a no mezclarlas con el conocimiento. ¿Qué es la Teosofía? “Teo” significa Dios y “Sofía”, Sabiduría. La palabra “Teosofía” se refiere a la sabiduría de Dios. Esta escuela, fundada por Helena Petrovna Blavatsky, aparece en Rusia a finales del siglo XIX y principios del XX. Tenía como objetivo impedir que el materialismo dialéctico de Carlos Marx y Lenin acabara con todos los principios espirituales de esta región del planeta. Su trabajo fue luchar contra el escepticismo. Tenía como objeto demostrar científicamente que el alma sí existe. Esta escuela se dedico a enseñar  y practicar la parapsicología, los diferentes poderes de la mente, fenómenos psíquicos, el desdoblamiento, el hipnotismo, la telepatía, la materialización de espectros y voces misteriosas, apariciones post mortem, el despertar de las facultades latentes en todas las personas. Si estudiamos esta doctrina nos damos cuenta que el objetivo no es la autorrealización del Ser, puesto que no enseña los Tres Factores para la Revolución de la Conciencia. En la actualidad las escuelas teosóficas no enseñan la castidad. Recomiendan el vegetarianismo; enseñan que la evolución mecánica nos conducirá a la iluminación. No enseñan que existe la involución y la necesidad de revolucionarse para liberarse. Como veíamos, buscaba mantener vivas y latentes las esperanzas espirituales para que la gente no cayera en el más absoluto materialismo. ¿Qué es el espiritismo? Esta doctrina, desarrollada en la segunda mitad del siglo XIX, enseña la técnica para lograr la comunicación con el alma de los muertos. A través de ellos se recibe información, se producen curaciones de personas enfermas, la solución de problemas materiales, etc. En una sesión de espiritismo se reúnen varias personas en torno a una mesa y tomándose de las manos invocan en coro la presencia de un “espíritu” determinado (1). Por lo general se le pide al “espíritu” que se manifieste por medio del movimiento de cosas,  ruidos, etc. Luego el desencarnado toma posesión de uno de los participantes, quien presta su cuerpo físico para su manifestación. A ésta persona se la denomina “médium” porque sirve de medio entre el desencarnado y el mundo físico. Cuando el “espíritu” toma posesión del cuerpo del médium, comienza a hablar con la voz que tenia en su existencia. Los interesados hacen diferentes preguntas y el desencarnado les va respondiendo una por una. 1 Lo que los espiritistas llaman “espíritu” es un defecto (o legión de defectos) de un desencarnado. No es el Real Ser de ese desencarnado. La mayoría de las personas que participan en estas prácticas terminan creando dependencia, puesto que se acostumbran a que les den respuesta a todas sus inquietudes tanto físicas como espirituales. Por lo general todas estas personas están convencidas de que se han comunicado con un santo o un dios; ninguno de ellos sospecha que se trata de un demonio, o la psiquis (legión) de un desencarnado que no posee vehículo de expresión física. En los diferentes procedimientos de curación, hacen hasta cirugías, y muchos de los sanados se curan definitivamente, aumentando su dependencia a estos procedimientos. Las escuelas de espiritismo crecieron en forma exagerada en el siglo pasado y han venido reclutando millones de fieles y seguidores. Como podemos ver a simple vista, este procedimiento por ningún lado busca la autorrealización de nuestro Ser, en ningún caso se enseña la eliminación de los defectos psicológicos, tampoco se dan conocimientos de cómo lograr la castidad científica etc., etc. Como enseñaba el maestro Jesús “por sus obras los conoceréis” veamos algunos trabajos de espiritistas: Adivinaciones, consejos, ligues, desligues, rezos, rituales, lectura de ouija, juego de la copa, trabajos de magia negra, rituales con velas, dominación, embos, imposición de enfermedades, curaciones, etc. Trabajos todos de magia negra. ¿Qué es el médium? Es un sujeto pasivo, receptivo, que sede su materia, su cuerpo físico, su centro motor, a los fantasmas metafísicos de ultratumba. El karma de la mediumnidad es la epilepsia. Todos los epilépticos fueron médium en sus anteriores existencias. En los estados post-mortem el médium continúa convertido en poseso de los demonios. Es incuestionable que después de cierto tiempo concluye divorciándose de su propio Ser Divinal. Ingresan entonces a la involución sumergida de los mundos infiernos. Es muy claro que ante la Logia Blanca, en los mundos Superiores cada cuerpo humano esta calificado (ya sea hombre o mujer) como el Templo vivo de un maestro o de una chispa divina. Ese Templo es muy respetado por todas las jerarquías. De ahí que es importante comprender que ningún maestro de la Logia Blanca se expresa a través de un vehículo (cuerpo físico) ajeno. Cuando un maestro necesita llegar o venir a este mundo tridimensional, manda primeramente su persona o cuerpo físico para que se prepare y más tarde él poderse manifestar a través de sus vehículos. Pero llega a su propia casa, no a casa ajena. La persona tendrá que desintegrar esos trabajos, esos yoes o elementos psíquicos de la mediumidad. Para que la entidad pueda ingresar al cuerpo del médium, éste debe volcar su Cuerpo Astral hacia delante. Así puede ingresar por el centro motor."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p042-img01.png",
+        "alt": "Imagen extraída de Fase B, página 42",
+        "caption": "",
+        "sourcePage": 42
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p043-img01.png",
+        "alt": "Imagen extraída de Fase B, página 43",
+        "caption": "",
+        "sourcePage": 43
       }
     ]
   },
@@ -4961,11 +6029,26 @@
       44,
       45
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p044-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p044-img01.png",
+        "alt": "Imagen extraída de Fase B, página 44",
+        "caption": "",
+        "sourcePage": 44
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Mucho se ha hablado sobre el Diablo, bastante se ha escrito sobre este tema, pero son pocos los que lo han explicado realmente. El origen de este mito hay que buscarlo en las criptas iniciáticas del pasado y en las cavernas arcaicas. Luz y sombras, en antitesis armoniosa, marcan un completo dualismo cuya extraordinaria síntesis es la sabiduría. Cada uno de nosotros proyecta su sombra. Sabemos que más allá del cuerpo, de los afectos y de la mente, está el Logos Interior, Divinal... Incuestionablemente, eso que es lo inefable, eso que es lo Real, proyecta su propia Reflexión, su Sombra particular, dentro de nosotros mismos, aquí y ahora. Esta sombra cumple una misión específica en el fondo mismo de nuestra propia Conciencia. Obviamente, tal \"Sombra\", tal Reflexión Logóica, es el \"Entrenador Psicológico\", \"Lucifer\", el \"Tentador\"…En el gimnasio psicológico de la existencia humana, se requiere siempre un entrenador, con el propósito de producir poderes, facultades, virtudes extraordinarias, etc. ¿En que forma podrían brotar de nosotros las virtudes si no existe la tentación? Solo mediante la lucha, el contraste, la tentación y la rigurosa disciplina esotérica pueden brotar en nosotros las flores de la virtud. Ahora me pregunto ¿Dónde está la maldad de Lucifer? Si no hay tentación, no hay virtudes; cuanto más fuertes sean las tentaciones, más grandes serán las virtudes. Lo importante es no caer en tentación No es el Diablo ese personaje tenebroso creado por el dogmatismo de algunas sectas muertas. Satanás, Lucifer, el Diablo, es la reflexión de nuestro propio Ser íntimo, en nosotros mismos y dentro de nuestra Conciencia, aquí y ahora. Hubo épocas en el pasado en que se levantaron por doquier, en todos los lugares del planeta Tierra, templos al Sol y al Dragón. El símbolo del dragón fue tomado de aquellos reptiles voladores gigantescos que existieron en las épocas de la Atlántida y la Lemuria. Resulta interesante que tal símbolo se haya usado para alegorizar a toda sombra del Sol, a toda reflexión del Astro Rey, incluyendo al Lucifer íntimo particular de cada ser humano. En Egipto, el \"Sol del Mediodía\", el \"Sagrado Sol Absoluto\", estuvo siempre simbolizado por Osiris, mientras su Sombra, su Reflexión, su Lucifer, se halla alegorizado por Tiphón (Seth). En los Misterios Griegos, el Sol Espiritual el Demiurgo Creador, fue siempre representado por Apolo, en tanto que su Sombra, su Lucifer, su Satán, su reflexión divinal, se alegoriza por Pityón. En el Apocalipsis de San Juan, el Cristo Sol resplandeciente se halla siempre simbolizado por Miguel, la divinidad guerrera, mientras su sombra cósmica es personificada por el Dragón Rojo. No es, pues, el Diablo ese personaje que algunas sectas muertas han sentado en un trono de ignominia para atemorizar a los débiles. En la Edad Media, se alegorizaba al Logos con la personalidad de San Jorge, mientras su Sombra se simboliza por el Dragón. Con justa razón Goethe pone en boca de su Dios, aquella frase con que se dirigiera la Divinidad a Mefistófeles: \"De todos los de tu especie, genios a mi Ley rebeldes, el menos dañino y perjudicial tú eres\". \"Vencer al Dragón\", \"matar al Dragón\", es urgente cuando uno quiere ser \"tragado por la Serpiente\", cuando uno desea convertirse en \"Serpiente\". Esto significa salir triunfante en todas las tentaciones puestas por el Dragón, eliminar el Ego, desintegrar todos los agregados psíquicos que lo componen, reducir a polvareda cósmica todos los recuerdos del deseo, etc. Todo Hierofante, todo verdadero Auto-Realizado es un Dragón de Sabiduría. Existen dos tipos de tinieblas: oscuridad del silencio y del secreto augusto de los sabios y oscuridad de la ignorancia y del error. La primera es la superobscuridad; la segunda es la infraobscuridad. Esto quiere decir que las tinieblas se bipolarizan y que lo negativo es tan solo el desdoblamiento de lo positivo. Prometeo-Lucifer, encadenado a la dura roca, sacrificándose por nosotros; sometido a todas las torturas, aunque sea el fiel de la balanza, el dador de Luz y Fuego, se desdobla inevitablemente en el aspecto fatal de la multiplicidad egoica, en esos agregados psíquicos siniestros que componen nuestro Yo (los demonios rojos de Seth). Lucifer el tentador, el gran entrenador del gimnasio psicológico de la existencia, trabaja tentándonos, y estas impresiones internas suelen polarizarse negativamente o fatalmente mediante la actividad egoica. Solo mediante la auto-reflexión serena y la meditación interior profunda podemos hacer clara diferenciación entre las impresiones intimas luciferinas directas y las impresiones egoístas bestiales. Venciendo al Dragón podemos cristalizar dentro de nosotros mismos a las tres fuerzas primarias del universo (Padre, Hijo y Espíritu Santo), alegorizadas por el tridente, convirtiéndonos en dioses solares. Lucifer, es escalera para bajar y escalera para subir, y poder trabajar y disolver el Ego en el laboratorio de la Alquimia Sexual. Indiscutiblemente, sólo mediante el Fuego Luciferino podemos reducir a cenizas las cristalizaciones negativas de nuestra Psiquis, los agregados psíquicos, infelices desviaciones del Poder Luciférico. Lucifer debe educarnos en el sexo. Allí debe someternos a un entrenamiento riguroso mediante las más severas tentaciones. Es claro que si allí, en el sexo, salimos victoriosos, la desintegración del Ego se precipita inevitablemente. ¿Que el Dragón nos tienta durante el trabajo? Es su deber... El debe volvernos fuertes; él debe educarnos en el Gimnasio Sexual; él debe convertirnos en atletas de la Magia Sexual. Al fin el Escamoso, Lucifer, la Sombra del Eterno, la Reflexión Intima de nuestro verdadero Ser Divino, volverá a Él, se fusionará con Él, resplandecerá en Él… porque en el fondo Él es Él."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p044-img01.png",
+        "alt": "Imagen extraída de Fase B, página 44",
+        "caption": "",
+        "sourcePage": 44
       }
     ]
   },
@@ -5071,11 +6154,54 @@
       49,
       50
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p050-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p050-img01.png",
+        "alt": "Imagen extraída de Fase B, página 50",
+        "caption": "",
+        "sourcePage": 50
+      },
+      {
+        "id": "fase-b-p050-img02",
+        "src": "/assets/conferencias/fase-b/fase-b-p050-img02.png",
+        "alt": "Imagen extraída de Fase B, página 50",
+        "caption": "",
+        "sourcePage": 50
+      },
+      {
+        "id": "fase-b-p050-img03",
+        "src": "/assets/conferencias/fase-b/fase-b-p050-img03.png",
+        "alt": "Imagen extraída de Fase B, página 50",
+        "caption": "",
+        "sourcePage": 50
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "El objetivo de esta conferencia es mostrarnos que todos nos desenvolvemos en tres planos diferentes, que no hay que confundirlos ni mezclarlos entre sí.  La vida publica de cada uno: allí se desenvuelve uno con las  demás personas en lo referente al trabajo, oficio, dinero, grupos, gimnasio psicológico, alumnos y en general con todo lo pertinente al mundo exterior y por lo tanto se relaciona con el Sacrificio por la Humanidad.  La vida privada de cada uno: En esta parte se desenvuelve lo pertinente a la familia, los padres, hijos, esposa. Por lo tanto esta parte se relaciona con el Nacimiento Espiritual, con la parte sexual, y con el gimnasio psicológico que implica la relación familiar. Al observar esta vida podemos ver que también es del mundo exterior, y se desenvuelve totalmente en el mundo exterior. En las distintas cosas de la vida privada de uno y la pareja no deben intervenir otras personas, ni mezclarse los diferentes acontecimientos y problemas de esta parte con la vida pública. Así como tampoco debemos llevar los problemas de la vida publica a nuestra vida privada u hogar.  La vida intima de cada uno: A esta vida le pertenece todo lo relacionado con el mundo interior; las iniciaciones, los grados, los diferentes avances de cada uno, las experiencias internas, las enseñanzas secretas que cada uno de nosotros recibe en el mundo interior, los distintos secretos que nos son revelados etc., etc. La vida intima se prostituye, cuando la llevamos a la vida pública y eso es un error muy grave que genera mucho estancamiento. Al contar nuestras experiencias, pierden fuerza; en cambio si las guardamos en silencio más adelante las comprenderemos y eso nos dará fuerza psicológica. Muchas de las experiencias que nos dan nuestros Padres nos permiten vivenciar y comprender directamente las diferentes cosas, así se vuelven realidad y nos dan fuerza. Muchas de las experiencias que nos dan nuestros Padres en el mundo interior, son advertencias de las cosas que van a suceder en el mundo físico, que nos permitirían desenmascarar a muchos traidores, y llevar los grupos por el camino correcto. Pero cuando las comentamos a los demás no logramos darnos cuenta de las advertencias que nos hacen. Muchos alumnos cuentan sus experiencias tratando de que los demás digan que él esta trabajando (orgullo y vanidad). La mayoría de los alumnos no saben interpretar sus experiencias y casi siempre las interpretan equivocadamente. Pero lo peor es poner a otras personas dormidas a que nos las interpreten puesto que nos confunden y desorientan, al mismo tiempo que nos volvemos dependientes de ellos y revelamos los distintos secretos que nos son confiados. Nos perjudicamos terriblemente cuando contamos las experiencias, nos hacemos un gran mal y nos arriesgamos a que nos saquen del Trabajo Esotérico por irresponsables. Muchos de los compañeros que hoy en día están con nosotros más adelante ya no lo estarán. Recordemos que la envidia es el motor secreto de todo. Muchas experiencias que le contamos a otros, van a hacer que nos estanquemos en el trabajo, por las criticas que estas generan, por las malas interpretaciones de otros, etc. Las personas a las que les contamos nuestras experiencias terminan retirándose porque se consideran fracasados e internamente nos ganamos un Karma por esto. La mayoría de los alumnos se estancan por contar sus sueños a los demás. Otras personas que conocen y saben que al hombre se le conoce por sus sueños, se dan cuenta y manipulan nuestros defectos psicológicos, al contarles nuestros sueños nos desvestimos ante ellos. Las experiencias no se deben contar, porque se viola un juramento que uno hace con el Padre y la Madre interna de no divulgar las Secretas Enseñanzas que sean recibidas. Se llaman secretas enseñanzas porque el discípulo las recibe en los Mundos Superiores por el Padre Interno y la Madre Particular, por ellos le son reveladas. Entonces, al divulgarlas, no le vuelven a confiar secretos y ahí vienen las tinieblas, es decir, lo que se conoce esotéricamente como “una noche”."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p050-img01.png",
+        "alt": "Imagen extraída de Fase B, página 50",
+        "caption": "",
+        "sourcePage": 50
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p050-img02.png",
+        "alt": "Imagen extraída de Fase B, página 50",
+        "caption": "",
+        "sourcePage": 50
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p050-img03.png",
+        "alt": "Imagen extraída de Fase B, página 50",
+        "caption": "",
+        "sourcePage": 50
       }
     ]
   },
@@ -5108,11 +6234,68 @@
       51,
       52
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p051-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p051-img01.png",
+        "alt": "Imagen extraída de Fase B, página 51",
+        "caption": "",
+        "sourcePage": 51
+      },
+      {
+        "id": "fase-b-p051-img02",
+        "src": "/assets/conferencias/fase-b/fase-b-p051-img02.png",
+        "alt": "Imagen extraída de Fase B, página 51",
+        "caption": "",
+        "sourcePage": 51
+      },
+      {
+        "id": "fase-b-p052-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p052-img01.png",
+        "alt": "Imagen extraída de Fase B, página 52",
+        "caption": "",
+        "sourcePage": 52
+      },
+      {
+        "id": "fase-b-p052-img02",
+        "src": "/assets/conferencias/fase-b/fase-b-p052-img02.png",
+        "alt": "Imagen extraída de Fase B, página 52",
+        "caption": "",
+        "sourcePage": 52
+      }
+    ],
     "content": [
       {
         "type": "paragraph",
         "text": "Mucho se ha hablado sobre el Kundalini, el poder serpentino anular que se desarrolla maravillosamente por la médula espinal en el cuerpo de todo tántrico blanco. Empero nadie podría gozar de los poderes de la serpiente luminosa sin haber sido devorado antes por la misma. Despertar la Kundalini no es todo. No solamente necesitamos despertar la Serpiente, es necesario ser tragados por la Serpiente. La Divina Madre Kundalini necesita devorarse los Cuerpos Existenciales del Ser, pero para que Ella pueda hacer eso, todos los Cuerpos deben haber sido transformados en Oro puro, porque Ella no traga nada inmundo. Jamás podría uno ser \"devorado por la Serpiente\" si previamente no ha disuelto el Ego animal. Quien disuelve el Ego, es \"tragado por la Serpiente\"; aquél que es \"tragado por la Serpiente\", se convierte en Serpiente. El símbolo del Águila tragándose la Serpiente representa los tres trabajos del Cristo en la Tercera Montaña.  Primer paso Al final de la Segunda Montaña, luego de la muerte de los Yoes Causa,  quedamos convertidos en Hombres Serpientes (Elohim Macho – Hembra). Aquí debemos recuperar el uno por ciento de Conciencia restante y comenzar a crear los Cuerpos de Luz. La Serpiente de Fuego (el Cristo) debe unirse al Espíritu Santo convirtiéndose así en un Elohim. Este es el comienzo de la Tercera Montaña.  Segundo Paso Se tiene que recoger la serpiente para formar la O del Espíritu, Dios  Madre, (la serpiente tragándose a si misma, tragándose la cola). El Cristo vence al Dragón Lucifer en todas las tentaciones y se fusiona con él. Como el Cristo ya eliminó a los Yoes Causa el Lucifer ya no tiene a quien tentar.  Tercer paso La serpiente (Cristo-Lucifer) es devorada por el Águila (El Padre), y así se convierte en Serpiente Emplumada. “Justa es su libertad después de su duro trabajo como entrenador psicológico, ha quedado sin ninguna sombra de maldad, el Logos (El Padre) se   lo traga, se lo absorbe”. La Sabiduría queda integrada al Amor. Se logró cristalizar en si mismo las tres fuerzas primarias del Universo. En la Tercera Montaña mueren estas tres fuerzas, por eso se dice que “Dios mismo tiene que morir”, porque este es un Dios, capaz de crear por medio del Verbo, y sin embargo tiene que pasar por la muerte. La muerte es una transformación, la unificación de estas tres fuerzas en una. Ese es el símbolo de los aztecas, cuando el Águila se traga la Serpiente, el pasaje de la Dualidad a la Unidad, porque al Absoluto tiene que entrar como Unidad, no como Trinidad ni como Dualidad, sino como Unidad. A las dos leyes se las absorbe una y queda unido a la Gran Ley, conectado al Absoluto directamente por la Gran Ley para llegar a la Unidad, a la Liberación total. El Águila representa al Espíritu y la Serpiente al Fuego. Cuando el Águila, se traga a la Serpiente entonces nos convertimos en Serpientes Emplumadas, en un Quetzalcoatl, y la Obra queda realizada."
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p051-img01.png",
+        "alt": "Imagen extraída de Fase B, página 51",
+        "caption": "",
+        "sourcePage": 51
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p051-img02.png",
+        "alt": "Imagen extraída de Fase B, página 51",
+        "caption": "",
+        "sourcePage": 51
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p052-img01.png",
+        "alt": "Imagen extraída de Fase B, página 52",
+        "caption": "",
+        "sourcePage": 52
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p052-img02.png",
+        "alt": "Imagen extraída de Fase B, página 52",
+        "caption": "",
+        "sourcePage": 52
       }
     ]
   },
@@ -5184,12 +6367,41 @@
       57,
       58
     ],
-    "images": [],
+    "images": [
+      {
+        "id": "fase-b-p057-img01",
+        "src": "/assets/conferencias/fase-b/fase-b-p057-img01.png",
+        "alt": "Imagen extraída de Fase B, página 57",
+        "caption": "",
+        "sourcePage": 57
+      },
+      {
+        "id": "fase-b-p057-img02",
+        "src": "/assets/conferencias/fase-b/fase-b-p057-img02.png",
+        "alt": "Imagen extraída de Fase B, página 57",
+        "caption": "",
+        "sourcePage": 57
+      }
+    ],
     "content": [
       {
         "type": "heading",
         "level": 3,
         "text": "DE UNO DE MAGIA NEGRA"
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p057-img01.png",
+        "alt": "Imagen extraída de Fase B, página 57",
+        "caption": "",
+        "sourcePage": 57
+      },
+      {
+        "type": "image",
+        "src": "/assets/conferencias/fase-b/fase-b-p057-img02.png",
+        "alt": "Imagen extraída de Fase B, página 57",
+        "caption": "",
+        "sourcePage": 57
       },
       {
         "type": "paragraph",
