@@ -166,7 +166,7 @@ def extract_fase_a():
 # ---------------- Fase B ----------------
 def extract_fase_b():
     doc = fitz.open(str(PDFS / "FASE_B_2010.pdf"))
-    pat = re.compile(r'Conferencia\s+Nro\.\s*(\d{1,2})\s*-\s*Fase\s*"?B"?', re.I)
+    pat = re.compile(r'Conferencia\s+Nro\.\s*(\d{1,2})\s*-\s*Fase\s*[\"“”\']?B[\"“”\']?', re.I)
     title_pat = re.compile(r'Conferencia\s+Nro\.\s*(\d{1,2})[^\n]*\n+([A-ZÁÉÍÓÚÑ][^\n]{3,90})')
     page_text = {i: get_page_text(doc, i) for i in range(doc.page_count)}
     markers = []
