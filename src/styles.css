@@ -4,18 +4,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+/* CONCIENCIA REVOLUCIONARIA — Sistema de diseño cinematográfico
+ * Paleta: obsidiana, dorado envejecido, marfil, ceniza cálida.
+ * Estética: museo digital · biblioteca iniciática · editorial cinematográfica.
  */
 
 @theme inline {
@@ -24,8 +15,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -45,100 +35,307 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --color-gold: var(--gold);
+  --color-gold-2: var(--gold2);
+  --color-bone: var(--bone);
+  --color-ash: var(--ash);
+  --color-obsidian: var(--obsidian);
+  --color-ember: var(--ember);
+
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", "Söhne", system-ui, sans-serif;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
-}
 
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  /* Paleta CR */
+  --void: #050505;
+  --ink: #0B0B0C;
+  --obsidian: #111113;
+  --bone: #F6F0E7;
+  --ash: #B6B0A8;
+  --gold: #C6A15B;
+  --gold2: #F0D58C;
+  --ember: #7A3F22;
+
+  /* Tokens semánticos (modo único: oscuro cinematográfico) */
+  --background: oklch(0.12 0.005 60);
+  --foreground: oklch(0.94 0.018 80);
+  --card: oklch(0.15 0.008 60);
+  --card-foreground: oklch(0.94 0.018 80);
+  --popover: oklch(0.13 0.006 60);
+  --popover-foreground: oklch(0.94 0.018 80);
+  --primary: oklch(0.78 0.12 80);
+  --primary-foreground: oklch(0.12 0.01 60);
+  --secondary: oklch(0.20 0.01 60);
+  --secondary-foreground: oklch(0.94 0.018 80);
+  --muted: oklch(0.18 0.008 60);
+  --muted-foreground: oklch(0.74 0.02 80);
+  --accent: oklch(0.86 0.13 85);
+  --accent-foreground: oklch(0.12 0.01 60);
+  --destructive: oklch(0.55 0.18 25);
+  --destructive-foreground: oklch(0.96 0.01 80);
+  --border: oklch(0.30 0.02 80 / 0.35);
+  --input: oklch(0.30 0.02 80 / 0.35);
+  --ring: oklch(0.78 0.12 80 / 0.55);
+
+  /* Gradientes y sombras de marca */
+  --gradient-gold: linear-gradient(135deg, var(--gold), var(--gold2));
+  --gradient-halo: radial-gradient(circle at center,
+    color-mix(in oklab, var(--gold) 35%, transparent) 0%,
+    color-mix(in oklab, var(--gold) 12%, transparent) 30%,
+    transparent 65%);
+  --gradient-vignette: radial-gradient(ellipse at center, transparent 40%, var(--void) 100%);
+  --shadow-gold: 0 20px 60px -20px color-mix(in oklab, var(--gold) 40%, transparent);
+  --shadow-elegant: 0 30px 80px -30px rgba(0,0,0,0.7);
+  --border-gold: 1px solid color-mix(in oklab, var(--gold) 40%, transparent);
+  --border-gold-strong: 1px solid color-mix(in oklab, var(--gold) 70%, transparent);
 }
 
 @layer base {
-  * {
-    border-color: var(--color-border);
+  * { border-color: var(--color-border); }
+  html, body {
+    background: var(--void);
+    color: var(--bone);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-  }
+  h1, h2, h3, h4, .font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+  ::selection { background: color-mix(in oklab, var(--gold) 35%, transparent); color: var(--bone); }
+  a { color: inherit; }
+  img { max-width: 100%; height: auto; }
 }
+
+/* ============ Tipografía editorial ============ */
+.cr-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--gold) 80%, var(--bone));
+  font-weight: 500;
+}
+.cr-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+.cr-shimmer {
+  background: linear-gradient(110deg,
+    var(--bone) 30%,
+    var(--gold2) 45%,
+    var(--gold) 50%,
+    var(--gold2) 55%,
+    var(--bone) 70%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: cr-shimmer 8s ease-in-out infinite;
+}
+@keyframes cr-shimmer {
+  0%, 100% { background-position: 200% 50%; }
+  50% { background-position: 0% 50%; }
+}
+.cr-gold-text {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ============ Halos y orbes ============ */
+.cr-halo {
+  position: absolute;
+  pointer-events: none;
+  background: var(--gradient-halo);
+  filter: blur(20px);
+  animation: cr-breathe 9s ease-in-out infinite;
+}
+@keyframes cr-breathe {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.05); }
+}
+.cr-orb {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%,
+    color-mix(in oklab, var(--gold2) 60%, transparent),
+    transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* ============ Glass + bordes ============ */
+.cr-glass {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--obsidian) 92%, transparent),
+    color-mix(in oklab, var(--ink) 96%, transparent));
+  border: var(--border-gold);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+.cr-luxury-border {
+  position: relative;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--obsidian), var(--obsidian)) padding-box,
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--gold) 60%, transparent),
+      color-mix(in oklab, var(--gold) 10%, transparent) 50%,
+      color-mix(in oklab, var(--gold) 50%, transparent)) border-box;
+}
+.cr-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent,
+    color-mix(in oklab, var(--gold) 50%, transparent), transparent);
+}
+
+/* ============ Botones ============ */
+.cr-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s, background .35s, color .35s;
+  cursor: pointer;
+}
+.cr-btn-gold {
+  background: var(--gradient-gold);
+  color: var(--ink);
+  box-shadow: var(--shadow-gold);
+}
+.cr-btn-gold:hover { transform: translateY(-2px); box-shadow: 0 25px 70px -20px color-mix(in oklab, var(--gold) 60%, transparent); }
+.cr-btn-ghost {
+  background: transparent;
+  color: var(--bone);
+  border: var(--border-gold);
+}
+.cr-btn-ghost:hover {
+  background: color-mix(in oklab, var(--gold) 8%, transparent);
+  border-color: color-mix(in oklab, var(--gold) 70%, transparent);
+}
+
+/* ============ Cards ============ */
+.cr-card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--obsidian) 96%, transparent), color-mix(in oklab, var(--ink) 98%, transparent));
+  border: 1px solid color-mix(in oklab, var(--gold) 18%, transparent);
+  transition: border-color .4s, transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  overflow: hidden;
+}
+.cr-card::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(circle at var(--mx,50%) var(--my,0%),
+    color-mix(in oklab, var(--gold) 14%, transparent), transparent 50%);
+  opacity: 0; transition: opacity .4s;
+}
+.cr-card:hover { transform: translateY(-4px); border-color: color-mix(in oklab, var(--gold) 55%, transparent); box-shadow: var(--shadow-elegant); }
+.cr-card:hover::before { opacity: 1; }
+
+/* ============ Reveal ============ */
+.cr-reveal { opacity: 0; transform: translateY(24px); transition: opacity 1.1s cubic-bezier(.2,.8,.2,1), transform 1.1s cubic-bezier(.2,.8,.2,1); }
+.cr-reveal.is-in { opacity: 1; transform: translateY(0); }
+
+/* ============ Reader prose ============ */
+.cr-prose { color: var(--bone); font-size: 1.075rem; line-height: 1.85; }
+.cr-prose p { margin: 1.1em 0; color: color-mix(in oklab, var(--bone) 92%, var(--ash)); }
+.cr-prose h2, .cr-prose h3 { font-family: var(--font-display); color: var(--bone); margin-top: 2.2em; margin-bottom: 0.6em; line-height: 1.15; }
+.cr-prose h2 { font-size: 1.85rem; }
+.cr-prose h3 { font-size: 1.35rem; color: color-mix(in oklab, var(--gold) 70%, var(--bone)); }
+.cr-prose ul { padding-left: 1.4em; margin: 1.1em 0; }
+.cr-prose ul li { margin: 0.4em 0; position: relative; padding-left: 0.4em; color: color-mix(in oklab, var(--bone) 90%, var(--ash)); }
+.cr-prose ul li::marker { color: var(--gold); }
+.cr-prose blockquote, .cr-quote {
+  margin: 1.6em 0;
+  padding: 1.2em 1.4em;
+  border-left: 2px solid var(--gold);
+  background: color-mix(in oklab, var(--obsidian) 80%, transparent);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--bone);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.cr-mantra {
+  margin: 1.8em auto;
+  padding: 1.4em 1.6em;
+  text-align: center;
+  border: var(--border-gold);
+  border-radius: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  color: var(--gold2);
+  background: radial-gradient(ellipse at center, color-mix(in oklab, var(--gold) 8%, transparent), transparent 70%);
+}
+.cr-practice {
+  margin: 1.8em 0;
+  padding: 1.5em;
+  border-radius: 0.85rem;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--gold) 5%, var(--obsidian)), var(--obsidian));
+  border: 1px solid color-mix(in oklab, var(--gold) 30%, transparent);
+}
+.cr-practice .cr-practice-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--gold2); margin-bottom: 0.6em; letter-spacing: 0.04em; }
+.cr-figure {
+  margin: 2em auto;
+  text-align: center;
+}
+.cr-figure img {
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in oklab, var(--gold) 35%, transparent);
+  padding: 0.4rem;
+  background: var(--ink);
+  box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+  max-height: 70vh;
+  cursor: zoom-in;
+}
+.cr-figure figcaption {
+  margin-top: 0.8em;
+  font-size: 0.85rem;
+  color: var(--ash);
+  letter-spacing: 0.04em;
+}
+
+/* ============ Reading progress ============ */
+.cr-progress-bar {
+  position: fixed; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--gradient-gold);
+  transform-origin: 0 50%;
+  z-index: 60;
+  transition: transform .15s linear;
+}
+
+/* ============ Skeleton ============ */
+.cr-skeleton {
+  position: relative; overflow: hidden;
+  background: color-mix(in oklab, var(--obsidian) 90%, transparent);
+  border-radius: 0.5rem;
+}
+.cr-skeleton::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--gold) 8%, transparent), transparent);
+  animation: cr-skeleton 1.6s infinite;
+}
+@keyframes cr-skeleton { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+
+/* Focus + reduced motion */
+*:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+}
+
+/* Modo enfoque */
+.cr-focus-mode .cr-hide-on-focus { display: none !important; }
+.cr-focus-mode .cr-prose { font-size: 1.15rem; max-width: 720px; margin: 0 auto; }
