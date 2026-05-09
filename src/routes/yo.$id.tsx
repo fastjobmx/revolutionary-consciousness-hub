@@ -54,7 +54,7 @@ function YoLectorPage() {
     );
   }
 
-  const headings = y.content.map((b, i) => b.type === "heading" ? { i, text: b.text, level: b.level } : null).filter(Boolean) as { i: number; text: string; level: number }[];
+  const headings = y.content.map((b: import("@/lib/cr/types").Block, i: number) => b.type === "heading" ? { i, text: b.text, level: b.level } : null).filter(Boolean) as { i: number; text: string; level: number }[];
 
   return (
     <div className="pt-28 pb-20 mx-auto max-w-7xl px-5 md:px-10 grid gap-12 lg:grid-cols-[260px_1fr]">
@@ -76,7 +76,7 @@ function YoLectorPage() {
           <p className="mt-5 text-[color:var(--ash)] leading-relaxed max-w-2xl">{y.summary}</p>
           {y.tags.length > 0 && (
             <div className="mt-5 flex flex-wrap gap-2">
-              {y.tags.map(t => <span key={t} className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">{t}</span>)}
+              {y.tags.map((t: string) => <span key={t} className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">{t}</span>)}
             </div>
           )}
           <div className="cr-divider mt-8" />

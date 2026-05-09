@@ -44,7 +44,7 @@ function LectorPage() {
   const reading = estimateReadingTime(c);
   const fontSizes = [0.92, 1, 1.075, 1.18, 1.32];
 
-  const headings = useMemo(() => c.content.map((b, i) => b.type === "heading" ? { i, text: b.text, level: b.level } : null).filter(Boolean) as { i: number; text: string; level: number }[], [c]);
+  const headings = useMemo(() => c.content.map((b: import("@/lib/cr/types").Block, i: number) => b.type === "heading" ? { i, text: b.text, level: b.level } : null).filter(Boolean) as { i: number; text: string; level: number }[], [c]);
 
   const related = useMemo(() => {
     const ids = new Set(c.related);
@@ -119,7 +119,7 @@ function LectorPage() {
             </div>
             {c.tags.length > 0 && (
               <div className="mt-5 flex flex-wrap gap-2">
-                {c.tags.map(t => <span key={t} className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">{t}</span>)}
+                {c.tags.map((t: string) => <span key={t} className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">{t}</span>)}
               </div>
             )}
             <div className="cr-divider mt-8" />
