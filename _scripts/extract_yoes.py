@@ -71,33 +71,7 @@ def clean(text):
         out.append(s)
     return out
 
-def to_blocks(raw):
-    if not raw: return []
-    blocks=[]; buf=[]; lst=[]
-    def fp():
-        nonlocal buf
-        if buf:
-            t=' '.join(buf).strip()
-            if t: blocks.append({"type":"paragraph","text":t})
-            buf=[]
-    def fl():
-        nonlocal lst
-        if lst:
-            blocks.append({"type":"list","items":lst[:]}); lst=[]
-    for ln in raw.split('\n'):
-        s=ln.strip()
-        if not s: continue
-        is_h = (len(s)<80 and s.isupper() and len(s)>3) or re.match(r'^\d+\.\-?\s+[A-ZÁÉÍÓÚÑ][^.]{2,70}:?$', s)
-        bm = re.match(r'^(?:[-•·▪]|\d+[\.\-\)])\s+(.+)$', s)
-        if is_h and not bm:
-            fp(); fl()
-            blocks.append({"type":"heading","level":3,"text":s.rstrip(':')})
-        elif bm:
-            fp(); lst.append(bm.group(1))
-        else:
-            fl(); buf.append(s)
-    fp(); fl()
-    return blocks
+# to_blocks importado desde extract_pdf_text
 
 def main():
     yoes=[]
