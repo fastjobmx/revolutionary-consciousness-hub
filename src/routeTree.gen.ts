@@ -10,6 +10,8 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YoesRouteImport } from './routes/yoes'
+import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as ConferenciasRouteImport } from './routes/conferencias'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as YoIdRouteImport } from './routes/yo.$id'
@@ -18,6 +20,16 @@ import { Route as ConferenciaIdRouteImport } from './routes/conferencia.$id'
 const YoesRoute = YoesRouteImport.update({
   id: '/yoes',
   path: '/yoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreRoute = SobreRouteImport.update({
+  id: '/sobre',
+  path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConferenciasRoute = ConferenciasRouteImport.update({
@@ -44,6 +56,8 @@ const ConferenciaIdRoute = ConferenciaIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/conferencias': typeof ConferenciasRoute
+  '/contacto': typeof ContactoRoute
+  '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
   '/conferencia/$id': typeof ConferenciaIdRoute
   '/yo/$id': typeof YoIdRoute
@@ -51,6 +65,8 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/conferencias': typeof ConferenciasRoute
+  '/contacto': typeof ContactoRoute
+  '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
   '/conferencia/$id': typeof ConferenciaIdRoute
   '/yo/$id': typeof YoIdRoute
@@ -59,19 +75,37 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/conferencias': typeof ConferenciasRoute
+  '/contacto': typeof ContactoRoute
+  '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
   '/conferencia/$id': typeof ConferenciaIdRoute
   '/yo/$id': typeof YoIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/conferencias' | '/yoes' | '/conferencia/$id' | '/yo/$id'
+  fullPaths:
+    | '/'
+    | '/conferencias'
+    | '/contacto'
+    | '/sobre'
+    | '/yoes'
+    | '/conferencia/$id'
+    | '/yo/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/conferencias' | '/yoes' | '/conferencia/$id' | '/yo/$id'
+  to:
+    | '/'
+    | '/conferencias'
+    | '/contacto'
+    | '/sobre'
+    | '/yoes'
+    | '/conferencia/$id'
+    | '/yo/$id'
   id:
     | '__root__'
     | '/'
     | '/conferencias'
+    | '/contacto'
+    | '/sobre'
     | '/yoes'
     | '/conferencia/$id'
     | '/yo/$id'
@@ -80,6 +114,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ConferenciasRoute: typeof ConferenciasRoute
+  ContactoRoute: typeof ContactoRoute
+  SobreRoute: typeof SobreRoute
   YoesRoute: typeof YoesRoute
   ConferenciaIdRoute: typeof ConferenciaIdRoute
   YoIdRoute: typeof YoIdRoute
@@ -92,6 +128,20 @@ declare module '@tanstack/react-router' {
       path: '/yoes'
       fullPath: '/yoes'
       preLoaderRoute: typeof YoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/conferencias': {
@@ -128,6 +178,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ConferenciasRoute: ConferenciasRoute,
+  ContactoRoute: ContactoRoute,
+  SobreRoute: SobreRoute,
   YoesRoute: YoesRoute,
   ConferenciaIdRoute: ConferenciaIdRoute,
   YoIdRoute: YoIdRoute,
