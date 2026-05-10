@@ -6,6 +6,8 @@ const links = [
   { to: "/", label: "Inicio" },
   { to: "/conferencias", label: "Conferencias" },
   { to: "/yoes", label: "Estudios de Yoes" },
+  { to: "/sobre", label: "Sobre" },
+  { to: "/contacto", label: "Contacto" },
 ];
 
 export function Navbar() {

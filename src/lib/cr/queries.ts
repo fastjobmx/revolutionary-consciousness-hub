@@ -1,24 +1,20 @@
 import { queryOptions } from "@tanstack/react-query";
 import type { Conferencia, Yo } from "./types";
-
-async function fetchJSON<T>(url: string): Promise<T> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`No se pudo cargar ${url}`);
-  return res.json();
-}
+import conferenciasData from "../../../public/data/conferencias.json";
+import yoesData from "../../../public/data/yoes.json";
 
 export const conferenciasQuery = () =>
   queryOptions({
     queryKey: ["conferencias"],
-    queryFn: () => fetchJSON<Conferencia[]>("/data/conferencias.json"),
-    staleTime: 1000 * 60 * 30,
+    queryFn: async () => conferenciasData as unknown as Conferencia[],
+    staleTime: Infinity,
   });
 
 export const yoesQuery = () =>
   queryOptions({
     queryKey: ["yoes"],
-    queryFn: () => fetchJSON<Yo[]>("/data/yoes.json"),
-    staleTime: 1000 * 60 * 30,
+    queryFn: async () => yoesData as unknown as Yo[],
+    staleTime: Infinity,
   });
 
 export const SOCIAL = {
