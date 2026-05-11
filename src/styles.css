@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -112,8 +114,8 @@
 /* ============ Tipografía editorial ============ */
 .cr-eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  letter-spacing: 0.32em;
+  font-size: clamp(0.65rem, 0.6rem + 0.25vw, 0.72rem);
+  letter-spacing: clamp(0.2em, 0.15em + 0.2vw, 0.32em);
   text-transform: uppercase;
   color: color-mix(in oklab, var(--gold) 80%, var(--bone));
   font-weight: 500;
@@ -122,7 +124,7 @@
   font-family: var(--font-display);
   font-weight: 400;
   line-height: 1.02;
-  letter-spacing: -0.02em;
+  letter-spacing: clamp(-0.01em, -0.015em + 0.01vw, -0.02em);
 }
 .cr-shimmer {
   background: linear-gradient(110deg,

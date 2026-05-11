@@ -57,7 +57,7 @@ function YoLectorPage() {
   const headings = y.content.map((b: import("@/lib/cr/types").Block, i: number) => b.type === "heading" ? { i, text: b.text, level: b.level } : null).filter(Boolean) as { i: number; text: string; level: number }[];
 
   return (
-    <div className="pt-28 pb-20 mx-auto max-w-7xl px-5 md:px-10 grid gap-12 lg:grid-cols-[260px_1fr]">
+    <div className="pt-28 pb-20 mx-auto max-w-7xl px-4 sm:px-5 md:px-10 grid gap-8 lg:gap-12 lg:grid-cols-[260px_1fr]">
       <aside className="hidden lg:block sticky top-28 self-start">
         <div className="cr-eyebrow mb-4">Índice</div>
         <nav className="space-y-2 text-sm border-l border-[color-mix(in_oklab,var(--gold)_20%,transparent)] pl-4 max-h-[70vh] overflow-y-auto">
@@ -69,10 +69,10 @@ function YoLectorPage() {
       </aside>
 
       <article>
-        <header className="mb-10">
+        <header className="mb-10 px-4 sm:px-0">
           <Link to="/yoes" className="cr-eyebrow text-[color:var(--gold)]">← Estudios</Link>
           <div className="cr-eyebrow mt-6 text-[color:var(--ash)]">Estudio · {y.status === "completo" ? "Disponible" : "En preparación"}</div>
-          <h1 className="cr-display text-4xl md:text-6xl mt-3 leading-[1.05]">{y.title}</h1>
+          <h1 className="cr-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 leading-[1.1]">{y.title}</h1>
           <p className="mt-5 text-[color:var(--ash)] leading-relaxed max-w-2xl">{y.summary}</p>
           {y.tags.length > 0 && (
             <div className="mt-5 flex flex-wrap gap-2">

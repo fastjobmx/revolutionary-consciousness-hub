@@ -11,11 +11,16 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YoesRouteImport } from './routes/yoes'
 import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as LibrosRouteImport } from './routes/libros'
 import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as ConferenciasFaseBRouteImport } from './routes/conferencias-fase-b'
+import { Route as ConferenciasFaseARouteImport } from './routes/conferencias-fase-a'
 import { Route as ConferenciasRouteImport } from './routes/conferencias'
+import { Route as ComoEmpezarRouteImport } from './routes/como-empezar'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as YoIdRouteImport } from './routes/yo.$id'
 import { Route as ConferenciaIdRouteImport } from './routes/conferencia.$id'
+import { Route as ConferenciaFaseBIdRouteImport } from './routes/conferencia-fase-b.$id'
 
 const YoesRoute = YoesRouteImport.update({
   id: '/yoes',
@@ -27,14 +32,34 @@ const SobreRoute = SobreRouteImport.update({
   path: '/sobre',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LibrosRoute = LibrosRouteImport.update({
+  id: '/libros',
+  path: '/libros',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactoRoute = ContactoRouteImport.update({
   id: '/contacto',
   path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConferenciasFaseBRoute = ConferenciasFaseBRouteImport.update({
+  id: '/conferencias-fase-b',
+  path: '/conferencias-fase-b',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConferenciasFaseARoute = ConferenciasFaseARouteImport.update({
+  id: '/conferencias-fase-a',
+  path: '/conferencias-fase-a',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ConferenciasRoute = ConferenciasRouteImport.update({
   id: '/conferencias',
   path: '/conferencias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ComoEmpezarRoute = ComoEmpezarRouteImport.update({
+  id: '/como-empezar',
+  path: '/como-empezar',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -52,32 +77,52 @@ const ConferenciaIdRoute = ConferenciaIdRouteImport.update({
   path: '/conferencia/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConferenciaFaseBIdRoute = ConferenciaFaseBIdRouteImport.update({
+  id: '/conferencia-fase-b/$id',
+  path: '/conferencia-fase-b/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/como-empezar': typeof ComoEmpezarRoute
   '/conferencias': typeof ConferenciasRoute
+  '/conferencias-fase-a': typeof ConferenciasFaseARoute
+  '/conferencias-fase-b': typeof ConferenciasFaseBRoute
   '/contacto': typeof ContactoRoute
+  '/libros': typeof LibrosRoute
   '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
+  '/conferencia-fase-b/$id': typeof ConferenciaFaseBIdRoute
   '/conferencia/$id': typeof ConferenciaIdRoute
   '/yo/$id': typeof YoIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/como-empezar': typeof ComoEmpezarRoute
   '/conferencias': typeof ConferenciasRoute
+  '/conferencias-fase-a': typeof ConferenciasFaseARoute
+  '/conferencias-fase-b': typeof ConferenciasFaseBRoute
   '/contacto': typeof ContactoRoute
+  '/libros': typeof LibrosRoute
   '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
+  '/conferencia-fase-b/$id': typeof ConferenciaFaseBIdRoute
   '/conferencia/$id': typeof ConferenciaIdRoute
   '/yo/$id': typeof YoIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/como-empezar': typeof ComoEmpezarRoute
   '/conferencias': typeof ConferenciasRoute
+  '/conferencias-fase-a': typeof ConferenciasFaseARoute
+  '/conferencias-fase-b': typeof ConferenciasFaseBRoute
   '/contacto': typeof ContactoRoute
+  '/libros': typeof LibrosRoute
   '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
+  '/conferencia-fase-b/$id': typeof ConferenciaFaseBIdRoute
   '/conferencia/$id': typeof ConferenciaIdRoute
   '/yo/$id': typeof YoIdRoute
 }
@@ -85,38 +130,58 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/como-empezar'
     | '/conferencias'
+    | '/conferencias-fase-a'
+    | '/conferencias-fase-b'
     | '/contacto'
+    | '/libros'
     | '/sobre'
     | '/yoes'
+    | '/conferencia-fase-b/$id'
     | '/conferencia/$id'
     | '/yo/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/como-empezar'
     | '/conferencias'
+    | '/conferencias-fase-a'
+    | '/conferencias-fase-b'
     | '/contacto'
+    | '/libros'
     | '/sobre'
     | '/yoes'
+    | '/conferencia-fase-b/$id'
     | '/conferencia/$id'
     | '/yo/$id'
   id:
     | '__root__'
     | '/'
+    | '/como-empezar'
     | '/conferencias'
+    | '/conferencias-fase-a'
+    | '/conferencias-fase-b'
     | '/contacto'
+    | '/libros'
     | '/sobre'
     | '/yoes'
+    | '/conferencia-fase-b/$id'
     | '/conferencia/$id'
     | '/yo/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ComoEmpezarRoute: typeof ComoEmpezarRoute
   ConferenciasRoute: typeof ConferenciasRoute
+  ConferenciasFaseARoute: typeof ConferenciasFaseARoute
+  ConferenciasFaseBRoute: typeof ConferenciasFaseBRoute
   ContactoRoute: typeof ContactoRoute
+  LibrosRoute: typeof LibrosRoute
   SobreRoute: typeof SobreRoute
   YoesRoute: typeof YoesRoute
+  ConferenciaFaseBIdRoute: typeof ConferenciaFaseBIdRoute
   ConferenciaIdRoute: typeof ConferenciaIdRoute
   YoIdRoute: typeof YoIdRoute
 }
@@ -137,6 +202,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SobreRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/libros': {
+      id: '/libros'
+      path: '/libros'
+      fullPath: '/libros'
+      preLoaderRoute: typeof LibrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contacto': {
       id: '/contacto'
       path: '/contacto'
@@ -144,11 +216,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/conferencias-fase-b': {
+      id: '/conferencias-fase-b'
+      path: '/conferencias-fase-b'
+      fullPath: '/conferencias-fase-b'
+      preLoaderRoute: typeof ConferenciasFaseBRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conferencias-fase-a': {
+      id: '/conferencias-fase-a'
+      path: '/conferencias-fase-a'
+      fullPath: '/conferencias-fase-a'
+      preLoaderRoute: typeof ConferenciasFaseARouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/conferencias': {
       id: '/conferencias'
       path: '/conferencias'
       fullPath: '/conferencias'
       preLoaderRoute: typeof ConferenciasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/como-empezar': {
+      id: '/como-empezar'
+      path: '/como-empezar'
+      fullPath: '/como-empezar'
+      preLoaderRoute: typeof ComoEmpezarRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -172,18 +265,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ConferenciaIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/conferencia-fase-b/$id': {
+      id: '/conferencia-fase-b/$id'
+      path: '/conferencia-fase-b/$id'
+      fullPath: '/conferencia-fase-b/$id'
+      preLoaderRoute: typeof ConferenciaFaseBIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ComoEmpezarRoute: ComoEmpezarRoute,
   ConferenciasRoute: ConferenciasRoute,
+  ConferenciasFaseARoute: ConferenciasFaseARoute,
+  ConferenciasFaseBRoute: ConferenciasFaseBRoute,
   ContactoRoute: ContactoRoute,
+  LibrosRoute: LibrosRoute,
   SobreRoute: SobreRoute,
   YoesRoute: YoesRoute,
+  ConferenciaFaseBIdRoute: ConferenciaFaseBIdRoute,
   ConferenciaIdRoute: ConferenciaIdRoute,
   YoIdRoute: YoIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

@@ -37,4 +37,27 @@ export interface Yo {
   source: string;
   missingSource: boolean;
   content: Block[];
+  date?: string; // ISO date string
+  category?: string;
+}
+
+export interface ConferenciaFaseB {
+  id: string;
+  number: number;
+  title: string;
+  summary: string;
+  type: "practica" | "doctrina" | "simbolo" | "iniciacion";
+  content: Block[];
+}
+
+export interface Libro {
+  id: string;
+  title: string;
+  author: string;
+  type: "gnosis" | "psicologia" | "esoterismo" | "budismo" | "egiptologia" | "yoga" | "tantra" | string;
+  description: string;
+  cover: string;
+  downloadUrl: string;
+  year: number;
+  pages: number;
 }

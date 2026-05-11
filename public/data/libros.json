@@ -1,0 +1,90 @@
+[
+  {
+    "id": "revolucion-de-la-conciencia",
+    "title": "Revolutión de la Conciencia",
+    "author": "V.M. Samael Aun Weor",
+    "type": "gnosis",
+    "description": "Tratado fundamental sobre el trabajo interior y los tres factores de la revolución de la conciencia: nacer, morir y sacrificar por la humanidad.",
+    "cover": "/assets/books/revolucion-conciencia.jpg",
+    "downloadUrl": "#",
+    "year": 1976,
+    "pages": 180
+  },
+  {
+    "id": "tratado-psicologia-revolucionaria",
+    "title": "Tratado de Psicología Revolucionaria",
+    "author": "V.M. Samael Aun Weor",
+    "type": "psicologia",
+    "description": "Guía práctica para el autoconocimiento y la eliminación de los agregados psicológicos. Fundamentos del trabajo sobre el yo.",
+    "cover": "/assets/books/psicologia-revolucionaria.jpg",
+    "downloadUrl": "#",
+    "year": 1976,
+    "pages": 120
+  },
+  {
+    "id": "misterios-mayores",
+    "title": "Los Misterios Mayores",
+    "author": "V.M. Samael Aun Weor",
+    "type": "esoterismo",
+    "description": "Exposición de los arcanos mayores del tarot y su aplicación práctica en el trabajo esotérico. Símbolos y prácticas iniciáticas.",
+    "cover": "/assets/books/misterios-mayores.jpg",
+    "downloadUrl": "#",
+    "year": 1977,
+    "pages": 140
+  },
+  {
+    "id": "bodhisattva-mano-vacia",
+    "title": "El Bodhisattva de la Mano Vacía",
+    "author": "V.M. Samael Aun Weor",
+    "type": "budismo",
+    "description": "Comentarios al Sutra del Corazón y la Prajnaparamita. Integración de la sabiduría budista con el trabajo cristico.",
+    "cover": "/assets/books/bodhisattva.jpg",
+    "downloadUrl": "#",
+    "year": 1978,
+    "pages": 160
+  },
+  {
+    "id": "viaje-egipto",
+    "title": "El Viaje a Egipto",
+    "author": "V.M. Samael Aun Weor",
+    "type": "egiptologia",
+    "description": "Relato de la experiencia iniciática en las pirámides y templos de Egipto. Los misterios de la muerte y el más allá.",
+    "cover": "/assets/books/viaje-egipto.jpg",
+    "downloadUrl": "#",
+    "year": 1979,
+    "pages": 130
+  },
+  {
+    "id": "doctrina-sintesis",
+    "title": "Doctrina Secreta de la Anahuac",
+    "author": "V.M. Samael Aun Weor",
+    "type": "gnosis",
+    "description": "Sabiduría ancestral de México prehispánico. Los calendarios, los nahualismos y la tradición tolteca.",
+    "cover": "/assets/books/anahuac.jpg",
+    "downloadUrl": "#",
+    "year": 1975,
+    "pages": 150
+  },
+  {
+    "id": "kundalini-yoga",
+    "title": "Kundalini Yoga",
+    "author": "V.M. Samael Aun Weor",
+    "type": "yoga",
+    "description": "Técnicas de trabajo con la energía serpentina. Prácticas de posturas, respiración y meditación para el despertar.",
+    "cover": "/assets/books/kundalini.jpg",
+    "downloadUrl": "#",
+    "year": 1974,
+    "pages": 110
+  },
+  {
+    "id": "matrimonio-perfecto",
+    "title": "El Matrimonio Perfecto",
+    "author": "V.M. Samael Aun Weor",
+    "type": "tantra",
+    "description": "El sendero del fuego y la transmutación sexual. La magia sexual blanca y la alquimia del amor consciente.",
+    "cover": "/assets/books/matrimonio.jpg",
+    "downloadUrl": "#",
+    "year": 1973,
+    "pages": 200
+  }
+]

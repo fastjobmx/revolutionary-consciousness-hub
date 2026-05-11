@@ -42,29 +42,76 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const SITE_URL = "https://concienciarevolucionaria.app";
+
+// Schema.org Organization JSON-LD
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Conciencia Revolucionaria",
+  "alternateName": "Escuela del Conocimiento de Sí Mismo",
+  "url": SITE_URL,
+  "logo": `${SITE_URL}/assets/logo/logo.png`,
+  "description": "Escuela viva del Conocimiento de Sí Mismo con 75 conferencias gratuitas sobre auto-observación, meditación y trabajo interior.",
+  "sameAs": [
+    "https://www.youtube.com/@concienciarevolucionaria",
+    "https://www.instagram.com/concienciarevolucionaria18/",
+    "https://www.facebook.com/profile.php?id=61550522941805",
+    "https://www.tiktok.com/@concienciarevolucionaria"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Información y soporte",
+    "availableLanguage": "Spanish"
+  }
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Conciencia Revolucionaria — El conocimiento de sí mismo" },
-      { name: "description", content: "Una escuela viva del conocimiento de sí mismo: 75 conferencias, estudios psicológicos de los Yoes y la práctica diaria de la Revolución de la Conciencia." },
+      { title: "Conciencia Revolucionaria — El Conocimiento de Sí Mismo" },
+      { name: "description", content: "Una escuela viva del Conocimiento de Sí Mismo: 75 conferencias, estudios psicológicos de los Yoes y la práctica diaria de la Revolución de la Conciencia." },
       { name: "author", content: "Conciencia Revolucionaria" },
-      { property: "og:title", content: "Conciencia Revolucionaria — El conocimiento de sí mismo" },
-      { property: "og:description", content: "Una escuela viva del conocimiento de sí mismo: 75 conferencias, estudios psicológicos de los Yoes y la práctica diaria de la Revolución de la Conciencia." },
+      { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#0a0a0f" },
+      { property: "og:site_name", content: "Conciencia Revolucionaria" },
+      { property: "og:locale", content: "es_ES" },
+      { property: "og:title", content: "Conciencia Revolucionaria — El Conocimiento de Sí Mismo" },
+      { property: "og:description", content: "Una escuela viva del Conocimiento de Sí Mismo: 75 conferencias, estudios psicológicos de los Yoes y la práctica diaria de la Revolución de la Conciencia." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: SITE_URL },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Conciencia Revolucionaria — El conocimiento de sí mismo" },
-      { name: "twitter:description", content: "Una escuela viva del conocimiento de sí mismo: 75 conferencias, estudios psicológicos de los Yoes y la práctica diaria de la Revolución de la Conciencia." },
+      { name: "twitter:title", content: "Conciencia Revolucionaria — El Conocimiento de Sí Mismo" },
+      { name: "twitter:description", content: "Una escuela viva del Conocimiento de Sí Mismo: 75 conferencias, estudios psicológicos de los Yoes y la práctica diaria de la Revolución de la Conciencia." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/971acc0b-00c3-4437-bdd4-c38cdefcd2ee" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/971acc0b-00c3-4437-bdd4-c38cdefcd2ee" },
     ],
     links: [
-      { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: SITE_URL },
+      // Preconnect a dominios externos para acelerar carga
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" },
+      { rel: "dns-prefetch", href: "https://fonts.googleapis.com" },
+      { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
+      // Preload de CSS crítico
+      { rel: "preload", href: appCss, as: "style" },
+      { rel: "stylesheet", href: appCss },
+      // Fuentes con display=swap para evitar FOIT
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap", media: "print", onload: "this.media='all'" },
       { rel: "icon", href: "/assets/logo/logo.png" },
+      { rel: "apple-touch-icon", href: "/assets/logo/logo.png" },
+      // Preload de logo para LCP
+      { rel: "preload", href: "/assets/logo/logo.png", as: "image", type: "image/png" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify(organizationSchema),
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -75,7 +122,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="es-ES">
       <head><HeadContent /></head>
       <body>
         {children}

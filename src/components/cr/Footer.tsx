@@ -6,17 +6,25 @@ export function Footer() {
   return (
     <footer className="cr-hide-on-focus mt-32 border-t border-[color-mix(in_oklab,var(--gold)_18%,transparent)]">
       <div className="cr-divider" />
-      <div className="mx-auto max-w-7xl px-6 md:px-10 py-16 grid gap-12 md:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 py-12 md:py-16 grid gap-8 md:gap-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logo} alt="" className="h-10 w-10 object-contain" />
+            <img 
+            src={logo} 
+            alt="Conciencia Revolucionaria" 
+            className="h-10 w-10 object-contain" 
+            width="40"
+            height="40"
+            loading="lazy"
+            decoding="async"
+          />
             <div>
               <div className="cr-eyebrow text-[0.6rem]">Conciencia</div>
               <div className="font-display text-xl cr-shimmer">Revolucionaria</div>
             </div>
           </div>
           <p className="mt-4 text-sm text-[color:var(--ash)] max-w-xs leading-relaxed">
-            Una escuela viva del conocimiento de sí mismo. El camino no se explica: se recorre.
+            Una escuela viva del Conocimiento de Sí Mismo. El camino no se explica: se recorre.
           </p>
         </div>
         <div>

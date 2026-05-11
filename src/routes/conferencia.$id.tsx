@@ -92,7 +92,7 @@ function LectorPage() {
     <div className="pt-28 pb-20">
       <div className="cr-progress-bar" style={{ transform: `scaleX(${progress})` }} aria-hidden />
 
-      <div className="mx-auto max-w-7xl px-5 md:px-10 grid grid-cols-1 lg:grid-cols-[260px_1fr_220px] gap-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-10 grid grid-cols-1 lg:grid-cols-[260px_1fr_220px] gap-8 lg:gap-12">
         {/* TOC */}
         <aside className="cr-hide-on-focus hidden lg:block sticky top-28 self-start">
           <div className="cr-eyebrow mb-4">Índice</div>
@@ -111,10 +111,15 @@ function LectorPage() {
           <header className="mb-10 cr-hide-on-focus">
             <Link to="/conferencias" className="cr-eyebrow text-[color:var(--gold)] hover:text-[color:var(--gold2)]">← Biblioteca</Link>
             <div className="cr-eyebrow mt-6 text-[color:var(--ash)]">Fase {c.phase} · Conferencia {c.number}</div>
-            <h1 className="cr-display text-4xl md:text-6xl mt-3 leading-[1.05]">{c.title}</h1>
-            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs tracking-[0.18em] uppercase text-[color:var(--ash)]">
-              <span>p. {c.pageStart}{c.pageEnd && c.pageEnd !== c.pageStart ? `–${c.pageEnd}` : ""}</span>
-              <span>· {reading} min</span>
+            <div className="max-w-[72ch] mx-auto lg:mx-0 px-4 sm:px-0">
+              <h1 className="cr-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.05] mb-4 sm:mb-6">{c.title}</h1>
+              <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-[color:var(--ash)] mb-6 sm:mb-8">
+                <span>Fase {c.phase}</span>
+                <span className="text-[color:var(--gold)] hidden sm:inline">·</span>
+                <span className="w-full sm:w-auto">Conferencia {c.number}</span>
+                <span className="text-[color:var(--gold)] hidden sm:inline">·</span>
+                <span>{reading} min</span>
+              </div>
               {c.images.length > 0 && <span>· ◇ {c.images.length} diagramas</span>}
             </div>
             {c.tags.length > 0 && (

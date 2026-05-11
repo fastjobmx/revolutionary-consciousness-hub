@@ -1,7 +1,9 @@
 import { queryOptions } from "@tanstack/react-query";
-import type { Conferencia, Yo } from "./types";
+import type { Conferencia, Yo, ConferenciaFaseB, Libro } from "./types";
 import conferenciasData from "../../../public/data/conferencias.json";
 import yoesData from "../../../public/data/yoes.json";
+import conferenciasFaseBData from "../../../public/data/conferencias-fase-b.json";
+import librosData from "../../../public/data/libros.json";
 
 export const conferenciasQuery = () =>
   queryOptions({
@@ -14,6 +16,20 @@ export const yoesQuery = () =>
   queryOptions({
     queryKey: ["yoes"],
     queryFn: async () => yoesData as unknown as Yo[],
+    staleTime: Infinity,
+  });
+
+export const conferenciasFaseBQuery = () =>
+  queryOptions({
+    queryKey: ["conferencias-fase-b"],
+    queryFn: async () => conferenciasFaseBData as unknown as ConferenciaFaseB[],
+    staleTime: Infinity,
+  });
+
+export const librosQuery = () =>
+  queryOptions({
+    queryKey: ["libros"],
+    queryFn: async () => librosData as unknown as Libro[],
     staleTime: Infinity,
   });
 
@@ -41,6 +57,48 @@ export const FILTER_TAGS = [
   { id: "with-images", label: "Con imágenes" },
   { id: "leidas", label: "Leídas" },
   { id: "no-leidas", label: "No leídas" },
+];
+
+export const FILTER_TYPES_FASE_B = [
+  { id: "todas", label: "Todas" },
+  { id: "practica", label: "Práctica" },
+  { id: "doctrina", label: "Doctrina" },
+  { id: "simbolo", label: "Símbolo" },
+  { id: "iniciacion", label: "Iniciación" },
+];
+
+// Filtros por pilar para Fase A
+export const FILTER_PILARES_FASE_A = [
+  { id: "todas", label: "Todas" },
+  { id: "ciencia", label: "Ciencia" },
+  { id: "arte", label: "Arte" },
+  { id: "psicologia", label: "Psicología" },
+  { id: "mistica", label: "Mística" },
+];
+
+// Filtros por nivel para Fase A
+export const FILTER_NIVELES_FASE_A = [
+  { id: "todas", label: "Todos los niveles" },
+  { id: "inicial", label: "Inicial" },
+  { id: "intermedio", label: "Intermedio" },
+  { id: "avanzado", label: "Avanzado" },
+];
+
+// Filtros para libros
+export const FILTER_TIPOS_LIBROS = [
+  { id: "todos", label: "Todos" },
+  { id: "gnosis", label: "Gnosis" },
+  { id: "psicologia", label: "Psicología" },
+  { id: "esoterismo", label: "Esoterismo" },
+  { id: "budismo", label: "Budismo" },
+  { id: "egiptologia", label: "Egiptología" },
+  { id: "yoga", label: "Yoga" },
+  { id: "tantra", label: "Tantra" },
+];
+
+export const FILTER_AUTORES_LIBROS = [
+  { id: "todos", label: "Todos los autores" },
+  { id: "samael", label: "V.M. Samael Aun Weor" },
 ];
 
 export function estimateReadingTime(c: { content: { type: string; text?: string; items?: string[] }[] }) {

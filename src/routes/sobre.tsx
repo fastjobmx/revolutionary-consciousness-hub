@@ -35,7 +35,7 @@ function SobrePage() {
         <div className="relative">
           <div className="cr-eyebrow cr-reveal">La escuela</div>
           <h1 className="cr-display text-5xl md:text-7xl mt-4 cr-reveal leading-[1.05]">
-            Una <span className="cr-shimmer">escuela viva</span> del<br/>conocimiento de sí mismo
+            Una <span className="cr-shimmer">escuela viva</span> del<br/>Conocimiento de Sí Mismo
           </h1>
           <p className="mt-8 text-[color:var(--ash)] cr-reveal max-w-2xl mx-auto leading-relaxed text-lg">
             Conciencia Revolucionaria reúne y transmite las enseñanzas de la psicología revolucionaria
@@ -90,7 +90,7 @@ function SobrePage() {
         <div className="cr-eyebrow">Comenzar</div>
         <h2 className="cr-display text-4xl md:text-5xl mt-3 cr-reveal">Tu primer paso</h2>
         <p className="mt-5 text-[color:var(--ash)] leading-relaxed">
-          La biblioteca está abierta. La Conferencia 01 es el umbral: el conocimiento de sí mismo y los objetivos del trabajo.
+          La biblioteca está abierta. La Conferencia 01 es el umbral: el Conocimiento de Sí Mismo y los objetivos del trabajo.
         </p>
         <div className="mt-8 flex flex-wrap gap-4 justify-center">
           <Link to="/conferencia/$id" params={{ id: "fase-a-01" }} className="cr-btn cr-btn-gold">Empezar por Conferencia 01</Link>
