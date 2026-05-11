@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YoesRouteImport } from './routes/yoes'
 import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SalasRouteImport } from './routes/salas'
 import { Route as LibrosRouteImport } from './routes/libros'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as ConferenciasFaseBRouteImport } from './routes/conferencias-fase-b'
@@ -30,6 +31,11 @@ const YoesRoute = YoesRouteImport.update({
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalasRoute = SalasRouteImport.update({
+  id: '/salas',
+  path: '/salas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LibrosRoute = LibrosRouteImport.update({
@@ -91,6 +97,7 @@ export interface FileRoutesByFullPath {
   '/conferencias-fase-b': typeof ConferenciasFaseBRoute
   '/contacto': typeof ContactoRoute
   '/libros': typeof LibrosRoute
+  '/salas': typeof SalasRoute
   '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
   '/conferencia-fase-b/$id': typeof ConferenciaFaseBIdRoute
@@ -105,6 +112,7 @@ export interface FileRoutesByTo {
   '/conferencias-fase-b': typeof ConferenciasFaseBRoute
   '/contacto': typeof ContactoRoute
   '/libros': typeof LibrosRoute
+  '/salas': typeof SalasRoute
   '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
   '/conferencia-fase-b/$id': typeof ConferenciaFaseBIdRoute
@@ -120,6 +128,7 @@ export interface FileRoutesById {
   '/conferencias-fase-b': typeof ConferenciasFaseBRoute
   '/contacto': typeof ContactoRoute
   '/libros': typeof LibrosRoute
+  '/salas': typeof SalasRoute
   '/sobre': typeof SobreRoute
   '/yoes': typeof YoesRoute
   '/conferencia-fase-b/$id': typeof ConferenciaFaseBIdRoute
@@ -136,6 +145,7 @@ export interface FileRouteTypes {
     | '/conferencias-fase-b'
     | '/contacto'
     | '/libros'
+    | '/salas'
     | '/sobre'
     | '/yoes'
     | '/conferencia-fase-b/$id'
@@ -150,6 +160,7 @@ export interface FileRouteTypes {
     | '/conferencias-fase-b'
     | '/contacto'
     | '/libros'
+    | '/salas'
     | '/sobre'
     | '/yoes'
     | '/conferencia-fase-b/$id'
@@ -164,6 +175,7 @@ export interface FileRouteTypes {
     | '/conferencias-fase-b'
     | '/contacto'
     | '/libros'
+    | '/salas'
     | '/sobre'
     | '/yoes'
     | '/conferencia-fase-b/$id'
@@ -179,6 +191,7 @@ export interface RootRouteChildren {
   ConferenciasFaseBRoute: typeof ConferenciasFaseBRoute
   ContactoRoute: typeof ContactoRoute
   LibrosRoute: typeof LibrosRoute
+  SalasRoute: typeof SalasRoute
   SobreRoute: typeof SobreRoute
   YoesRoute: typeof YoesRoute
   ConferenciaFaseBIdRoute: typeof ConferenciaFaseBIdRoute
@@ -200,6 +213,13 @@ declare module '@tanstack/react-router' {
       path: '/sobre'
       fullPath: '/sobre'
       preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/salas': {
+      id: '/salas'
+      path: '/salas'
+      fullPath: '/salas'
+      preLoaderRoute: typeof SalasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/libros': {
@@ -283,6 +303,7 @@ const rootRouteChildren: RootRouteChildren = {
   ConferenciasFaseBRoute: ConferenciasFaseBRoute,
   ContactoRoute: ContactoRoute,
   LibrosRoute: LibrosRoute,
+  SalasRoute: SalasRoute,
   SobreRoute: SobreRoute,
   YoesRoute: YoesRoute,
   ConferenciaFaseBIdRoute: ConferenciaFaseBIdRoute,

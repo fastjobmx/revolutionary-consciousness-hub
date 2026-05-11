@@ -16,7 +16,7 @@ export const Route = createFileRoute("/sobre")({
 const PILARES = [
   { name: "Ciencia", text: "Observación rigurosa de la psiquis y de las leyes que rigen al ser humano. No creemos: comprobamos." },
   { name: "Arte", text: "El trabajo interior como obra viva. Cada acto consciente es una pincelada sobre el alma." },
-  { name: "Filosofía", text: "Pensar lo esencial. Distinguir lo verdadero de lo aparente, lo permanente de lo pasajero." },
+  { name: "Psicología", text: "Pensar lo esencial. Distinguir lo verdadero de lo aparente, lo permanente de lo pasajero." },
   { name: "Mística", text: "Experiencia directa de lo divino, dentro y fuera del ser humano. No teoría: vivencia." },
 ];
 
@@ -57,7 +57,7 @@ function SobrePage() {
 
       <section className="mx-auto max-w-7xl px-6 md:px-10 mb-24">
         <div className="cr-eyebrow text-center">Los cuatro pilares</div>
-        <h2 className="cr-display text-4xl md:text-5xl text-center mt-3 cr-reveal">Ciencia · Arte · Filosofía · Mística</h2>
+        <h2 className="cr-display text-4xl md:text-5xl text-center mt-3 cr-reveal">Ciencia · Arte · Psicología · Mística</h2>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {PILARES.map((p, i) => (
             <div key={p.name} className="cr-card cr-reveal" style={{ transitionDelay: `${i * 80}ms` }}>
