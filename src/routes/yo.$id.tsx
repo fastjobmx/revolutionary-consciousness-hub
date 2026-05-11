@@ -53,14 +53,14 @@ function YoLectorPage() {
 
   if (y.status === "incompleto" || y.missingSource) {
     return (
-      <div className="pt-32 pb-20 mx-auto max-w-3xl px-6 text-center">
+      <div className="pt-24 sm:pt-32 pb-20 mx-auto max-w-3xl px-4 sm:px-6 text-center">
         <Link to="/yoes" className="cr-eyebrow text-[color:var(--gold)]">← Estudios</Link>
-        <div className="cr-eyebrow mt-8">Estudio en preparación</div>
-        <h1 className="cr-display text-5xl md:text-6xl mt-4">{y.title}</h1>
-        <p className="mt-6 text-[color:var(--ash)] leading-relaxed">{y.summary}</p>
-        <div className="cr-luxury-border rounded-2xl p-8 mt-12 cr-glass">
-          <div className="cr-eyebrow text-[color:var(--gold)]">Contenido en preparación</div>
-          <p className="mt-4 text-[color:var(--bone)] leading-relaxed">
+        <div className="cr-eyebrow mt-12">Estudio en preparación</div>
+        <h1 className="cr-display text-[clamp(2.5rem,1.5rem+6vw,4.5rem)] mt-6 leading-tight balance-text">{y.title}</h1>
+        <p className="mt-8 text-sm sm:text-base md:text-lg text-[color:var(--ash)] leading-relaxed max-w-2xl mx-auto">{y.summary}</p>
+        <div className="cr-luxury-border rounded-2xl p-7 sm:p-10 md:p-12 mt-12 cr-glass">
+          <div className="cr-eyebrow text-[color:var(--gold)] mb-4">Contenido en preparación</div>
+          <p className="text-sm sm:text-base text-[color:var(--bone)] leading-relaxed opacity-90">
             Este estudio aún no ha sido publicado. Falta su fuente original
             <span className="text-[color:var(--ash)]"> ({y.source})</span>. Cuando esté disponible,
             será integrado con el mismo cuidado editorial que el resto de la biblioteca.
@@ -77,11 +77,11 @@ function YoLectorPage() {
   };
 
   return (
-    <div className="pt-28 pb-20 mx-auto max-w-7xl px-4 sm:px-5 md:px-10 grid gap-8 lg:gap-12 lg:grid-cols-[260px_1fr]">
-      {/* Desktop Sidebar - Hidden on mobile/tablet */}
+    <div className="pt-20 sm:pt-28 pb-20 mx-auto max-w-7xl px-4 sm:px-6 md:px-10 grid gap-8 lg:gap-12 lg:grid-cols-[260px_1fr]">
+      {/* Desktop Sidebar */}
       <aside className="hidden lg:block sticky top-28 self-start">
-        <div className="cr-eyebrow mb-4">Índice</div>
-        <nav className="space-y-2 text-sm border-l border-[color-mix(in_oklab,var(--gold)_20%,transparent)] pl-4 max-h-[70vh] overflow-y-auto pr-2">
+        <div className="cr-eyebrow mb-6">Índice de estudio</div>
+        <nav className="space-y-3 text-sm border-l border-[color-mix(in_oklab,var(--gold)_20%,transparent)] pl-4 max-h-[70vh] overflow-y-auto pr-2 scrollbar-none">
           {headings.length === 0 && <div className="text-[color:var(--ash)] text-xs">Lectura continua</div>}
           {headings.map(h => (
             <a 
@@ -95,74 +95,75 @@ function YoLectorPage() {
         </nav>
       </aside>
 
-      <article className="max-w-3xl lg:max-w-none">
-        {/* Mobile Index Accordion - Only visible on small screens */}
-        <div className="lg:hidden mb-8">
-          <button
-            onClick={() => setMobileIndexOpen(!mobileIndexOpen)}
-            className="w-full flex items-center justify-between p-4 rounded-xl border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] bg-[color-mix(in_oklab,var(--gold)_5%,transparent)] hover:bg-[color-mix(in_oklab,var(--gold)_8%,transparent)] transition-colors"
-            aria-expanded={mobileIndexOpen}
-            aria-controls="mobile-index"
-          >
-            <div className="flex items-center gap-3">
-              <BookOpen className="w-5 h-5 text-[color:var(--gold)]" />
-              <span className="font-medium">{mobileIndexOpen ? "Cerrar índice" : "Ver índice del estudio"}</span>
-            </div>
-            {mobileIndexOpen ? (
-              <ChevronUp className="w-5 h-5 text-[color:var(--gold)]" />
-            ) : (
-              <ChevronDown className="w-5 h-5 text-[color:var(--gold)]" />
-            )}
-          </button>
+      <article className="w-full max-w-[75ch] mx-auto lg:mx-0">
+        <header className="mb-12">
+          <Link to="/yoes" className="inline-flex items-center text-[0.65rem] tracking-[0.2em] uppercase text-[color:var(--gold)] hover:text-[color:var(--gold2)] transition-colors mb-8">
+            ← Volver a biblioteca
+          </Link>
           
-          {mobileIndexOpen && (
-            <nav 
-              id="mobile-index"
-              className="mt-3 p-4 rounded-xl border border-[color-mix(in_oklab,var(--gold)_20%,transparent)] bg-[color-mix(in_oklab,var(--void)_60%,transparent)] max-h-[60vh] overflow-y-auto"
-            >
-              {headings.length === 0 && (
-                <div className="text-[color:var(--ash)] text-sm py-2">Lectura continua</div>
-              )}
-              {headings.map(h => (
-                <a 
-                  key={h.i} 
-                  href={`#h-${h.i}`}
-                  onClick={() => setMobileIndexOpen(false)}
-                  className={`block py-2.5 px-3 rounded-lg hover:bg-[color-mix(in_oklab,var(--gold)_10%,transparent)] transition-colors ${h.level === 2 ? "font-medium text-[color:var(--bone)]" : "pl-6 text-[color:var(--ash)] text-sm"}`}
-                >
-                  {h.text}
-                </a>
-              ))}
-            </nav>
-          )}
-        </div>
+          <div className="space-y-4">
+            <div className="cr-eyebrow text-[color:var(--ash)]">Estudio del Yo</div>
+            <h1 className="cr-display text-[clamp(1.85rem,1.5rem+5vw,3.5rem)] leading-[1.1] mb-6 balance-text">{y.title}</h1>
+            <p className="text-sm sm:text-base md:text-lg text-[color:var(--ash)] leading-relaxed opacity-90">{y.summary}</p>
+          </div>
 
-        <header className="mb-10 px-4 sm:px-0">
-          <Link to="/yoes" className="cr-eyebrow text-[color:var(--gold)] hover:text-[color:var(--gold2)] transition-colors">← Estudios</Link>
-          <div className="cr-eyebrow mt-6 text-[color:var(--ash)]">Estudio · {y.status === "completo" ? "Disponible" : "En preparación"}</div>
-          <h1 className="cr-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 leading-[1.1]">{y.title}</h1>
-          <p className="mt-5 text-[color:var(--ash)] leading-relaxed max-w-2xl">{y.summary}</p>
           {y.tags.length > 0 && (
-            <div className="mt-5 flex flex-wrap gap-2">
-              {y.tags.map((t: string) => <span key={t} className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">{t}</span>)}
+            <div className="mt-8 flex flex-wrap gap-2">
+              {y.tags.map((t: string) => (
+                <span key={t} className="text-[0.55rem] tracking-[0.15em] uppercase px-2.5 py-1 rounded-md border border-[color-mix(in_oklab,var(--gold)_15%,transparent)] text-[color:var(--ash)] bg-[color-mix(in_oklab,var(--gold)_5%,transparent)]">
+                  {t}
+                </span>
+              ))}
             </div>
           )}
-          <div className="cr-divider mt-8" />
+          <div className="cr-divider mt-10 opacity-40" />
         </header>
 
-        {/* Content with improved reading experience */}
-        <div className="prose-content">
+        {/* Mobile Index Accordion */}
+        {headings.length > 0 && (
+          <div className="lg:hidden mb-12">
+            <button
+              onClick={() => setMobileIndexOpen(!mobileIndexOpen)}
+              className="w-full flex items-center justify-between p-4.5 rounded-xl border border-[color-mix(in_oklab,var(--gold)_20%,transparent)] bg-[color-mix(in_oklab,var(--gold)_8%,transparent)] active:scale-[0.98] transition-all"
+              aria-expanded={mobileIndexOpen}
+            >
+              <div className="flex items-center gap-3">
+                <BookOpen className="w-5 h-5 text-[color:var(--gold)]" />
+                <span className="font-display tracking-wide">{mobileIndexOpen ? "Ocultar contenido" : "Ver contenido"}</span>
+              </div>
+              <ChevronDown className={`w-5 h-5 text-[color:var(--gold)] transition-transform duration-300 ${mobileIndexOpen ? "rotate-180" : ""}`} />
+            </button>
+            
+            {mobileIndexOpen && (
+              <nav className="mt-3 p-5 rounded-xl cr-glass border border-[color-mix(in_oklab,var(--gold)_15%,transparent)] max-h-[60vh] overflow-y-auto scrollbar-none animate-in fade-in slide-in-from-top-2 duration-300">
+                {headings.map(h => (
+                  <a 
+                    key={h.i} 
+                    href={`#h-${h.i}`}
+                    onClick={() => setMobileIndexOpen(false)}
+                    className={`block py-3 px-2 border-b border-[color-mix(in_oklab,var(--gold)_5%,transparent)] last:border-0 ${h.level === 2 ? "font-medium text-[color:var(--bone)]" : "pl-6 text-[color:var(--ash)] text-sm"}`}
+                  >
+                    {h.text}
+                  </a>
+                ))}
+              </nav>
+            )}
+          </div>
+        )}
+
+        {/* Content */}
+        <div className="cr-prose">
           <ContentBlocks blocks={y.content} />
         </div>
 
         {related.length > 0 && (
           <div className="mt-20">
-            <div className="cr-eyebrow">Estudios relacionados</div>
-            <div className="grid gap-4 md:grid-cols-3 mt-5">
+            <div className="cr-eyebrow mb-6">Estudios relacionados</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {related.map(r => (
-                <Link key={r.id} to="/yo/$id" params={{ id: r.id }} className="cr-card block">
-                  <div className="cr-eyebrow text-[color:var(--gold)]">Estudio</div>
-                  <div className="font-display text-lg mt-2 leading-tight">{r.title}</div>
+                <Link key={r.id} to="/yo/$id" params={{ id: r.id }} className="cr-card p-6 block group">
+                  <div className="cr-eyebrow text-[color:var(--gold)] opacity-70 group-hover:opacity-100 transition-opacity">Estudio relacionado</div>
+                  <div className="font-display text-lg mt-3 leading-tight group-hover:text-[color:var(--gold2)] transition-colors">{r.title}</div>
                 </Link>
               ))}
             </div>
@@ -174,10 +175,10 @@ function YoLectorPage() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-6 md:right-10 z-40 p-3 rounded-full bg-[color:var(--gold)] text-[var(--ink)] shadow-lg shadow-black/30 hover:bg-[color:var(--gold2)] transition-all duration-300 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--obsidian)]"
+          className="fixed bottom-8 right-6 z-40 p-3.5 rounded-full bg-[color:var(--gold)] text-[var(--ink)] shadow-2xl shadow-[var(--gold)]/20 hover:scale-110 active:scale-95 transition-all duration-300"
           aria-label="Volver arriba"
         >
-          <ArrowUp className="w-5 h-5" />
+          <ArrowUp className="w-6 h-6" />
         </button>
       )}
     </div>

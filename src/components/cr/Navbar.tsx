@@ -82,28 +82,26 @@ export function Navbar() {
         className={`
           fixed inset-x-0 top-0 z-50 
           transition-all duration-300 ease-out
-          h-[64px] md:h-[72px] lg:h-auto
+          h-[64px] md:h-[72px] lg:h-[80px]
           ${scrolled 
-            ? "bg-[color-mix(in_oklab,var(--void)_85%,transparent)] backdrop-blur-xl border-b border-[color-mix(in_oklab,var(--gold)_20%,transparent)]" 
+            ? "bg-[color-mix(in_oklab,var(--void)_90%,transparent)] backdrop-blur-xl border-b border-[color-mix(in_oklab,var(--gold)_15%,transparent)] shadow-sm" 
             : "bg-transparent"
           }
         `}
       >
         <nav className="mx-auto flex max-w-7xl h-full items-center justify-between px-4 sm:px-6 lg:px-10">
           {/* Logo - siempre visible */}
-          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+          <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group shrink-0">
             <img 
               src={logo} 
               alt="Conciencia Revolucionaria" 
-              className="h-8 w-8 sm:h-9 sm:w-9 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-200" 
+              className="h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-200" 
               width="36" 
               height="36"
-              fetchPriority="high"
-              decoding="async"
             />
-            <div className="leading-none hidden sm:block">
-              <div className="text-[0.55rem] sm:text-[0.6rem] uppercase tracking-[0.2em] text-[var(--ash)]">Conciencia</div>
-              <div className="font-display text-base sm:text-lg tracking-wide cr-shimmer">Revolucionaria</div>
+            <div className="flex flex-col leading-none">
+              <span className="cr-eyebrow text-[0.55rem] sm:text-[0.6rem] tracking-[0.2em]">Conciencia</span>
+              <span className="font-display text-base sm:text-lg md:text-xl cr-shimmer">Revolucionaria</span>
             </div>
           </Link>
 

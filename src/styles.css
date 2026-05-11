@@ -97,18 +97,31 @@
 
 @layer base {
   * { border-color: var(--color-border); }
-  html, body {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
     background: var(--void);
     color: var(--bone);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100svh;
   }
   h1, h2, h3, h4, .font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
   ::selection { background: color-mix(in oklab, var(--gold) 35%, transparent); color: var(--bone); }
   a { color: inherit; }
-  img { max-width: 100%; height: auto; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  /* Mejora mobile de párrafos */
+  p {
+    line-height: 1.65;
+    color: var(--ash);
+  }
 }
 
 /* ============ Tipografía editorial ============ */
@@ -249,25 +262,58 @@
 .cr-reveal { opacity: 0; transform: translateY(24px); transition: opacity 1.1s cubic-bezier(.2,.8,.2,1), transform 1.1s cubic-bezier(.2,.8,.2,1); }
 .cr-reveal.is-in { opacity: 1; transform: translateY(0); }
 
+/* ============ Utilities ============ */
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+
+.balance-text { text-wrap: balance; }
+
 /* ============ Reader prose ============ */
-.cr-prose { color: var(--bone); font-size: 1.075rem; line-height: 1.85; }
-.cr-prose p { margin: 1.1em 0; color: color-mix(in oklab, var(--bone) 92%, var(--ash)); }
-.cr-prose h2, .cr-prose h3 { font-family: var(--font-display); color: var(--bone); margin-top: 2.2em; margin-bottom: 0.6em; line-height: 1.15; }
-.cr-prose h2 { font-size: 1.85rem; }
-.cr-prose h3 { font-size: 1.35rem; color: color-mix(in oklab, var(--gold) 70%, var(--bone)); }
-.cr-prose ul { padding-left: 1.4em; margin: 1.1em 0; }
-.cr-prose ul li { margin: 0.4em 0; position: relative; padding-left: 0.4em; color: color-mix(in oklab, var(--bone) 90%, var(--ash)); }
+.cr-prose { 
+  color: var(--bone); 
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.125rem); 
+  line-height: 1.8; 
+  letter-spacing: -0.002em;
+}
+.cr-prose p { 
+  margin: 1.25em 0; 
+  color: color-mix(in oklab, var(--bone) 92%, var(--ash)); 
+}
+.cr-prose h2, .cr-prose h3 { 
+  font-family: var(--font-display); 
+  color: var(--gold2); 
+  margin-top: 2.5em; 
+  margin-bottom: 0.8em; 
+  line-height: 1.2; 
+  text-wrap: balance;
+}
+.cr-prose h2 { 
+  font-size: clamp(1.5rem, 1.25rem + 2vw, 2rem); 
+  border-bottom: 1px solid color-mix(in oklab, var(--gold) 15%, transparent);
+  padding-bottom: 0.4em;
+}
+.cr-prose h3 { 
+  font-size: clamp(1.25rem, 1.15rem + 1vw, 1.5rem); 
+}
+.cr-prose ul { padding-left: 1.4em; margin: 1.25em 0; }
+.cr-prose ul li { 
+  margin: 0.6em 0; 
+  position: relative; 
+  padding-left: 0.4em; 
+  color: color-mix(in oklab, var(--bone) 90%, var(--ash)); 
+}
 .cr-prose ul li::marker { color: var(--gold); }
 .cr-prose blockquote, .cr-quote {
-  margin: 1.6em 0;
-  padding: 1.2em 1.4em;
-  border-left: 2px solid var(--gold);
-  background: color-mix(in oklab, var(--obsidian) 80%, transparent);
+  margin: 2em 0;
+  padding: 1.5em 1.75em;
+  border-left: 3px solid var(--gold);
+  background: color-mix(in oklab, var(--obsidian) 40%, transparent);
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 1rem + 1vw, 1.35rem);
   font-style: italic;
   color: var(--bone);
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.75rem 0.75rem 0;
+  box-shadow: inset 1px 0 0 rgba(255,255,255,0.05);
 }
 .cr-mantra {
   margin: 1.8em auto;

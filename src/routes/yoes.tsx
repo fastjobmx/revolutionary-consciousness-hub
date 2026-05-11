@@ -246,49 +246,49 @@ function FeaturedCard({ yo }: { yo: Yo }) {
   const newBadge = isNew(yo.date);
 
   return (
-    <div ref={ref} className="cr-luxury-border rounded-2xl p-8 md:p-10 cr-glass cr-reveal mb-12">
-      <div className="flex flex-col md:flex-row gap-8">
+    <div ref={ref} className="cr-luxury-border rounded-2xl p-6 sm:p-8 md:p-10 cr-glass cr-reveal mb-12">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         {/* Imagen placeholder o icono */}
-        <div className="shrink-0">
-          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[color-mix(in_oklab,var(--gold)_15%,transparent)] flex items-center justify-center">
+        <div className="shrink-0 hidden sm:flex items-center justify-center">
+          <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-[color-mix(in_oklab,var(--gold)_12%,transparent)] flex items-center justify-center shadow-inner">
             <BookOpen className="w-10 h-10 md:w-12 md:h-12 text-[color:var(--gold)]" />
           </div>
         </div>
 
         {/* Contenido */}
         <div className="flex-1">
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-3 mb-4">
             <span className="cr-eyebrow text-[color:var(--gold)]">Estudio destacado</span>
             {newBadge && (
-              <span className="text-[0.6rem] tracking-[0.18em] uppercase px-2 py-1 rounded-full bg-[color:var(--gold)] text-[color:var(--ink)]">
+              <span className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-0.5 rounded-full bg-[color:var(--gold)] text-[color:var(--ink)] font-bold">
                 Nuevo
               </span>
             )}
           </div>
 
-          <h2 className="font-display text-3xl md:text-4xl mb-4 leading-tight">{yo.title}</h2>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl mb-4 leading-tight group-hover:text-[color:var(--gold2)] transition">{yo.title}</h2>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-[color:var(--ash)] mb-4">
+          <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-[color:var(--ash)] mb-6">
             {yo.date && (
-              <div className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
+              <div className="flex items-center gap-1.5">
+                <Calendar className="w-4 h-4 text-[color:var(--gold)]" />
                 <span>{formatDate(yo.date)}</span>
               </div>
             )}
             {yo.category && (
-              <span className="px-2 py-1 rounded border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">
+              <span className="px-2 py-0.5 rounded-md border border-[color-mix(in_oklab,var(--gold)_20%,transparent)] text-[color:var(--ash)] bg-[color-mix(in_oklab,var(--gold)_5%,transparent)]">
                 {yo.category}
               </span>
             )}
           </div>
 
-          <p className="text-[color:var(--bone)] leading-relaxed mb-6 max-w-2xl">{yo.summary}</p>
+          <p className="text-[color:var(--bone)] text-sm sm:text-base leading-relaxed mb-6 max-w-2xl opacity-90">{yo.summary}</p>
 
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-8">
             {yo.tags.slice(0, 5).map((t) => (
               <span
                 key={t}
-                className="text-[0.6rem] tracking-[0.18em] uppercase px-2 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_20%,transparent)] text-[color:var(--ash)]"
+                className="text-[0.6rem] tracking-[0.15em] uppercase px-2.5 py-1 rounded-lg border border-[color-mix(in_oklab,var(--gold)_15%,transparent)] text-[color:var(--ash)] bg-[color-mix(in_oklab,var(--void)_50%,transparent)]"
               >
                 {t}
               </span>
@@ -298,10 +298,10 @@ function FeaturedCard({ yo }: { yo: Yo }) {
           <Link
             to="/yo/$id"
             params={{ id: yo.id }}
-            className="cr-btn cr-btn-gold inline-flex items-center gap-2"
+            className="cr-btn cr-btn-gold w-full sm:w-auto inline-flex items-center justify-center gap-2 min-h-[48px]"
           >
             <BookOpen className="w-4 h-4" />
-            Estudiar ahora
+            <span>Estudiar ahora</span>
           </Link>
         </div>
       </div>

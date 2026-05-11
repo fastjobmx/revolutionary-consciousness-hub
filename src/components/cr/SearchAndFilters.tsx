@@ -51,27 +51,32 @@ export function SearchAndFilters({
 
       {/* Filtros */}
       {filters.length > 0 && (
-        <div className="space-y-4">
+        <div className="space-y-6">
           {filters.map((filter, idx) => (
-            <div key={idx} className="flex flex-wrap items-center gap-2">
+            <div key={idx} className="flex flex-col gap-3">
               {filter.label && (
-                <span className="text-[0.65rem] uppercase tracking-[0.16em] text-[color:var(--ash)] mr-2">
-                  {filter.label}:
+                <span className="text-[0.65rem] uppercase tracking-[0.2em] text-[color:var(--ash)] font-medium">
+                  {filter.label}
                 </span>
               )}
-              {filter.options.map((option) => (
-                <button
-                  key={option.id}
-                  onClick={() => filter.onChange(option.id)}
-                  className={`text-[0.65rem] tracking-[0.16em] uppercase px-3 py-1.5 rounded-full border transition ${
-                    filter.value === option.id
-                      ? "bg-[color:var(--gold)] text-[color:var(--ink)] border-[color:var(--gold)]"
-                      : "border-[color-mix(in_oklab,var(--gold)_25%,transparent)] hover:border-[color:var(--gold)]"
-                  }`}
-                >
-                  {option.label}
-                </button>
-              ))}
+              <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none -mx-1 px-1 sm:flex-wrap">
+                {filter.options.map((option) => (
+                  <button
+                    key={option.id}
+                    onClick={() => filter.onChange(option.id)}
+                    className={`
+                      text-[0.7rem] tracking-[0.12em] uppercase px-4 py-2 rounded-full border transition-all shrink-0
+                      min-h-[36px] flex items-center justify-center
+                      ${filter.value === option.id
+                        ? "bg-[color:var(--gold)] text-[color:var(--ink)] border-[color:var(--gold)] shadow-sm"
+                        : "border-[color-mix(in_oklab,var(--gold)_20%,transparent)] text-[color:var(--ash)] hover:border-[color:var(--gold)] hover:text-[color:var(--gold2)]"
+                      }
+                    `}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
             </div>
           ))}
         </div>

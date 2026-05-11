@@ -89,17 +89,25 @@ function LectorPage() {
   };
 
   return (
-    <div className="pt-28 pb-20">
+    <div className="pt-20 sm:pt-28 pb-20">
       <div className="cr-progress-bar" style={{ transform: `scaleX(${progress})` }} aria-hidden />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-10 grid grid-cols-1 lg:grid-cols-[260px_1fr_220px] gap-8 lg:gap-12">
-        {/* TOC */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 grid grid-cols-1 lg:grid-cols-[260px_1fr_220px] gap-8 lg:gap-12">
+        {/* TOC - Desktop */}
         <aside className="cr-hide-on-focus hidden lg:block sticky top-28 self-start">
-          <div className="cr-eyebrow mb-4">Índice</div>
-          <nav className="space-y-2 text-sm border-l border-[color-mix(in_oklab,var(--gold)_20%,transparent)] pl-4 max-h-[70vh] overflow-y-auto">
+          <div className="cr-eyebrow mb-6">Índice de estudio</div>
+          <nav className="space-y-3 text-sm border-l border-[color-mix(in_oklab,var(--gold)_20%,transparent)] pl-4 max-h-[70vh] overflow-y-auto scrollbar-none">
             {headings.length === 0 && <div className="text-[color:var(--ash)] text-xs">Lectura continua</div>}
             {headings.map(h => (
-              <a key={h.i} href={`#h-${h.i}`} className={`block hover:text-[color:var(--gold2)] transition ${h.level === 2 ? "text-[color:var(--bone)]" : "text-[color:var(--ash)] pl-3 text-[0.82rem]"}`}>
+              <a 
+                key={h.i} 
+                href={`#h-${h.i}`} 
+                className={`block transition-colors duration-200 ${
+                  h.level === 2 
+                    ? "text-[color:var(--bone)] font-medium hover:text-[color:var(--gold)]" 
+                    : "text-[color:var(--ash)] pl-3 text-[0.82rem] hover:text-[color:var(--gold2)]"
+                }`}
+              >
                 {h.text}
               </a>
             ))}
@@ -107,64 +115,105 @@ function LectorPage() {
         </aside>
 
         {/* MAIN */}
-        <article ref={articleRef}>
-          <header className="mb-10 cr-hide-on-focus">
-            <Link to="/conferencias" className="cr-eyebrow text-[color:var(--gold)] hover:text-[color:var(--gold2)]">← Biblioteca</Link>
-            <div className="cr-eyebrow mt-6 text-[color:var(--ash)]">Fase {c.phase} · Conferencia {c.number}</div>
-            <div className="max-w-[72ch] mx-auto lg:mx-0 px-4 sm:px-0">
-              <h1 className="cr-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.05] mb-4 sm:mb-6">{c.title}</h1>
-              <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-[color:var(--ash)] mb-6 sm:mb-8">
-                <span>Fase {c.phase}</span>
-                <span className="text-[color:var(--gold)] hidden sm:inline">·</span>
-                <span className="w-full sm:w-auto">Conferencia {c.number}</span>
-                <span className="text-[color:var(--gold)] hidden sm:inline">·</span>
-                <span>{reading} min</span>
+        <article ref={articleRef} className="w-full max-w-[75ch] mx-auto lg:mx-0">
+          <header className="mb-12 cr-hide-on-focus">
+            <Link 
+              to="/conferencias" 
+              className="inline-flex items-center text-[0.65rem] tracking-[0.2em] uppercase text-[color:var(--gold)] hover:text-[color:var(--gold2)] transition-colors mb-8"
+            >
+              ← Volver a biblioteca
+            </Link>
+            
+            <div className="space-y-4">
+              <div className="cr-eyebrow text-[color:var(--ash)]">
+                Fase {c.phase} · Lección {c.number}
               </div>
-              {c.images.length > 0 && <span>· ◇ {c.images.length} diagramas</span>}
+              
+              <h1 className="cr-display text-[clamp(1.85rem,1.5rem+5vw,3.5rem)] leading-[1.1] mb-6 balance-text">
+                {c.title}
+              </h1>
+              
+              <div className="flex flex-wrap items-center gap-y-3 gap-x-6 text-xs sm:text-sm text-[color:var(--ash)] opacity-80">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--gold)]" />
+                  <span>{reading} min de lectura</span>
+                </div>
+                {c.images.length > 0 && (
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[color:var(--gold2)]" />
+                    <span>{c.images.length} diagramas</span>
+                  </div>
+                )}
+              </div>
             </div>
+
             {c.tags.length > 0 && (
-              <div className="mt-5 flex flex-wrap gap-2">
-                {c.tags.map((t: string) => <span key={t} className="text-[0.6rem] tracking-[0.18em] uppercase px-2.5 py-1 rounded-full border border-[color-mix(in_oklab,var(--gold)_25%,transparent)] text-[color:var(--ash)]">{t}</span>)}
+              <div className="mt-8 flex flex-wrap gap-2">
+                {c.tags.map((t: string) => (
+                  <span key={t} className="text-[0.55rem] tracking-[0.15em] uppercase px-2.5 py-1 rounded-md border border-[color-mix(in_oklab,var(--gold)_15%,transparent)] text-[color:var(--ash)] bg-[color-mix(in_oklab,var(--gold)_5%,transparent)]">
+                    {t}
+                  </span>
+                ))}
               </div>
             )}
-            <div className="cr-divider mt-8" />
+            
+            <div className="cr-divider mt-10 opacity-40" />
           </header>
 
           {/* Mobile TOC toggle */}
           {headings.length > 0 && (
-            <div className="lg:hidden mb-8 cr-hide-on-focus">
-              <button onClick={() => setTocOpen(o => !o)} className="cr-btn cr-btn-ghost !text-[0.65rem] w-full justify-between">
-                <span>Índice ({headings.length})</span><span>{tocOpen ? "−" : "+"}</span>
+            <div className="lg:hidden mb-12 cr-hide-on-focus">
+              <button 
+                onClick={() => setTocOpen(o => !o)} 
+                className="flex items-center justify-between w-full px-5 py-4 rounded-xl bg-[color-mix(in_oklab,var(--gold)_8%,transparent)] border border-[color-mix(in_oklab,var(--gold)_20%,transparent)] text-[color:var(--bone)]"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="cr-eyebrow !text-[0.6rem] tracking-[0.2em] !mb-0 opacity-80">Contenido</div>
+                  <span className="text-xs font-medium text-[color:var(--gold)]">{headings.length} secciones</span>
+                </div>
+                <span className="text-lg text-[color:var(--gold)]">{tocOpen ? "−" : "+"}</span>
               </button>
+              
               {tocOpen && (
-                <nav className="mt-3 cr-glass rounded-xl p-4 space-y-1.5 text-sm max-h-[50vh] overflow-y-auto">
+                <nav className="mt-3 cr-glass rounded-xl p-5 space-y-3 text-sm max-h-[60vh] overflow-y-auto scrollbar-none animate-in fade-in slide-in-from-top-2 duration-300">
                   {headings.map(h => (
-                    <a key={h.i} href={`#h-${h.i}`} onClick={() => setTocOpen(false)} className={`block ${h.level === 2 ? "" : "pl-3 text-[color:var(--ash)] text-[0.85rem]"}`}>{h.text}</a>
+                    <a 
+                      key={h.i} 
+                      href={`#h-${h.i}`} 
+                      onClick={() => setTocOpen(false)} 
+                      className={`block py-1 ${h.level === 2 ? "text-[color:var(--bone)] font-medium" : "pl-4 text-[color:var(--ash)] text-[0.85rem]"}`}
+                    >
+                      {h.text}
+                    </a>
                   ))}
                 </nav>
               )}
             </div>
           )}
 
-          <div style={{ fontSize: `${fontSizes[fontIdx]}rem` }}>
+          <div className="cr-prose" style={{ fontSize: `${fontSizes[fontIdx]}rem` }}>
             <ContentBlocks blocks={c.content} />
           </div>
 
           {/* Nav */}
-          <div className="cr-divider my-12" />
-          <div className="flex flex-wrap justify-between gap-4 cr-hide-on-focus">
+          <div className="cr-divider my-16 opacity-30" />
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 cr-hide-on-focus mb-20">
             {navIds.prev ? (
-              <Link to="/conferencia/$id" params={{ id: navIds.prev.id }} className="cr-card flex-1 max-w-sm">
-                <div className="cr-eyebrow text-[color:var(--gold)]">← Anterior · F.{navIds.prev.phase} {navIds.prev.number}</div>
-                <div className="font-display text-lg mt-2 leading-tight">{navIds.prev.title}</div>
+              <Link to="/conferencia/$id" params={{ id: navIds.prev.id }} className="cr-card flex flex-col p-6 group">
+                <div className="cr-eyebrow text-[color:var(--gold)] opacity-70 group-hover:opacity-100 transition-opacity">← Anterior</div>
+                <div className="font-display text-lg mt-3 leading-tight group-hover:text-[color:var(--gold2)] transition-colors">{navIds.prev.title}</div>
+                <div className="text-[0.65rem] uppercase tracking-widest mt-2 text-[color:var(--ash)]">F.{navIds.prev.phase} · Lección {navIds.prev.number}</div>
               </Link>
-            ) : <div className="flex-1" />}
+            ) : <div />}
+            
             {navIds.next ? (
-              <Link to="/conferencia/$id" params={{ id: navIds.next.id }} className="cr-card flex-1 max-w-sm text-right">
-                <div className="cr-eyebrow text-[color:var(--gold)]">Siguiente · F.{navIds.next.phase} {navIds.next.number} →</div>
-                <div className="font-display text-lg mt-2 leading-tight">{navIds.next.title}</div>
+              <Link to="/conferencia/$id" params={{ id: navIds.next.id }} className="cr-card flex flex-col p-6 group text-right">
+                <div className="cr-eyebrow text-[color:var(--gold)] opacity-70 group-hover:opacity-100 transition-opacity">Siguiente →</div>
+                <div className="font-display text-lg mt-3 leading-tight group-hover:text-[color:var(--gold2)] transition-colors">{navIds.next.title}</div>
+                <div className="text-[0.65rem] uppercase tracking-widest mt-2 text-[color:var(--ash)]">F.{navIds.next.phase} · Lección {navIds.next.number}</div>
               </Link>
-            ) : <div className="flex-1" />}
+            ) : <div />}
           </div>
 
           {related.length > 0 && (

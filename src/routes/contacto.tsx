@@ -119,32 +119,32 @@ function ContactoPage() {
   };
 
   return (
-    <div ref={ref} className="pt-32 pb-20">
+    <div ref={ref} className="pt-24 sm:pt-32 pb-20 overflow-hidden">
       {/* HERO */}
       <section className="relative mx-auto max-w-4xl px-4 sm:px-6 text-center mb-12 sm:mb-16">
         <div className="cr-halo" style={{ inset: "-30% 10%", height: "140%", opacity: 0.4 }} />
         <div className="relative">
           <div className="cr-eyebrow cr-reveal">Comunicación</div>
-          <h1 className="cr-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-4 cr-reveal leading-[1.05]">
+          <h1 className="cr-display text-[clamp(2.5rem,1.5rem+8vw,5.5rem)] mt-6 cr-reveal leading-[1.1]">
             <span className="cr-shimmer">Contáctanos</span>
           </h1>
-          <p className="mt-8 text-lg text-[color:var(--ash)] cr-reveal max-w-2xl mx-auto leading-relaxed">
-            Solicita información o recursos relacionados con las conferencias. 
-            También puedes enviarnos sugerencias para mejorar el sitio.
+          <p className="mt-8 text-sm sm:text-base md:text-xl text-[color:var(--ash)] cr-reveal max-w-2xl mx-auto leading-relaxed opacity-90">
+            Estamos aquí para acompañar tu proceso de estudio. Solicita información, recursos 
+            o comparte tus sugerencias para mejorar la biblioteca.
           </p>
         </div>
       </section>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10">
-        <div className="grid gap-8 lg:gap-12 lg:grid-cols-[1fr_400px]">
+        <div className="grid gap-12 lg:gap-16 lg:grid-cols-[1fr_400px]">
           {/* FORMULARIO */}
-          <section>
-            <div className="cr-luxury-border rounded-2xl p-5 sm:p-8 md:p-10 cr-glass cr-reveal">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-full bg-[color-mix(in_oklab,var(--gold)_15%,transparent)]">
-                  <Mail className="w-5 h-5 text-[color:var(--gold)]" />
+          <section className="order-2 lg:order-1">
+            <div className="cr-luxury-border rounded-2xl p-6 sm:p-10 md:p-12 cr-glass cr-reveal shadow-2xl">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="p-3 rounded-xl bg-[color-mix(in_oklab,var(--gold)_12%,transparent)] border border-[color-mix(in_oklab,var(--gold)_20%,transparent)]">
+                  <Mail className="w-6 h-6 text-[color:var(--gold)]" />
                 </div>
-                <div className="cr-eyebrow text-[color:var(--gold)]">Formulario de contacto</div>
+                <div className="cr-eyebrow text-[color:var(--gold)] !mb-0">Formulario de contacto</div>
               </div>
 
               {/* Mensajes de estado - NUNCA ambos a la vez */}
@@ -248,17 +248,14 @@ function ContactoPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="cr-btn cr-btn-gold w-full flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="cr-btn cr-btn-gold w-full min-h-[52px] flex items-center justify-center gap-2 text-base font-semibold shadow-lg shadow-[var(--gold)]/10 active:scale-[0.98] transition-all disabled:opacity-50"
                 >
                   {isSubmitting ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-[color:var(--ink)] border-t-transparent rounded-full animate-spin" />
-                      Enviando...
-                    </>
+                    <div className="w-5 h-5 border-2 border-[color:var(--ink)] border-t-transparent rounded-full animate-spin" />
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Enviar mensaje
+                      <span>Enviar mensaje</span>
                     </>
                   )}
                 </button>
@@ -266,56 +263,49 @@ function ContactoPage() {
             </div>
           </section>
 
-          {/* SIDEBAR - Redes y enlaces */}
-          <aside className="space-y-8">
-            {/* Redes sociales */}
-            <div className="cr-reveal">
-              <div className="cr-eyebrow mb-4">Redes sociales</div>
-              <div className="space-y-3">
+          {/* SIDEBAR INFO */}
+          <aside className="space-y-12 order-1 lg:order-2">
+            {/* Redes Sociales */}
+            <div>
+              <div className="cr-eyebrow mb-6">Canales oficiales</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
                 {SOCIAL_CARDS.map((card, i) => (
                   <a
                     key={card.id}
                     href={card.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="cr-card block group"
-                    style={{ transitionDelay: `${i * 60}ms` }}
+                    className="cr-card p-6 flex items-start gap-4 group cr-reveal"
+                    style={{ transitionDelay: `${i * 100}ms` }}
                   >
-                    <div className="flex items-start gap-4">
-                      <div className="p-2.5 rounded-full bg-[color-mix(in_oklab,var(--gold)_10%,transparent)] group-hover:bg-[color-mix(in_oklab,var(--gold)_20%,transparent)] transition">
-                        <card.icon className="w-4 h-4 text-[color:var(--gold)]" />
+                    <div className="p-2.5 rounded-xl bg-[color-mix(in_oklab,var(--gold)_10%,transparent)] border border-[color-mix(in_oklab,var(--gold)_15%,transparent)] text-[color:var(--gold)] group-hover:bg-[color:var(--gold)] group-hover:text-[color:var(--ink)] transition-colors">
+                      <card.icon className="w-5 h-5" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="font-display text-lg leading-none">{card.label}</span>
+                        <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-40 transition-opacity" />
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
-                          <span className="font-display text-lg">{card.label}</span>
-                          <ExternalLink className="w-3 h-3 text-[color:var(--ash)] opacity-0 group-hover:opacity-100 transition" />
-                        </div>
-                        <p className="text-sm text-[color:var(--ash)] mt-1">{card.desc}</p>
-                        <span className="text-[0.65rem] tracking-[0.18em] uppercase text-[color:var(--gold)] mt-2 block">
-                          {card.cta} →
-                        </span>
-                      </div>
+                      <p className="text-xs text-[color:var(--ash)] leading-relaxed mb-3">{card.desc}</p>
+                      <span className="text-[0.6rem] tracking-[0.2em] uppercase text-[color:var(--gold)] font-bold">{card.cta} →</span>
                     </div>
                   </a>
                 ))}
               </div>
             </div>
 
-            {/* Enlaces relacionados */}
-            <div className="cr-reveal" style={{ transitionDelay: "240ms" }}>
-              <div className="cr-eyebrow mb-4">Páginas relacionadas</div>
-              <div className="cr-luxury-border rounded-2xl p-5 cr-glass space-y-3">
-                {RELATED_LINKS.map((link, i) => (
+            {/* Enlaces Rápidos */}
+            <div className="cr-reveal" style={{ transitionDelay: "400ms" }}>
+              <div className="cr-eyebrow mb-6">Guías rápidas</div>
+              <div className="cr-glass rounded-2xl p-6 border border-[color-mix(in_oklab,var(--gold)_15%,transparent)] divide-y divide-[color-mix(in_oklab,var(--gold)_10%,transparent)]">
+                {RELATED_LINKS.map((link) => (
                   <Link
                     key={link.to}
                     to={link.to}
-                    className="flex items-center justify-between group py-2 border-b border-[color-mix(in_oklab,var(--gold)_10%,transparent)] last:border-0"
+                    className="flex flex-col py-4 first:pt-0 last:pb-0 group"
                   >
-                    <div>
-                      <span className="font-display text-[color:var(--bone)] group-hover:text-[color:var(--gold2)] transition">{link.label}</span>
-                      <p className="text-xs text-[color:var(--ash)]">{link.desc}</p>
-                    </div>
-                    <ExternalLink className="w-4 h-4 text-[color:var(--ash)] group-hover:text-[color:var(--gold)] transition" />
+                    <span className="font-display text-base group-hover:text-[color:var(--gold)] transition-colors">{link.label}</span>
+                    <span className="text-xs text-[color:var(--ash)] mt-1">{link.desc}</span>
                   </Link>
                 ))}
               </div>

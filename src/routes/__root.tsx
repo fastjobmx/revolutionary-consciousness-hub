@@ -101,7 +101,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preload", href: appCss, as: "style" },
       { rel: "stylesheet", href: appCss },
       // Fuentes con display=swap para evitar FOIT
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap", media: "print", onload: "this.media='all'" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" },
       { rel: "icon", href: "/assets/logo/logo.png" },
       { rel: "apple-touch-icon", href: "/assets/logo/logo.png" },
       // Preload de logo para LCP

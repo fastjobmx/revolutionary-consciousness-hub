@@ -22,27 +22,27 @@ export function MobileNav({ isOpen, onClose, links, currentPath }: MobileNavProp
       
       {/* Drawer lateral derecho */}
       <div 
-        className="fixed top-0 right-0 bottom-0 w-[85vw] max-w-[360px] z-50 bg-[var(--obsidian)] border-l border-[color-mix(in_oklab,var(--gold)_30%,transparent)] shadow-2xl animate-in slide-in-from-right-full duration-300"
+        className="fixed top-0 right-0 bottom-0 w-[min(85vw,380px)] z-50 bg-[var(--obsidian)] border-l border-[color-mix(in_oklab,var(--gold)_30%,transparent)] shadow-2xl animate-in slide-in-from-right-full duration-300 flex flex-col"
         role="dialog"
         aria-modal="true"
         aria-label="Menú de navegación móvil"
       >
         {/* Header del drawer */}
-        <div className="flex items-center justify-between px-5 py-4 border-b border-[color-mix(in_oklab,var(--gold)_15%,transparent)]">
-          <span className="font-display text-lg text-[var(--gold)] tracking-wide">
+        <div className="flex items-center justify-between px-6 py-5 border-b border-[color-mix(in_oklab,var(--gold)_15%,transparent)]">
+          <span className="font-display text-xl text-[var(--gold)] tracking-wide">
             Menú
           </span>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-[color-mix(in_oklab,var(--gold)_10%,transparent)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)]"
+            className="p-2.5 rounded-full hover:bg-[color-mix(in_oklab,var(--gold)_10%,transparent)] transition-colors focus:outline-none"
             aria-label="Cerrar menú"
           >
-            <X className="w-6 h-6 text-[var(--bone)]" />
+            <X className="w-7 h-7 text-[var(--bone)]" />
           </button>
         </div>
 
         {/* Links de navegación */}
-        <nav className="px-5 py-6 flex flex-col gap-2">
+        <nav className="px-6 py-8 flex flex-col gap-1 overflow-y-auto">
           {links.map((link) => {
             const isActive = currentPath === link.to;
             return (
@@ -51,12 +51,11 @@ export function MobileNav({ isOpen, onClose, links, currentPath }: MobileNavProp
                 to={link.to}
                 onClick={onClose}
                 className={`
-                  py-3.5 px-4 rounded-lg text-base font-medium transition-all duration-200
-                  min-h-[44px] flex items-center
-                  focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)]
+                  py-4 px-5 rounded-xl text-lg font-medium transition-all duration-300
+                  min-h-[52px] flex items-center
                   ${isActive 
-                    ? "bg-[color-mix(in_oklab,var(--gold)_15%,transparent)] text-[var(--gold2)] border border-[color-mix(in_oklab,var(--gold)_40%,transparent)]" 
-                    : "text-[var(--bone)] hover:bg-[color-mix(in_oklab,var(--gold)_8%,transparent)] hover:text-[var(--gold)]"
+                    ? "bg-[color-mix(in_oklab,var(--gold)_12%,transparent)] text-[var(--gold2)] border border-[color-mix(in_oklab,var(--gold)_30%,transparent)] shadow-inner" 
+                    : "text-[var(--bone)] hover:bg-[color-mix(in_oklab,var(--gold)_5%,transparent)] hover:text-[var(--gold)]"
                   }
                 `}
                 aria-current={isActive ? "page" : undefined}
@@ -68,51 +67,27 @@ export function MobileNav({ isOpen, onClose, links, currentPath }: MobileNavProp
         </nav>
 
         {/* Sección de curso */}
-        <div className="px-5 py-6 mt-auto border-t border-[color-mix(in_oklab,var(--gold)_15%,transparent)]">
-          <span className="text-[0.7rem] uppercase tracking-[0.2em] text-[var(--ash)] mb-3 block">
+        <div className="px-6 py-8 mt-auto border-t border-[color-mix(in_oklab,var(--gold)_15%,transparent)] bg-[color-mix(in_oklab,var(--ink)_50%,transparent)]">
+          <span className="text-[0.65rem] uppercase tracking-[0.25em] text-[color:var(--ash)] mb-4 block font-semibold">
             Comienza tu camino
           </span>
           
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4 pb-[env(safe-area-inset-bottom)]">
             <Link
-              to="/conferencias-fase-a"
+              to="/como-empezar"
               onClick={onClose}
               className="
-                py-4 px-4 rounded-lg bg-[var(--gold)] text-[var(--ink)] 
-                text-center font-medium text-sm
-                hover:bg-[var(--gold2)] transition-colors duration-200
-                focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--obsidian)]
+                py-4 px-6 rounded-xl bg-[var(--gold)] text-[var(--ink)] 
+                text-center font-semibold shadow-lg shadow-[var(--gold)]/10
+                active:scale-[0.98] transition-all duration-200
               "
             >
-              <span className="block text-[0.65rem] uppercase tracking-[0.15em] opacity-80 mb-1">
+              <span className="block text-[0.6rem] uppercase tracking-[0.2em] opacity-80 mb-0.5">
                 Comenzar aquí
               </span>
-              <span className="font-display text-base">Fase A — Fundamentos</span>
-            </Link>
-            
-            <Link
-              to="/conferencias-fase-b"
-              onClick={onClose}
-              className="
-                py-3 px-4 rounded-lg border border-[color-mix(in_oklab,var(--gold)_50%,transparent)] 
-                text-[var(--bone)] text-center font-medium text-sm
-                hover:bg-[color-mix(in_oklab,var(--gold)_10%,transparent)] hover:border-[var(--gold)] transition-all duration-200
-                focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)]
-              "
-            >
-              <span className="block text-[0.65rem] uppercase tracking-[0.15em] text-[var(--ash)] mb-1">
-                Profundización
-              </span>
-              <span className="font-display text-base">Fase B — Esoterismo</span>
+              <span className="font-display text-lg">Fase A — Fundamentos</span>
             </Link>
           </div>
-        </div>
-
-        {/* Footer con info */}
-        <div className="absolute bottom-0 left-0 right-0 px-5 py-4 border-t border-[color-mix(in_oklab,var(--gold)_10%,transparent)]">
-          <p className="text-[0.7rem] text-[var(--ash)] text-center tracking-wide">
-            Conciencia Revolucionaria
-          </p>
         </div>
       </div>
     </>

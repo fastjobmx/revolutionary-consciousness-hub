@@ -1,35 +1,52 @@
 import { queryOptions } from "@tanstack/react-query";
+import { createServerFn } from "@tanstack/react-start";
 import type { Conferencia, Yo, ConferenciaFaseB, Libro } from "./types";
-import conferenciasData from "../../../public/data/conferencias.json";
-import yoesData from "../../../public/data/yoes.json";
-import conferenciasFaseBData from "../../../public/data/conferencias-fase-b.json";
-import librosData from "../../../public/data/libros.json";
+import conferenciasData from "@/data/conferencias.json";
+import yoesData from "@/data/yoes.json";
+import conferenciasFaseBData from "@/data/conferencias-fase-b.json";
+import librosData from "@/data/libros.json";
+
+const getConferencias = createServerFn({ method: "GET" }).handler(async () => {
+  return conferenciasData as unknown as Conferencia[];
+});
+
+const getYoes = createServerFn({ method: "GET" }).handler(async () => {
+  return yoesData as unknown as Yo[];
+});
+
+const getConferenciasFaseB = createServerFn({ method: "GET" }).handler(async () => {
+  return conferenciasFaseBData as unknown as ConferenciaFaseB[];
+});
+
+const getLibros = createServerFn({ method: "GET" }).handler(async () => {
+  return librosData as unknown as Libro[];
+});
 
 export const conferenciasQuery = () =>
   queryOptions({
     queryKey: ["conferencias"],
-    queryFn: async () => conferenciasData as unknown as Conferencia[],
+    queryFn: () => getConferencias(),
     staleTime: Infinity,
   });
 
 export const yoesQuery = () =>
   queryOptions({
     queryKey: ["yoes"],
-    queryFn: async () => yoesData as unknown as Yo[],
+    queryFn: () => getYoes(),
     staleTime: Infinity,
   });
 
 export const conferenciasFaseBQuery = () =>
   queryOptions({
     queryKey: ["conferencias-fase-b"],
-    queryFn: async () => conferenciasFaseBData as unknown as ConferenciaFaseB[],
+    queryFn: () => getConferenciasFaseB(),
     staleTime: Infinity,
   });
 
 export const librosQuery = () =>
   queryOptions({
     queryKey: ["libros"],
-    queryFn: async () => librosData as unknown as Libro[],
+    queryFn: () => getLibros(),
     staleTime: Infinity,
   });
 

@@ -3,61 +3,78 @@ import { SOCIAL } from "@/lib/cr/queries";
 import logo from "/assets/logo/logo.png?url";
 
 export function Footer() {
+  const footerLinks = {
+    Estudio: [
+      { label: "Biblioteca de Conferencias", to: "/conferencias" },
+      { label: "Estudios de Yoes", to: "/yoes" },
+      { label: "Comenzar por Conf. 01", to: "/conferencia/$id", params: { id: "fase-a-01" } },
+    ],
+    Comunidad: [
+      { label: "Grupo de WhatsApp", href: SOCIAL.whatsappGroup },
+      { label: "YouTube", href: SOCIAL.youtube },
+      { label: "Instagram", href: SOCIAL.instagram },
+      { label: "TikTok", href: SOCIAL.tiktok },
+      { label: "Facebook", href: SOCIAL.facebook },
+    ],
+    Contacto: [
+      { label: `WhatsApp ${SOCIAL.whatsappPhone}`, href: `https://wa.me/${SOCIAL.whatsappPhoneRaw.replace("+", "")}` },
+    ],
+  };
+
   return (
-    <footer className="cr-hide-on-focus mt-32 border-t border-[color-mix(in_oklab,var(--gold)_18%,transparent)]">
-      <div className="cr-divider" />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10 py-12 md:py-16 grid gap-8 md:gap-12 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <div className="flex items-center gap-3">
-            <img 
-            src={logo} 
-            alt="Conciencia Revolucionaria" 
-            className="h-10 w-10 object-contain" 
-            width="40"
-            height="40"
-            loading="lazy"
-            decoding="async"
-          />
-            <div>
-              <div className="cr-eyebrow text-[0.6rem]">Conciencia</div>
-              <div className="font-display text-xl cr-shimmer">Revolucionaria</div>
-            </div>
+    <footer className="relative mt-auto border-t border-[color-mix(in_oklab,var(--gold)_15%,transparent)] bg-[color:var(--void)] pt-16 pb-12 overflow-hidden">
+      <div className="cr-halo" style={{ inset: "auto 0 0 auto", width: "40%", height: "60%", opacity: 0.2 }} />
+      
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          <div className="lg:col-span-1 space-y-6">
+            <Link to="/" className="flex items-center gap-3 group">
+              <div className="w-10 h-10 rounded-xl bg-[color-mix(in_oklab,var(--gold)_12%,transparent)] flex items-center justify-center border border-[color-mix(in_oklab,var(--gold)_20%,transparent)]">
+                <span className="font-display text-xl text-[color:var(--gold)]">C</span>
+              </div>
+              <span className="font-display text-xl sm:text-2xl cr-shimmer">Conciencia Revolucionaria</span>
+            </Link>
+            <p className="text-sm text-[color:var(--ash)] leading-relaxed max-w-xs">
+              Difusión gratuita del conocimiento de sí mismo para el despertar de la conciencia y la liberación del ser.
+            </p>
           </div>
-          <p className="mt-4 text-sm text-[color:var(--ash)] max-w-xs leading-relaxed">
-            Una escuela viva del Conocimiento de Sí Mismo. El camino no se explica: se recorre.
+
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category} className="space-y-6">
+              <h4 className="cr-eyebrow text-[color:var(--gold)] !text-[0.65rem] tracking-[0.25em]">{category}</h4>
+              <ul className="space-y-4">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    {link.href ? (
+                      <a 
+                        href={link.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm text-[color:var(--ash)] hover:text-[color:var(--gold2)] transition-colors py-1.5 inline-block min-h-[40px] flex items-center"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={link.to} 
+                        params={link.params}
+                        className="text-sm text-[color:var(--ash)] hover:text-[color:var(--gold2)] transition-colors py-1.5 inline-block min-h-[40px] flex items-center"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 pt-8 border-t border-[color-mix(in_oklab,var(--gold)_10%,transparent)] flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-[0.65rem] uppercase tracking-widest text-[color:var(--ash)] opacity-60">
+            © {new Date().getFullYear()} Conciencia Revolucionaria · Sin fines de lucro
           </p>
         </div>
-        <div>
-          <div className="cr-eyebrow mb-4">Estudio</div>
-          <ul className="space-y-2 text-sm">
-            <li><Link to="/conferencias" className="hover:text-[color:var(--gold2)]">Biblioteca de Conferencias</Link></li>
-            <li><Link to="/yoes" className="hover:text-[color:var(--gold2)]">Estudios de Yoes</Link></li>
-            <li><Link to="/conferencia/$id" params={{ id: "fase-a-01" }} className="hover:text-[color:var(--gold2)]">Comenzar por Conf. 01</Link></li>
-          </ul>
-        </div>
-        <div>
-          <div className="cr-eyebrow mb-4">Comunidad</div>
-          <ul className="space-y-2 text-sm">
-            <li><a href={SOCIAL.whatsappGroup} target="_blank" rel="noreferrer" className="hover:text-[color:var(--gold2)]">Grupo de WhatsApp</a></li>
-            <li><a href={SOCIAL.youtube} target="_blank" rel="noreferrer" className="hover:text-[color:var(--gold2)]">YouTube</a></li>
-            <li><a href={SOCIAL.instagram} target="_blank" rel="noreferrer" className="hover:text-[color:var(--gold2)]">Instagram</a></li>
-            <li><a href={SOCIAL.tiktok} target="_blank" rel="noreferrer" className="hover:text-[color:var(--gold2)]">TikTok</a></li>
-            <li><a href={SOCIAL.facebook} target="_blank" rel="noreferrer" className="hover:text-[color:var(--gold2)]">Facebook</a></li>
-          </ul>
-        </div>
-        <div>
-          <div className="cr-eyebrow mb-4">Contacto</div>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href={`https://wa.me/${SOCIAL.whatsappPhoneRaw.replace("+","")}`} target="_blank" rel="noreferrer" className="hover:text-[color:var(--gold2)]">
-                WhatsApp {SOCIAL.whatsappPhone}
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="border-t border-[color-mix(in_oklab,var(--gold)_12%,transparent)] py-6 text-center text-xs text-[color:var(--ash)] tracking-[0.2em] uppercase">
-        © {new Date().getFullYear()} Conciencia Revolucionaria
       </div>
     </footer>
   );
