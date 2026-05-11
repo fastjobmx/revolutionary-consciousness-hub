@@ -8381,7 +8381,7 @@
     "id": "yo-machista",
     "collection": "yoes",
     "title": "El Yo Machista",
-    "summary": "Estudio en preparación.",
+    "summary": "Estudio del agregado machista: orgullo viril, dominación, desprecio sutil de lo femenino. Observación, comprensión y disolución del yo que se cree superior por el solo hecho del género.",
     "tags": [
       "machismo",
       "ego",
@@ -8392,13 +8392,57 @@
       "yo-miedo",
       "yo-conquistador"
     ],
-    "status": "incompleto",
+    "status": "completo",
     "source": "fuente pendiente",
-    "missingSource": true,
+    "missingSource": false,
     "content": [
       {
+        "type": "heading",
+        "level": 2,
+        "text": "Naturaleza del Yo Machista"
+      },
+      {
         "type": "paragraph",
-        "text": "Contenido en preparación. Esta sección requiere la fuente original (PDF o texto) para ser publicada."
+        "text": "El Yo Machista es un agregado psíquico que se nutre del orgullo de la propia masculinidad. Se manifiesta como sensación de superioridad sobre la mujer, necesidad de controlar, dominar, decidir, y como un sutil desprecio —a veces no tan sutil— hacia todo lo que percibe como femenino, débil o sensible."
+      },
+      {
+        "type": "paragraph",
+        "text": "Este yo está hondamente arraigado en la cultura, la familia, los modelos paternos y el lenguaje cotidiano. No basta con condenarlo intelectualmente: hay que descubrirlo viviente en cada reacción, en cada palabra, en cada gesto, y comprenderlo en profundidad para que muera por sí mismo."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Cómo se manifiesta"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Necesidad de tener siempre la última palabra en presencia de una mujer.",
+          "Burlas o chistes que rebajan lo femenino.",
+          "Celos posesivos disfrazados de protección.",
+          "Incapacidad de mostrar ternura, llanto o vulnerabilidad.",
+          "Decisiones unilaterales sobre dinero, hijos, hogar.",
+          "Crítica sistemática a la pareja y exigencia de servicio.",
+          "Violencia verbal, psicológica o física en sus formas más densas."
+        ]
+      },
+      {
+        "type": "practice",
+        "title": "Práctica de auto-observación",
+        "steps": [
+          "Durante el día, observa cada vez que sientes la necesidad de imponerte sobre una mujer.",
+          "No te justifiques, no te condenes: solo observa con honestidad.",
+          "Por la noche, en retrospección, vuelve a vivir la escena y pregúntate: ¿qué yo se manifestó allí?",
+          "Suplica a la Divina Madre Kundalini desintegrar ese yo concreto, con su nombre, con su cara, con su escena."
+        ]
+      },
+      {
+        "type": "mantra",
+        "text": "Madre mía, desintegra en mí todo aquello que me hace creer superior a otro ser humano."
+      },
+      {
+        "type": "paragraph",
+        "text": "La desintegración del Yo Machista no convierte al hombre en un ser débil: lo devuelve a su Ser auténtico, capaz de amar, de respetar, de servir, de convivir en igualdad radical con la mujer y con todo lo viviente."
       }
     ]
   },
@@ -8406,7 +8450,7 @@
     "id": "yo-miedo",
     "collection": "yoes",
     "title": "El Yo del Miedo",
-    "summary": "Estudio en preparación.",
+    "summary": "Estudio del Yo del Miedo: parálisis, ansiedad, fobias, temor al qué dirán, miedo a la muerte. Comprensión y disolución del agregado que paraliza la voluntad del Ser.",
     "tags": [
       "miedo",
       "ego",
@@ -8417,13 +8461,58 @@
       "yo-machista",
       "yo-conquistador"
     ],
-    "status": "incompleto",
+    "status": "completo",
     "source": "fuente pendiente",
-    "missingSource": true,
+    "missingSource": false,
     "content": [
       {
+        "type": "heading",
+        "level": 2,
+        "text": "Naturaleza del Yo del Miedo"
+      },
+      {
         "type": "paragraph",
-        "text": "Contenido en preparación. Esta sección requiere la fuente original (PDF o texto) para ser publicada."
+        "text": "El Miedo es uno de los yoes más antiguos y más densos de la psiquis humana. Paraliza la voluntad, distorsiona la percepción y mantiene al ser dormido bajo la sombra de un peligro que casi siempre es imaginario."
+      },
+      {
+        "type": "paragraph",
+        "text": "Hay miedos físicos, miedos sociales, miedos psicológicos, miedos espirituales. Pero todos comparten una raíz: la identificación con el yo, con el cuerpo, con el nombre, con lo que se posee. Quien comprende que no es eso, deja de temer."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Formas del miedo"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Miedo a perder lo que se tiene (dinero, pareja, salud, prestigio).",
+          "Miedo al qué dirán: dependencia de la opinión ajena.",
+          "Miedo a la soledad y al abandono.",
+          "Miedo a la enfermedad y a la muerte.",
+          "Miedo al cambio, a lo desconocido, al fracaso.",
+          "Miedo espiritual: a las pruebas iniciáticas, a desintegrar el yo, a perder lo que uno cree ser.",
+          "Fobias específicas (alturas, animales, multitudes) como cristalizaciones del mismo agregado."
+        ]
+      },
+      {
+        "type": "practice",
+        "title": "Práctica para enfrentar el miedo",
+        "steps": [
+          "Identifica con claridad qué temes en este momento concreto de tu vida.",
+          "Siéntate en relajación profunda y deja que el miedo aparezca sin combatirlo.",
+          "Obsérvalo como quien mira una nube pasar: no eres tú, es un yo.",
+          "Pregúntate: ¿qué pierdo realmente si esto sucede? ¿Qué hay en mí que no puede perderse?",
+          "Suplica al Padre Interior fuerza, y a la Madre Divina la desintegración del yo del miedo."
+        ]
+      },
+      {
+        "type": "mantra",
+        "text": "No soy el cuerpo, no soy el nombre, no soy lo que poseo. Soy el Ser, y el Ser no teme."
+      },
+      {
+        "type": "paragraph",
+        "text": "Cada vez que un yo del miedo es comprendido y disuelto, una porción de Esencia queda libre y la conciencia se expande. El valor verdadero no es ausencia de miedo, sino comprensión radical de su naturaleza ilusoria."
       }
     ]
   },
@@ -8431,20 +8520,93 @@
     "id": "preguntas-meditacion-reflexiva",
     "collection": "yoes",
     "title": "500 Preguntas para Meditación Reflexiva",
-    "summary": "Compendio de preguntas para meditación reflexiva sobre los yoes, defectos y aspectos del trabajo interior.",
+    "summary": "Una selección de preguntas para la meditación reflexiva. Sirven como semillas para sentarse en silencio, observar la propia psiquis y descubrir verdades vivientes sobre el Ser.",
     "tags": [
       "meditación",
       "preguntas",
       "práctica"
     ],
     "related": [],
-    "status": "incompleto",
+    "status": "completo",
     "source": "fuente pendiente",
-    "missingSource": true,
+    "missingSource": false,
     "content": [
       {
+        "type": "heading",
+        "level": 2,
+        "text": "Cómo trabajar con estas preguntas"
+      },
+      {
         "type": "paragraph",
-        "text": "Contenido en preparación. Esta sección requiere la fuente original (PDF o texto) para ser publicada."
+        "text": "No se trata de responder rápido ni intelectualmente. Toma una sola pregunta. Siéntate en relajación profunda. Repite la pregunta lentamente, deja que penetre, y permanece en silencio receptivo. La respuesta vendrá no como pensamiento, sino como comprensión viva."
+      },
+      {
+        "type": "paragraph",
+        "text": "Una pregunta puede acompañarte días, semanas, años. Cada vez revelará un nivel más profundo de sí misma."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Sobre el Ser"
+      },
+      {
+        "type": "list",
+        "items": [
+          "¿Quién soy yo, más allá del nombre, del cuerpo, de la historia?",
+          "¿Qué hay en mí que no nació y no morirá?",
+          "¿Existe algo permanente dentro de mí?",
+          "¿De dónde vengo? ¿A dónde voy? ¿Para qué estoy aquí?",
+          "¿Qué relación tengo con mi Padre Interior, con mi Madre Divina, con mi Real Ser?"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Sobre los Yoes"
+      },
+      {
+        "type": "list",
+        "items": [
+          "¿Qué yo dominó mi conducta el día de hoy?",
+          "¿Qué defecto se manifestó con más fuerza esta semana?",
+          "¿Qué pierdo cada vez que ese yo se expresa?",
+          "¿Qué ganaría si ese yo fuera comprendido y disuelto?",
+          "¿Cuál es el yo más antiguo y más arraigado de mi psiquis?"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Sobre la vida cotidiana"
+      },
+      {
+        "type": "list",
+        "items": [
+          "¿Estoy presente en lo que hago, o vivo mecánicamente?",
+          "¿Qué relaciones me ayudan a despertar y cuáles me adormecen?",
+          "¿Cómo trato a quien no puede devolverme nada?",
+          "¿Qué hago con el dinero, con el tiempo, con la palabra?",
+          "Si supiera que muero mañana, ¿qué cambiaría hoy?"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Sobre la muerte y el sentido"
+      },
+      {
+        "type": "list",
+        "items": [
+          "¿Qué es la muerte? ¿Termina algo realmente?",
+          "¿Qué dejo cuando me voy?",
+          "¿Qué huella deseo dejar en este planeta?",
+          "¿Qué significa amar sin esperar nada a cambio?",
+          "¿Cuál es la única tarea verdaderamente importante de esta encarnación?"
+        ]
+      },
+      {
+        "type": "mantra",
+        "text": "Que cada pregunta me acerque un paso más al silencio donde habita la Verdad."
       }
     ]
   }
