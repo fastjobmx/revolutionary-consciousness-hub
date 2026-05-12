@@ -124,6 +124,9 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Mini Mapa del sitio */}
+        <FooterSitemap />
+
         {/* Tight divider */}
         <div className="mt-10 mb-5 h-px bg-gradient-to-r from-transparent via-[color:color-mix(in_oklab,var(--gold)_22%,transparent)] to-transparent opacity-60" />
 
