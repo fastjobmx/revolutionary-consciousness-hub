@@ -70,22 +70,24 @@ function ConferenciaFaseBPage() {
           <div className="space-y-3">
             <div className="cr-eyebrow mb-2">Navegación</div>
             {prevConf && (
-              <a 
-                href={`/conferencia-fase-b/${prevConf.id}`}
+              <Link 
+                to="/conferencia-fase-b/$id"
+                params={{ id: prevConf.id }}
                 className="block text-sm text-[color:var(--ash)] hover:text-[color:var(--gold)] transition"
               >
                 <span className="text-[0.65rem] uppercase tracking-[0.16em]">Anterior</span>
                 <p className="line-clamp-2 mt-1">{prevConf.title}</p>
-              </a>
+              </Link>
             )}
             {nextConf && (
-              <a 
-                href={`/conferencia-fase-b/${nextConf.id}`}
+              <Link 
+                to="/conferencia-fase-b/$id"
+                params={{ id: nextConf.id }}
                 className="block text-sm text-[color:var(--ash)] hover:text-[color:var(--gold)] transition"
               >
                 <span className="text-[0.65rem] uppercase tracking-[0.16em]">Siguiente</span>
                 <p className="line-clamp-2 mt-1">{nextConf.title}</p>
-              </a>
+              </Link>
             )}
           </div>
           
@@ -96,13 +98,14 @@ function ConferenciaFaseBPage() {
               <div className="cr-eyebrow mb-3">Del mismo tipo</div>
               <div className="space-y-2">
                 {relatedByType.map(r => (
-                  <a 
+                  <Link 
                     key={r.id}
-                    href={`/conferencia-fase-b/${r.id}`}
+                    to="/conferencia-fase-b/$id"
+                    params={{ id: r.id }}
                     className="block text-sm text-[color:var(--ash)] hover:text-[color:var(--gold)] transition line-clamp-2"
                   >
                     Conf. {String(r.number).padStart(2, "0")}: {r.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </>
@@ -160,20 +163,22 @@ function ConferenciaFaseBPage() {
           <div className="lg:hidden mt-16 pt-8 border-t border-[color-mix(in_oklab,var(--gold)_15%,transparent)]">
             <div className="flex justify-between items-center">
               {prevConf ? (
-                <a 
-                  href={`/conferencia-fase-b/${prevConf.id}`}
+                <Link 
+                  to="/conferencia-fase-b/$id"
+                  params={{ id: prevConf.id }}
                   className="text-sm text-[color:var(--ash)] hover:text-[color:var(--gold)]"
                 >
                   ← Anterior
-                </a>
+                </Link>
               ) : <div />}
               {nextConf && (
-                <a 
-                  href={`/conferencia-fase-b/${nextConf.id}`}
+                <Link 
+                  to="/conferencia-fase-b/$id"
+                  params={{ id: nextConf.id }}
                   className="text-sm text-[color:var(--gold)] hover:text-[color:var(--gold2)]"
                 >
                   Siguiente →
-                </a>
+                </Link>
               )}
             </div>
           </div>

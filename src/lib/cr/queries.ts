@@ -1,26 +1,25 @@
 import { queryOptions } from "@tanstack/react-query";
-import { createServerFn } from "@tanstack/react-start";
 import type { Conferencia, Yo, ConferenciaFaseB, Libro } from "./types";
 import conferenciasData from "@/data/conferencias.json";
 import yoesData from "@/data/yoes.json";
 import conferenciasFaseBData from "@/data/conferencias-fase-b.json";
 import librosData from "@/data/libros.json";
 
-const getConferencias = createServerFn({ method: "GET" }).handler(async () => {
+const getConferencias = async () => {
   return conferenciasData as unknown as Conferencia[];
-});
+};
 
-const getYoes = createServerFn({ method: "GET" }).handler(async () => {
+const getYoes = async () => {
   return yoesData as unknown as Yo[];
-});
+};
 
-const getConferenciasFaseB = createServerFn({ method: "GET" }).handler(async () => {
+const getConferenciasFaseB = async () => {
   return conferenciasFaseBData as unknown as ConferenciaFaseB[];
-});
+};
 
-const getLibros = createServerFn({ method: "GET" }).handler(async () => {
+const getLibros = async () => {
   return librosData as unknown as Libro[];
-});
+};
 
 export const conferenciasQuery = () =>
   queryOptions({
