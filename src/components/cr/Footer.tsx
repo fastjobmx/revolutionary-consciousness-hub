@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { MessageCircle, Phone } from "lucide-react";
 import { FooterCTA } from "./FooterCTA";
 import { FooterColumn, FooterLink } from "./FooterColumn";
+import { FooterSitemap } from "./FooterSitemap";
 import { SocialLinks } from "./SocialLinks";
 
 const WHATSAPP_URL = "https://wa.me/573022323472";
@@ -122,6 +123,9 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Mini Mapa del sitio */}
+        <FooterSitemap />
 
         {/* Tight divider */}
         <div className="mt-10 mb-5 h-px bg-gradient-to-r from-transparent via-[color:color-mix(in_oklab,var(--gold)_22%,transparent)] to-transparent opacity-60" />
