@@ -4,7 +4,7 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
     deployment: {
-      preset: "vercel",
+      preset: "netlify",
     },
   },
 });
