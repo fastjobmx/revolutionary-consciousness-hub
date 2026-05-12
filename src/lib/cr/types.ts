@@ -31,14 +31,20 @@ export interface Yo {
   collection: "yoes";
   title: string;
   summary: string;
+  excerpt?: string;
   tags: string[];
   related: string[];
-  status: "completo" | "incompleto";
+  status: "completo" | "incompleto" | "draft";
   source: string;
   missingSource: boolean;
   content: Block[];
-  date?: string; // ISO date string
-  category?: string;
+  date: string; // ISO date string format YYYY-MM-DD
+  category: string;
+  center?: "intelectual" | "emocional" | "motor" | "instintivo" | "sexual";
+  level: "inicial" | "intermedio" | "avanzado";
+  featured?: boolean;
+  recommended?: boolean;
+  readingTime?: number; // in minutes
 }
 
 export interface ConferenciaFaseB {

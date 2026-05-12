@@ -10,4 +10,5 @@ export { BookCard } from "./BookCard";
 export { FAQAccordion } from "./FAQAccordion";
 export { Breadcrumbs } from "./Breadcrumbs";
 export { PrimaryCTA } from "./PrimaryCTA";
+export { YoesPromo } from "./YoesPromo";
 export { useReveal } from "./Reveal";

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { conferenciasQuery, SOCIAL } from "@/lib/cr/queries";
 import { useReveal } from "@/components/cr/Reveal";
-import { SectionHeader, PillarCard, FAQAccordion } from "@/components/cr";
+import { SectionHeader, PillarCard, FAQAccordion, YoesPromo } from "@/components/cr";
 import { MapPin, Monitor, BookOpen, Video, Smartphone, Search, ArrowRight, MessageCircle } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -111,6 +111,9 @@ function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* 2.5 PROMO YOES */}
+      <YoesPromo />
 
       {/* 3. LOS CUATRO PILARES */}
       <section className="relative py-20 md:py-24 overflow-hidden">
