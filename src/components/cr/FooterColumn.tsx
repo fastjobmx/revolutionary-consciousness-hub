@@ -52,8 +52,7 @@ export function FooterLink({ to, href, params, external, children }: LinkProps) 
   }
   if (to) {
     return (
-      // @ts-expect-error dynamic route string
-      <Link to={to} params={params} className={className}>
+      <Link to={to as any} params={params as any} className={className}>
         {inner}
       </Link>
     );
