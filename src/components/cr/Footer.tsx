@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { MessageCircle, Phone } from "lucide-react";
-import { SOCIAL } from "@/lib/cr/queries";
 import { FooterCTA } from "./FooterCTA";
 import { FooterColumn, FooterLink } from "./FooterColumn";
 import { SocialLinks } from "./SocialLinks";
@@ -16,52 +15,43 @@ export function Footer() {
       role="contentinfo"
       className="relative mt-auto overflow-hidden bg-[color:var(--void)]"
     >
-      {/* Top gold hairline */}
+      {/* Top hairline */}
       <div
         aria-hidden
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:color-mix(in_oklab,var(--gold)_55%,transparent)] to-transparent opacity-60"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:color-mix(in_oklab,var(--gold)_40%,transparent)] to-transparent opacity-60"
       />
-      {/* Ambient glows */}
+      {/* Single muted ambient glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-40 -left-40 h-[520px] w-[520px] rounded-full bg-[color:var(--gold)] opacity-[0.04] blur-[140px]"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute top-1/3 -right-32 h-[380px] w-[380px] rounded-full bg-[color:var(--ember)] opacity-[0.05] blur-[140px]"
-      />
-      {/* Subtle vignette gradient */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[color:color-mix(in_oklab,var(--obsidian)_60%,transparent)] via-transparent to-[color:var(--void)]"
+        className="pointer-events-none absolute -bottom-48 left-1/2 h-[460px] w-[760px] -translate-x-1/2 rounded-full bg-[color:var(--gold)] opacity-[0.035] blur-[140px]"
       />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8 md:px-10 pt-16 pb-10 md:pt-20 md:pb-12">
+      <div className="relative mx-auto w-full max-w-6xl px-5 sm:px-8 md:px-10 pt-14 pb-8 md:pt-16 md:pb-10">
         {/* A. CTA */}
         <FooterCTA />
 
         {/* B. Navigation */}
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10">
-          {/* Brand */}
-          <div className="space-y-6 sm:col-span-2 lg:col-span-4">
-            <Link to="/" className="group inline-flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[color:color-mix(in_oklab,var(--gold)_25%,transparent)] bg-[color:color-mix(in_oklab,var(--gold)_10%,transparent)] font-display text-2xl font-semibold text-[color:var(--gold2)] transition-colors duration-200 group-hover:border-[color:var(--gold)]">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-12 lg:gap-x-10 lg:gap-y-0">
+          {/* Brand — full width on mobile, 4/12 desktop */}
+          <div className="col-span-2 space-y-5 lg:col-span-4 lg:pr-6">
+            <Link to="/" className="group inline-flex items-center gap-2.5">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-[color:color-mix(in_oklab,var(--gold)_22%,transparent)] bg-[color:color-mix(in_oklab,var(--gold)_8%,transparent)] font-display text-lg font-semibold text-[color:var(--gold2)] transition-colors duration-200 group-hover:border-[color:color-mix(in_oklab,var(--gold)_55%,transparent)]">
                 C
               </span>
               <span className="flex flex-col leading-tight">
-                <span className="cr-eyebrow !text-[0.55rem] tracking-[0.32em] opacity-60">
+                <span className="text-[0.55rem] font-medium uppercase tracking-[0.3em] text-[color:var(--ash)] opacity-55">
                   Conciencia
                 </span>
-                <span className="font-display text-xl tracking-tight text-[color:var(--bone)]">
+                <span className="font-display text-[1.05rem] tracking-tight text-[color:var(--bone)]">
                   Revolucionaria
                 </span>
               </span>
             </Link>
-            <p className="max-w-[340px] text-[0.92rem] leading-relaxed text-[color:var(--ash)] opacity-85">
+            <p className="max-w-[330px] text-[0.875rem] leading-[1.65] text-[color:color-mix(in_oklab,var(--ash)_88%,var(--bone))] opacity-90">
               Difusión gratuita del conocimiento de sí mismo para el despertar
               de la conciencia y la liberación del ser.
             </p>
-            <p className="font-display italic text-[1.05rem] tracking-wide text-[color:var(--gold2)] opacity-70">
+            <p className="font-display italic text-[0.95rem] tracking-wide text-[color:color-mix(in_oklab,var(--gold2)_75%,var(--bone))] opacity-80">
               "Conócete a ti mismo."
             </p>
           </div>
@@ -69,10 +59,10 @@ export function Footer() {
           {/* Estudio */}
           <div className="lg:col-span-2">
             <FooterColumn title="Estudio" ariaLabel="Sección de estudio">
-              <FooterLink to="/conferencias">Biblioteca de Conferencias</FooterLink>
+              <FooterLink to="/conferencias">Biblioteca</FooterLink>
               <FooterLink to="/como-empezar">Cómo empezar</FooterLink>
               <FooterLink to="/conferencia/$id" params={{ id: "fase-a-01" }}>
-                Comenzar por Conf. 01
+                Conf. 01
               </FooterLink>
               <FooterLink to="/conferencias-fase-a">Fase A</FooterLink>
               <FooterLink to="/conferencias-fase-b">Fase B</FooterLink>
@@ -82,7 +72,7 @@ export function Footer() {
 
           {/* Yoes */}
           <div className="lg:col-span-2">
-            <FooterColumn title="Estudios de Yoes" ariaLabel="Estudios de yoes">
+            <FooterColumn title="Yoes" ariaLabel="Estudios de yoes">
               <FooterLink to="/yoes">Estudios de Yoes</FooterLink>
               <FooterLink to="/yoes">Yo de la semana</FooterLink>
               <FooterLink to="/yoes">Yoes básicos</FooterLink>
@@ -100,21 +90,21 @@ export function Footer() {
           </div>
 
           {/* Contacto */}
-          <div className="space-y-5 lg:col-span-2">
-            <h4 className="cr-eyebrow !text-[0.62rem] tracking-[0.28em] font-semibold text-[color:var(--gold)] opacity-90">
+          <div className="col-span-2 space-y-4 lg:col-span-2">
+            <h4 className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[color:color-mix(in_oklab,var(--gold)_70%,var(--bone))]">
               Contacto
             </h4>
-            <div className="space-y-2">
-              <span className="block text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-[color:var(--ash)] opacity-50">
+            <div className="space-y-1">
+              <span className="block text-[0.6rem] font-medium uppercase tracking-[0.22em] text-[color:var(--ash)] opacity-50">
                 WhatsApp
               </span>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-[0.92rem] font-medium text-[color:var(--bone)] transition-colors hover:text-[color:var(--gold2)]"
+                className="inline-flex items-center gap-1.5 text-[0.9rem] font-medium text-[color:var(--bone)] transition-colors hover:text-[color:var(--gold2)]"
               >
-                <Phone className="h-3.5 w-3.5 text-[color:var(--gold)]" />
+                <Phone className="h-3.5 w-3.5 text-[color:color-mix(in_oklab,var(--gold)_75%,transparent)]" />
                 {WHATSAPP_LABEL}
               </a>
             </div>
@@ -122,57 +112,49 @@ export function Footer() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="cr-btn cr-btn-gold w-full max-w-[360px] justify-center !py-3 !px-4 !text-[0.65rem] !font-bold"
+              className="cr-btn cr-btn-gold w-full max-w-[320px] justify-center !py-2.5 !px-4 !text-[0.65rem] !tracking-[0.18em] !font-bold"
             >
-              <MessageCircle className="mr-2 h-4 w-4" />
+              <MessageCircle className="mr-1.5 h-3.5 w-3.5" />
               Escribir por WhatsApp
             </a>
-            <FooterLink to="/contacto">Formulario de contacto</FooterLink>
+            <div className="pt-1">
+              <FooterLink to="/contacto">Formulario de contacto</FooterLink>
+            </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="cr-divider mt-14 mb-8 opacity-60" />
+        {/* Tight divider */}
+        <div className="mt-10 mb-5 h-px bg-gradient-to-r from-transparent via-[color:color-mix(in_oklab,var(--gold)_22%,transparent)] to-transparent opacity-60" />
 
         {/* C. Legal */}
-        <div className="flex flex-col items-center justify-between gap-5 md:flex-row md:items-center">
-          <div className="flex flex-col items-center gap-2 text-center md:flex-row md:items-center md:gap-5 md:text-left">
-            <p className="text-[0.65rem] font-medium uppercase tracking-[0.28em] text-[color:var(--ash)] opacity-55">
+        <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
+          <div className="flex flex-col items-center gap-1.5 text-center md:flex-row md:gap-4 md:text-left">
+            <p className="text-[0.62rem] font-medium uppercase tracking-[0.24em] text-[color:var(--ash)] opacity-55">
               © {year} Conciencia Revolucionaria
             </p>
-            <span aria-hidden className="hidden h-3 w-px bg-[color:var(--gold)] opacity-20 md:block" />
-            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] italic text-[color:var(--gold)] opacity-60">
-              Difusión gratuita del conocimiento de sí mismo
+            <span aria-hidden className="hidden h-3 w-px bg-[color:var(--gold)] opacity-15 md:block" />
+            <p className="text-[0.62rem] font-medium uppercase tracking-[0.2em] italic text-[color:color-mix(in_oklab,var(--gold)_70%,var(--ash))] opacity-65">
+              Difusión gratuita · Sin fines de lucro
             </p>
           </div>
 
-          <nav
-            aria-label="Enlaces legales"
-            className="flex items-center gap-6"
-          >
-            <Link
-              to="/sobre"
-              className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--ash)] opacity-60 transition-colors hover:text-[color:var(--gold2)] hover:opacity-100"
-            >
-              Privacidad
-            </Link>
-            <Link
-              to="/contacto"
-              className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--ash)] opacity-60 transition-colors hover:text-[color:var(--gold2)] hover:opacity-100"
-            >
-              Contacto
-            </Link>
-            <Link
-              to="/"
-              className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--ash)] opacity-60 transition-colors hover:text-[color:var(--gold2)] hover:opacity-100"
-            >
-              Inicio
-            </Link>
+          <nav aria-label="Enlaces legales" className="flex items-center gap-5">
+            {[
+              { to: "/sobre", label: "Privacidad" },
+              { to: "/contacto", label: "Contacto" },
+              { to: "/", label: "Inicio" },
+            ].map((l) => (
+              <Link
+                key={l.label}
+                to={l.to}
+                className="text-[0.62rem] font-medium uppercase tracking-[0.2em] text-[color:var(--ash)] opacity-60 transition-colors hover:text-[color:var(--gold2)] hover:opacity-100"
+              >
+                {l.label}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>
-      {/* Reference imports kept for tree-shaking awareness */}
-      <span className="hidden">{SOCIAL.whatsappPhoneRaw}</span>
     </footer>
   );
 }

@@ -11,13 +11,13 @@ export function FooterColumn({
   children: ReactNode;
 }) {
   return (
-    <div className="space-y-5">
-      <h4 className="cr-eyebrow !text-[0.62rem] tracking-[0.28em] font-semibold text-[color:var(--gold)] opacity-90">
+    <div className="space-y-4">
+      <h4 className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[color:color-mix(in_oklab,var(--gold)_70%,var(--bone))]">
         {title}
       </h4>
       <nav
         aria-label={ariaLabel ?? title}
-        className="flex flex-col gap-1"
+        className="flex flex-col gap-0.5"
       >
         {children}
       </nav>
@@ -35,11 +35,11 @@ type LinkProps = {
 
 export function FooterLink({ to, href, params, external, children }: LinkProps) {
   const className =
-    "group inline-flex items-center min-h-[44px] py-1.5 text-[0.86rem] text-[color:color-mix(in_oklab,var(--bone)_82%,var(--ash))] hover:text-[color:var(--gold2)] transition-colors duration-200 focus-visible:text-[color:var(--gold2)]";
+    "group relative inline-flex w-fit items-center min-h-[36px] py-1 text-[0.875rem] leading-snug text-[color:color-mix(in_oklab,var(--bone)_78%,var(--ash))] transition-colors duration-200 hover:text-[color:var(--gold2)] focus-visible:text-[color:var(--gold2)]";
   const inner = (
     <span className="relative">
       {children}
-      <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-[color:var(--gold)] opacity-60 transition-all duration-200 group-hover:w-full group-focus-visible:w-full" />
+      <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-[color:color-mix(in_oklab,var(--gold)_70%,transparent)] transition-all duration-200 group-hover:w-full group-focus-visible:w-full" />
     </span>
   );
 
